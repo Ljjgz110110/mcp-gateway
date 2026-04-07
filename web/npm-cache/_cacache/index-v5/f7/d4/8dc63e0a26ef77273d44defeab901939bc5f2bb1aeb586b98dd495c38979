@@ -1,2 +1,0 @@
-
-33fd15678ce2d7851f5145b77d5daba886f056fd	{"key":"make-fetch-happen:request-cache:https://mirrors.cloud.tencent.com/npm/asynckit/-/asynckit-0.4.0.tgz","integrity":"sha1-x57Zf380y48robyXkLzDZkdLS3k=","time":1775547261579,"size":8111,"metadata":{"time":1775547261550,"url":"https://mirrors.cloud.tencent.com/npm/asynckit/-/asynckit-0.4.0.tgz","reqHeaders":{},"resHeaders":{"cache-control":"max-age=300","content-type":"application/octet-stream; charset=utf-8","date":"Tue, 07 Apr 2026 07:34:21 GMT","expires":"Tue, 07 Apr 2026 07:39:21 GMT"},"options":{"compress":true}}}
