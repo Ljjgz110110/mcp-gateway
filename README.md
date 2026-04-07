@@ -1,40 +1,40 @@
-# MCP Gateway
+# MCP 网关
 
-## Description
+## 描述
 
-The MCP gateway is a reverse proxy server that forwards requests from clients to the MCP server or uses all MCP servers under the gateway through a unified portal.
+MCP 网关是一个反向代理服务器，它将客户端的请求转发到 MCP 服务器，或者通过统一门户使用网关下的所有 MCP 服务器。
 
-## Features
+## 特性
 
-- Deploy multiple MCP servers
-- Connect to MCP server
-- Use gateway to call MCP servers
-- Get all MCP servers' SSE streams
-- Get all MCP servers' tools
+- 部署多个 MCP 服务器
+- 连接到 MCP 服务器
+- 使用网关调用 MCP 服务器
+- 获取所有 MCP 服务器的 SSE 流
+- 获取所有 MCP 服务器的工具
 
-## Installation
+## 安装
 
-1. pull github package
+1. 拉取 GitHub 包
 
 ```bash
 docker pull ghcr.io/lucky-aeon/mcp-gateway:latest
 ```
 
-2. self build docker image
+2. 自行构建 Docker 镜像
 
 ```bash
 docker build -t mcp-gateway .
 ```
 
-## Usage
+## 使用
 
-run github docker container
+运行 GitHub Docker 容器
 
 ```bash
 docker run -d --name mcp-gateway -p 8080:8080 ghcr.io/lucky-aeon/mcp-gateway
 ```
 
-run self build docker container
+运行自行构建的 Docker 容器
 
 ```bash
 docker run -d --name mcp-gateway -p 8080:8080 mcp-gateway
@@ -42,9 +42,9 @@ docker run -d --name mcp-gateway -p 8080:8080 mcp-gateway
 
 ## API
 
-### Deploy
+### 部署
 
-support: uvx, npx. or sse url
+支持：uvx、npx 或 sse url
 ```http
 POST /deploy HTTP/1.1
 Host: localhost:8080
@@ -65,16 +65,16 @@ Content-Type: application/json
 }
 ```
 
-### Use MCP
+### 使用 MCP
 
-#### GET SSE
+#### 获取 SSE
 
 ```http
 GET /{mcp-server-name}/sse HTTP/1.1
 Host: localhost:8080
 ```
 
-#### POST Message
+#### 发送消息
 
 ```http
 POST /{mcp-server-name}/message HTTP/1.1
@@ -94,11 +94,11 @@ Content-Type: application/json
 }
 ```
 
-### Use Gateway
+### 使用网关
 
-网关和直连MCP的区别在于，只需要与网关交互，网关会自动将请求转发到对应的MCP服务器。在call 时，需要在method前面添加 `mcpServerName` 内容，标识该请求来自哪个 MCP 服务器。
+网关和直连 MCP 的区别在于，只需要与网关交互，网关会自动将请求转发到对应的 MCP 服务器。在 call 时，需要在 method 前面添加 `mcpServerName` 内容，标识该请求来自哪个 MCP 服务器。
 
-#### GET SSE
+#### 获取 SSE
 
 ```http
 GET /sse HTTP/1.1
@@ -109,9 +109,9 @@ Host: localhost:8080
 
 当客户端订阅 sse 时，网关会为每个 MCP 服务器创建一个 SSE 连接，并将所有 MCP 服务器的 SSE 流合并到一起。
 
-在响应的所有tools/call 的结果中，会在method前面添加 `mcpServerName` 内容，标识该结果来自哪个 MCP 服务器。
+在响应的所有 tools/call 的结果中，会在 method 前面添加 `mcpServerName` 内容，标识该结果来自哪个 MCP 服务器。
 
-#### POST Message
+#### 发送消息
 
 ```http
 POST /message HTTP/1.1
@@ -197,4 +197,3 @@ Content-Type: application/json
   }
 }
 ```
-

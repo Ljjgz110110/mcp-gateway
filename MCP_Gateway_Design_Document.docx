@@ -1,0 +1,317 @@
+ # MCP Gateway 设计文档
+
+## 1. 整体设计
+
+MCP Gateway 是一个反向代理服务器，用于管理和转发请求到 MCP（Model Context Protocol）服务器，或者通过统一门户使用网关下的所有 MCP 服务器。
+
+### 1.1 系统架构
+
+MCP Gateway 采用分层架构设计，主要包括以下层次：
+
+- **接口层**：处理 HTTP 请求和响应，包括 RESTful API 和代理功能
+- **服务管理层**：管理 MCP 服务的部署、启动、停止和重启
+- **工作区管理层**：管理工作区，每个工作区可以包含多个服务
+- **桥接层**：连接 stdio 和 SSE（Server-Sent Events）
+- **配置层**：管理系统配置和服务配置
+
+### 1.2 核心组件
+
+- **ServerManager**：管理所有运行的服务，处理 API 请求
+- **ServiceManager**：管理服务的部署、启动、停止和重启
+- **WorkspaceManager**：管理工作区，每个工作区可以包含多个服务
+- **McpService**：表示一个运行中的 MCP 服务实例
+- **Bridge**：用于连接 stdio 和 SSE
+
+## 2. 配置设计
+
+### 2.1 系统配置
+
+系统配置存储在 `config.json` 文件中，该文件会在系统首次运行时自动生成。系统会按照以下顺序查找配置目录：
+
+1. 首先尝试 `./vm` 目录
+2. 如果 `./vm` 目录不存在，则使用当前目录（`.`）
+
+配置文件包含以下字段：
+
+| 字段 | 类型 | 描述 | 默认值 |
+|------|------|------|--------|
+| LogLevel | uint8 | 日志级别 | - |
+| ConfigDirPath | string | 配置文件路径 | - |
+| Bind | string | 绑定地址 | [::]:8080 |
+| Auth | AuthConfig | 认证配置 | - |
+| SessionGCInterval | time.Duration | Session GC 间隔 | 10s |
+| ProxySessionTimeout | time.Duration | Proxy Session 超时时间 | 1m |
+| McpServiceMgrConfig | McpServiceMgrConfig | MCP 服务管理器配置 | - |
+
+### 2.2 认证配置
+
+| 字段 | 类型 | 描述 | 默认值 |
+|------|------|------|--------|
+| Enabled | bool | 是否启用认证 | true |
+| ApiKey | string | API Key | 123456 |
+
+### 2.3 MCP 服务配置
+
+MCP 服务配置存储在 `mcp_servers.json` 文件中，每个服务的配置包含以下字段：
+
+| 字段 | 类型 | 描述 |
+|------|------|------|
+| Workspace | string | 工作区名称 |
+| URL | string | 服务 URL（与 Command 二选一） |
+| Command | string | 启动服务的命令（与 URL 二选一） |
+| Args | []string | 命令参数 |
+| Env | map[string]string | 环境变量 |
+| LogConfig | LogConfig | 日志配置 |
+| McpServiceMgrConfig | McpServiceMgrConfig | 服务管理器配置 |
+
+## 3. 设计思路
+
+### 3.1 服务管理
+
+MCP Gateway 支持两种类型的 MCP 服务：
+
+1. **SSE 类型**：通过 URL 连接到现有的 MCP 服务器
+2. **命令类型**：通过执行命令启动新的 MCP 服务实例
+
+对于命令类型的服务，MCP Gateway 使用 stdio-sse 桥接将命令的标准输入/输出转换为 SSE 流，以便与 MCP 客户端进行通信。
+
+### 3.2 代理功能
+
+MCP Gateway 提供代理功能，将客户端的请求转发到相应的 MCP 服务器：
+
+1. 从请求路径中提取服务名和路由
+2. 根据服务名获取服务实例
+3. 根据路由类型构建目标 URL
+4. 转发请求到目标 URL
+5. 处理响应并返回给客户端
+
+对于 SSE 请求，MCP Gateway 会特殊处理，确保 SSE 流正确传递给客户端。
+
+### 3.3 工作区管理
+
+MCP Gateway 支持工作区概念，每个工作区可以包含多个 MCP 服务：
+
+1. 工作区提供了服务的逻辑分组
+2. 每个工作区有自己的会话管理
+3. 服务可以在不同工作区之间独立部署和管理
+
+## 4. 代码接口逻辑
+
+### 4.1 系统入口
+
+系统入口在 `main.go` 文件中，主要流程如下：
+
+1. 初始化配置
+2. 设置日志
+3. 启动性能分析
+4. 创建 Echo 实例
+5. 添加中间件
+6. 初始化服务管理器
+7. 启动 pprof 调试服务器
+8. 启动主服务器
+9. 等待退出信号
+10. 优雅关闭
+
+### 4.2 服务管理接口
+
+#### 4.2.1 部署服务
+
+- **API 路径**：POST /deploy
+- **请求体**：包含服务配置的 JSON 对象
+- **响应**：服务部署结果
+
+#### 4.2.2 删除服务
+
+- **API 路径**：DELETE /delete
+- **请求体**：包含服务名称的 JSON 对象
+- **响应**：删除结果
+
+#### 4.2.3 获取所有服务
+
+- **API 路径**：GET /services
+- **响应**：所有服务的列表
+
+#### 4.2.4 获取服务健康状态
+
+- **API 路径**：GET /services/:name/health
+- **响应**：服务的健康状态
+
+### 4.3 工作区管理接口
+
+#### 4.3.1 获取所有工作区
+
+- **API 路径**：GET /api/workspaces
+- **响应**：所有工作区的列表
+
+#### 4.3.2 创建工作区
+
+- **API 路径**：POST /api/workspaces
+- **请求体**：包含工作区名称的 JSON 对象
+- **响应**：创建结果
+
+#### 4.3.3 删除工作区
+
+- **API 路径**：DELETE /api/workspaces/:id
+- **响应**：删除结果
+
+#### 4.3.4 获取工作区服务
+
+- **API 路径**：GET /api/workspaces/:id/services
+- **响应**：工作区中的服务列表
+
+### 4.4 会话管理接口
+
+#### 4.4.1 获取工作区会话
+
+- **API 路径**：GET /api/workspaces/:workspace/sessions
+- **响应**：工作区中的会话列表
+
+#### 4.4.2 创建会话
+
+- **API 路径**：POST /api/workspaces/:workspace/sessions
+- **响应**：创建的会话信息
+
+#### 4.4.3 删除会话
+
+- **API 路径**：DELETE /api/workspaces/:workspace/sessions/:id
+- **响应**：删除结果
+
+#### 4.4.4 获取会话状态
+
+- **API 路径**：GET /api/sessions/:id/status
+- **响应**：会话状态
+
+### 4.5 增强的服务管理接口
+
+#### 4.5.1 部署服务到工作区
+
+- **API 路径**：POST /api/workspaces/:workspace/services
+- **请求体**：包含服务配置的 JSON 对象
+- **响应**：部署结果
+
+#### 4.5.2 更新服务配置
+
+- **API 路径**：PUT /api/workspaces/:workspace/services/:name
+- **请求体**：包含更新配置的 JSON 对象
+- **响应**：更新结果
+
+#### 4.5.3 重启服务
+
+- **API 路径**：POST /api/workspaces/:workspace/services/:name/restart
+- **响应**：重启结果
+
+#### 4.5.4 停止服务
+
+- **API 路径**：POST /api/workspaces/:workspace/services/:name/stop
+- **响应**：停止结果
+
+#### 4.5.5 启动服务
+
+- **API 路径**：POST /api/workspaces/:workspace/services/:name/start
+- **响应**：启动结果
+
+#### 4.5.6 删除服务
+
+- **API 路径**：DELETE /api/workspaces/:workspace/services/:name
+- **响应**：删除结果
+
+#### 4.5.7 获取服务日志
+
+- **API 路径**：GET /api/workspaces/:workspace/services/:name/logs
+- **响应**：服务日志
+
+### 4.6 代理接口
+
+MCP Gateway 提供通用代理接口，将请求转发到相应的 MCP 服务器：
+
+- **API 路径**：/*
+- **处理逻辑**：
+  1. 从路径中提取服务名和路由
+  2. 获取服务实例
+  3. 构建目标 URL
+  4. 转发请求
+  5. 处理响应
+
+## 5. 系统入口
+
+系统的入口点是 `main.go` 文件，主要功能包括：
+
+1. **配置初始化**：加载和初始化系统配置
+2. **日志设置**：设置文件日志
+3. **性能分析**：启动 CPU 性能分析和定期性能分析
+4. **Echo 实例创建**：创建 Echo HTTP 服务器实例
+5. **中间件添加**：添加日志、恢复、CORS 和认证中间件
+6. **服务管理器初始化**：初始化服务管理器，注册路由
+7. **调试服务器启动**：启动 pprof 调试服务器
+8. **主服务器启动**：启动主 HTTP 服务器
+9. **优雅退出**：处理退出信号，优雅关闭服务器
+
+## 6. 技术栈
+
+- **语言**：Go
+- **Web 框架**：Echo v4
+- **日志**：自定义日志库
+- **性能分析**：pprof
+- **容器化**：Docker
+
+## 7. 部署方式
+
+### 7.1 Docker 部署
+
+1. **拉取镜像**：
+   ```bash
+   docker pull ghcr.io/lucky-aeon/mcp-gateway:latest
+   ```
+
+2. **运行容器**：
+   ```bash
+   docker run -d --name mcp-gateway -p 8080:8080 ghcr.io/lucky-aeon/mcp-gateway
+   ```
+
+### 7.2 本地构建
+
+1. **构建镜像**：
+   ```bash
+   docker build -t mcp-gateway .
+   ```
+
+2. **运行容器**：
+   ```bash
+   docker run -d --name mcp-gateway -p 8080:8080 mcp-gateway
+   ```
+
+### 7.3 本地启动
+
+1. **直接运行**：
+   ```bash
+   go run main.go
+   或
+   go run .
+   ```
+
+2. **构建并运行**：
+   ```bash
+   go build -o mcp-gateway
+   ```
+   **注意：go mod download是下载依赖，并不构建
+
+**注意**：本地启动前需要确保已安装 Go 1.23 或更高版本，并且项目依赖已正确安装。
+
+### 7.4 前端启动
+   ```bash
+   npm install
+   cd web && npm run build
+   ```
+
+## 8. 总结
+
+MCP Gateway 是一个功能强大的反向代理服务器，用于管理和转发请求到 MCP 服务器。它支持部署多个 MCP 服务器，并通过统一的门户访问这些服务器。它提供了丰富的 API 接口来管理工作区、会话和服务，支持 SSE 流的处理和转发。
+
+MCP Gateway 的设计采用了分层架构，核心组件包括 ServerManager、ServiceManager、WorkspaceManager、McpService 和 Bridge。它使用 Go 语言开发，基于 Echo 框架构建，支持 Docker 部署。
+
+通过 MCP Gateway，用户可以更方便地管理和使用 MCP 服务器，提高了系统的可扩展性和可维护性。
+
+- 管理界面：http://localhost:8080/admin
+- 主服务 ： http://localhost:8080
+- pprof 调试服务 ： http://localhost:6060
+- fetch MCP 服务 ： http://localhost:10000

@@ -1,0 +1,1626 @@
+0 verbose cli D:\devSoft\nvm_windows\nodejs\node.exe D:\devSoft\nodejs\node_global\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.12.0
+2 info using node@v24.14.0
+3 silly config load:file:D:\devSoft\nodejs\node_global\node_modules\npm\npmrc
+4 silly config load:file:D:\learning\ai\project\mcp-gateway\web\.npmrc
+5 silly config load:file:C:\Users\linji\.npmrc
+6 silly config load:file:D:\devSoft\nodejs\node_global\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:D:\learning\ai\project\mcp-gateway\web\npm-cache\_logs\2026-04-07T07_33_38_465Z-
+10 verbose logfile D:\learning\ai\project\mcp-gateway\web\npm-cache\_logs\2026-04-07T07_33_38_465Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly fetch manifest @esbuild/aix-ppc64@0.25.4
+15 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2faix-ppc64 cache-miss
+16 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2faix-ppc64 198ms (cache miss)
+17 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2faix-ppc64 set size:15436 disposed:false
+18 silly fetch manifest @esbuild/android-arm@0.25.4
+19 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fandroid-arm cache-miss
+20 http fetch GET 200 https://registry.npmmirror.com/npm 409ms
+21 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fandroid-arm 216ms (cache miss)
+22 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fandroid-arm set size:70088 disposed:false
+23 silly fetch manifest @esbuild/android-arm64@0.25.4
+24 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fandroid-arm64 cache-miss
+25 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fandroid-arm64 90ms (cache miss)
+26 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fandroid-arm64 set size:60626 disposed:false
+27 silly fetch manifest @esbuild/android-x64@0.25.4
+28 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fandroid-x64 cache-miss
+29 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fandroid-x64 109ms (cache miss)
+30 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fandroid-x64 set size:59942 disposed:false
+31 silly fetch manifest @esbuild/darwin-x64@0.25.4
+32 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fdarwin-x64 cache-miss
+33 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fdarwin-x64 70ms (cache miss)
+34 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fdarwin-x64 set size:59848 disposed:false
+35 silly fetch manifest @esbuild/freebsd-arm64@0.25.4
+36 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2ffreebsd-arm64 cache-miss
+37 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2ffreebsd-arm64 81ms (cache miss)
+38 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2ffreebsd-arm64 set size:59761 disposed:false
+39 silly fetch manifest @esbuild/freebsd-x64@0.25.4
+40 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2ffreebsd-x64 cache-miss
+41 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2ffreebsd-x64 80ms (cache miss)
+42 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2ffreebsd-x64 set size:60079 disposed:false
+43 silly fetch manifest @esbuild/linux-arm@0.25.4
+44 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-arm cache-miss
+45 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-arm 87ms (cache miss)
+46 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-arm set size:59341 disposed:false
+47 silly fetch manifest @esbuild/linux-arm64@0.25.4
+48 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-arm64 cache-miss
+49 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-arm64 77ms (cache miss)
+50 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-arm64 set size:59820 disposed:false
+51 silly fetch manifest @esbuild/linux-ia32@0.25.4
+52 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-ia32 cache-miss
+53 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-ia32 88ms (cache miss)
+54 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-ia32 set size:60049 disposed:false
+55 silly fetch manifest @esbuild/linux-loong64@0.25.4
+56 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-loong64 cache-miss
+57 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-loong64 69ms (cache miss)
+58 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-loong64 set size:79436 disposed:false
+59 silly fetch manifest @esbuild/linux-mips64el@0.25.4
+60 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-mips64el cache-miss
+61 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-mips64el 79ms (cache miss)
+62 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-mips64el set size:60066 disposed:false
+63 silly fetch manifest @esbuild/linux-ppc64@0.25.4
+64 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-ppc64 cache-miss
+65 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-ppc64 64ms (cache miss)
+66 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-ppc64 set size:59770 disposed:false
+67 silly fetch manifest @esbuild/linux-riscv64@0.25.4
+68 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-riscv64 cache-miss
+69 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-riscv64 87ms (cache miss)
+70 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-riscv64 set size:60122 disposed:false
+71 silly fetch manifest @esbuild/linux-s390x@0.25.4
+72 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-s390x cache-miss
+73 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-s390x 77ms (cache miss)
+74 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-s390x set size:60000 disposed:false
+75 silly fetch manifest @esbuild/linux-x64@0.25.4
+76 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-x64 cache-miss
+77 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-x64 86ms (cache miss)
+78 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2flinux-x64 set size:59790 disposed:false
+79 silly fetch manifest @esbuild/netbsd-arm64@0.25.4
+80 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fnetbsd-arm64 cache-miss
+81 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fnetbsd-arm64 69ms (cache miss)
+82 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fnetbsd-arm64 set size:9833 disposed:false
+83 silly fetch manifest @esbuild/netbsd-x64@0.25.4
+84 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fnetbsd-x64 cache-miss
+85 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fnetbsd-x64 78ms (cache miss)
+86 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fnetbsd-x64 set size:59931 disposed:false
+87 silly fetch manifest @esbuild/openbsd-arm64@0.25.4
+88 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fopenbsd-arm64 cache-miss
+89 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fopenbsd-arm64 57ms (cache miss)
+90 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fopenbsd-arm64 set size:11028 disposed:false
+91 silly fetch manifest @esbuild/openbsd-x64@0.25.4
+92 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fopenbsd-x64 cache-miss
+93 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fopenbsd-x64 76ms (cache miss)
+94 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fopenbsd-x64 set size:59989 disposed:false
+95 silly fetch manifest @esbuild/sunos-x64@0.25.4
+96 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fsunos-x64 cache-miss
+97 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fsunos-x64 79ms (cache miss)
+98 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fsunos-x64 set size:59992 disposed:false
+99 silly fetch manifest @esbuild/win32-arm64@0.25.4
+100 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fwin32-arm64 cache-miss
+101 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fwin32-arm64 84ms (cache miss)
+102 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fwin32-arm64 set size:59988 disposed:false
+103 silly fetch manifest @esbuild/win32-ia32@0.25.4
+104 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fwin32-ia32 cache-miss
+105 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fwin32-ia32 74ms (cache miss)
+106 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fwin32-ia32 set size:60484 disposed:false
+107 silly fetch manifest @esbuild/win32-x64@0.25.4
+108 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fwin32-x64 cache-miss
+109 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fwin32-x64 93ms (cache miss)
+110 silly packumentCache full:https://registry.npmmirror.com/@esbuild%2fwin32-x64 set size:59897 disposed:false
+111 silly placeDep ROOT @esbuild/aix-ppc64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+112 silly placeDep ROOT @esbuild/android-arm@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+113 silly placeDep ROOT @esbuild/android-arm64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+114 silly placeDep ROOT @esbuild/android-x64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+115 silly placeDep ROOT @esbuild/darwin-x64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+116 silly placeDep ROOT @esbuild/freebsd-arm64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+117 silly placeDep ROOT @esbuild/freebsd-x64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+118 silly placeDep ROOT @esbuild/linux-arm@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+119 silly placeDep ROOT @esbuild/linux-arm64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+120 silly placeDep ROOT @esbuild/linux-ia32@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+121 silly placeDep ROOT @esbuild/linux-loong64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+122 silly placeDep ROOT @esbuild/linux-mips64el@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+123 silly placeDep ROOT @esbuild/linux-ppc64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+124 silly placeDep ROOT @esbuild/linux-riscv64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+125 silly placeDep ROOT @esbuild/linux-s390x@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+126 silly placeDep ROOT @esbuild/linux-x64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+127 silly placeDep ROOT @esbuild/netbsd-arm64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+128 silly placeDep ROOT @esbuild/netbsd-x64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+129 silly placeDep ROOT @esbuild/openbsd-arm64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+130 silly placeDep ROOT @esbuild/openbsd-x64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+131 silly placeDep ROOT @esbuild/sunos-x64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+132 silly placeDep ROOT @esbuild/win32-arm64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+133 silly placeDep ROOT @esbuild/win32-ia32@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+134 silly placeDep ROOT @esbuild/win32-x64@0.25.4 OK for: esbuild@0.25.4 want: 0.25.4
+135 silly fetch manifest @rollup/rollup-android-arm-eabi@4.41.0
+136 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-android-arm-eabi cache-miss
+137 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-android-arm-eabi 78ms (cache miss)
+138 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-android-arm-eabi set size:68685 disposed:false
+139 silly fetch manifest @rollup/rollup-android-arm64@4.41.0
+140 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-android-arm64 cache-miss
+141 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-android-arm64 87ms (cache miss)
+142 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-android-arm64 set size:68806 disposed:false
+143 silly fetch manifest @rollup/rollup-darwin-x64@4.41.0
+144 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-darwin-x64 cache-miss
+145 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-darwin-x64 73ms (cache miss)
+146 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-darwin-x64 set size:67992 disposed:false
+147 silly fetch manifest @rollup/rollup-freebsd-arm64@4.41.0
+148 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-freebsd-arm64 cache-miss
+149 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-freebsd-arm64 73ms (cache miss)
+150 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-freebsd-arm64 set size:37669 disposed:false
+151 silly fetch manifest @rollup/rollup-freebsd-x64@4.41.0
+152 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-freebsd-x64 cache-miss
+153 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-freebsd-x64 68ms (cache miss)
+154 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-freebsd-x64 set size:37535 disposed:false
+155 silly fetch manifest @rollup/rollup-linux-arm-gnueabihf@4.41.0
+156 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-arm-gnueabihf cache-miss
+157 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-linux-arm-gnueabihf 79ms (cache miss)
+158 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-arm-gnueabihf set size:69258 disposed:false
+159 silly fetch manifest @rollup/rollup-linux-arm-musleabihf@4.41.0
+160 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-arm-musleabihf cache-miss
+161 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-linux-arm-musleabihf 61ms (cache miss)
+162 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-arm-musleabihf set size:48221 disposed:false
+163 silly fetch manifest @rollup/rollup-linux-arm64-gnu@4.41.0
+164 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-arm64-gnu cache-miss
+165 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-linux-arm64-gnu 95ms (cache miss)
+166 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-arm64-gnu set size:68701 disposed:false
+167 silly fetch manifest @rollup/rollup-linux-arm64-musl@4.41.0
+168 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-arm64-musl cache-miss
+169 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-linux-arm64-musl 75ms (cache miss)
+170 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-arm64-musl set size:59879 disposed:false
+171 silly fetch manifest @rollup/rollup-linux-loongarch64-gnu@4.41.0
+172 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-loongarch64-gnu cache-miss
+173 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-linux-loongarch64-gnu 86ms (cache miss)
+174 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-loongarch64-gnu set size:20622 disposed:false
+175 silly fetch manifest @rollup/rollup-linux-powerpc64le-gnu@4.41.0
+176 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-powerpc64le-gnu cache-miss
+177 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-linux-powerpc64le-gnu 68ms (cache miss)
+178 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-powerpc64le-gnu set size:32662 disposed:false
+179 silly fetch manifest @rollup/rollup-linux-riscv64-gnu@4.41.0
+180 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-riscv64-gnu cache-miss
+181 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-linux-riscv64-gnu 78ms (cache miss)
+182 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-riscv64-gnu set size:53915 disposed:false
+183 silly fetch manifest @rollup/rollup-linux-riscv64-musl@4.41.0
+184 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-riscv64-musl cache-miss
+185 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-linux-riscv64-musl 70ms (cache miss)
+186 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-riscv64-musl set size:21992 disposed:false
+187 silly fetch manifest @rollup/rollup-linux-s390x-gnu@4.41.0
+188 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-s390x-gnu cache-miss
+189 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-linux-s390x-gnu 80ms (cache miss)
+190 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-s390x-gnu set size:49097 disposed:false
+191 silly fetch manifest @rollup/rollup-linux-x64-gnu@4.41.0
+192 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-x64-gnu cache-miss
+193 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-linux-x64-gnu 73ms (cache miss)
+194 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-x64-gnu set size:68206 disposed:false
+195 silly fetch manifest @rollup/rollup-linux-x64-musl@4.41.0
+196 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-x64-musl cache-miss
+197 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-linux-x64-musl 89ms (cache miss)
+198 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-linux-x64-musl set size:68286 disposed:false
+199 silly fetch manifest @rollup/rollup-win32-arm64-msvc@4.41.0
+200 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-win32-arm64-msvc cache-miss
+201 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-win32-arm64-msvc 82ms (cache miss)
+202 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-win32-arm64-msvc set size:69037 disposed:false
+203 silly fetch manifest @rollup/rollup-win32-ia32-msvc@4.41.0
+204 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-win32-ia32-msvc cache-miss
+205 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-win32-ia32-msvc 79ms (cache miss)
+206 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-win32-ia32-msvc set size:69186 disposed:false
+207 silly fetch manifest @rollup/rollup-win32-x64-msvc@4.41.0
+208 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-win32-x64-msvc cache-miss
+209 http fetch GET 200 https://registry.npmmirror.com/@rollup%2frollup-win32-x64-msvc 74ms (cache miss)
+210 silly packumentCache full:https://registry.npmmirror.com/@rollup%2frollup-win32-x64-msvc set size:68345 disposed:false
+211 silly placeDep ROOT @rollup/rollup-android-arm-eabi@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+212 silly placeDep ROOT @rollup/rollup-android-arm64@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+213 silly placeDep ROOT @rollup/rollup-darwin-x64@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+214 silly placeDep ROOT @rollup/rollup-freebsd-arm64@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+215 silly placeDep ROOT @rollup/rollup-freebsd-x64@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+216 silly placeDep ROOT @rollup/rollup-linux-arm-gnueabihf@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+217 silly placeDep ROOT @rollup/rollup-linux-arm-musleabihf@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+218 silly placeDep ROOT @rollup/rollup-linux-arm64-gnu@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+219 silly placeDep ROOT @rollup/rollup-linux-arm64-musl@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+220 silly placeDep ROOT @rollup/rollup-linux-loongarch64-gnu@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+221 silly placeDep ROOT @rollup/rollup-linux-powerpc64le-gnu@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+222 silly placeDep ROOT @rollup/rollup-linux-riscv64-gnu@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+223 silly placeDep ROOT @rollup/rollup-linux-riscv64-musl@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+224 silly placeDep ROOT @rollup/rollup-linux-s390x-gnu@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+225 silly placeDep ROOT @rollup/rollup-linux-x64-gnu@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+226 silly placeDep ROOT @rollup/rollup-linux-x64-musl@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+227 silly placeDep ROOT @rollup/rollup-win32-arm64-msvc@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+228 silly placeDep ROOT @rollup/rollup-win32-ia32-msvc@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+229 silly placeDep ROOT @rollup/rollup-win32-x64-msvc@4.41.0 OK for: rollup@4.41.0 want: 4.41.0
+230 silly reify moves {}
+231 silly audit bulk request {
+231 silly audit   react: [ '19.1.0' ],
+231 silly audit   '@ampproject/remapping': [ '2.3.0' ],
+231 silly audit   '@babel/code-frame': [ '7.27.1' ],
+231 silly audit   '@babel/compat-data': [ '7.27.2' ],
+231 silly audit   '@babel/core': [ '7.27.1' ],
+231 silly audit   '@babel/generator': [ '7.27.1' ],
+231 silly audit   '@babel/helper-compilation-targets': [ '7.27.2' ],
+231 silly audit   '@babel/helper-module-imports': [ '7.27.1' ],
+231 silly audit   '@babel/helper-module-transforms': [ '7.27.1' ],
+231 silly audit   '@babel/helper-plugin-utils': [ '7.27.1' ],
+231 silly audit   '@babel/helper-string-parser': [ '7.27.1' ],
+231 silly audit   '@babel/helper-validator-identifier': [ '7.27.1' ],
+231 silly audit   '@babel/helper-validator-option': [ '7.27.1' ],
+231 silly audit   '@babel/helpers': [ '7.27.1' ],
+231 silly audit   '@babel/parser': [ '7.27.2' ],
+231 silly audit   '@babel/plugin-transform-react-jsx-self': [ '7.27.1' ],
+231 silly audit   '@babel/plugin-transform-react-jsx-source': [ '7.27.1' ],
+231 silly audit   '@babel/runtime': [ '7.27.6' ],
+231 silly audit   '@babel/template': [ '7.27.2' ],
+231 silly audit   '@babel/traverse': [ '7.27.1' ],
+231 silly audit   globals: [ '11.12.0', '14.0.0', '16.1.0' ],
+231 silly audit   '@babel/types': [ '7.27.1' ],
+231 silly audit   '@emotion/babel-plugin': [ '11.13.5' ],
+231 silly audit   'convert-source-map': [ '1.9.0', '2.0.0' ],
+231 silly audit   '@emotion/cache': [ '11.14.0' ],
+231 silly audit   '@emotion/hash': [ '0.9.2' ],
+231 silly audit   '@emotion/is-prop-valid': [ '1.3.1' ],
+231 silly audit   '@emotion/memoize': [ '0.9.0' ],
+231 silly audit   '@emotion/react': [ '11.14.0' ],
+231 silly audit   '@emotion/serialize': [ '1.3.3' ],
+231 silly audit   '@emotion/sheet': [ '1.4.0' ],
+231 silly audit   '@emotion/styled': [ '11.14.1' ],
+231 silly audit   '@emotion/unitless': [ '0.10.0' ],
+231 silly audit   '@emotion/use-insertion-effect-with-fallbacks': [ '1.2.0' ],
+231 silly audit   '@emotion/utils': [ '1.4.2' ],
+231 silly audit   '@emotion/weak-memoize': [ '0.4.0' ],
+231 silly audit   '@esbuild/darwin-arm64': [ '0.25.4' ],
+231 silly audit   '@eslint-community/eslint-utils': [ '4.7.0' ],
+231 silly audit   'eslint-visitor-keys': [ '3.4.3', '4.2.0' ],
+231 silly audit   '@eslint-community/regexpp': [ '4.12.1' ],
+231 silly audit   '@eslint/config-array': [ '0.20.0' ],
+231 silly audit   '@eslint/config-helpers': [ '0.2.2' ],
+231 silly audit   '@eslint/core': [ '0.14.0' ],
+231 silly audit   '@eslint/eslintrc': [ '3.3.1' ],
+231 silly audit   '@eslint/js': [ '9.27.0' ],
+231 silly audit   '@eslint/object-schema': [ '2.1.6' ],
+231 silly audit   '@eslint/plugin-kit': [ '0.3.1' ],
+231 silly audit   '@humanfs/core': [ '0.19.1' ],
+231 silly audit   '@humanfs/node': [ '0.16.6' ],
+231 silly audit   '@humanwhocodes/retry': [ '0.3.1', '0.4.3' ],
+231 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+231 silly audit   '@jridgewell/gen-mapping': [ '0.3.8' ],
+231 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+231 silly audit   '@jridgewell/set-array': [ '1.2.1' ],
+231 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.0' ],
+231 silly audit   '@jridgewell/trace-mapping': [ '0.3.25' ],
+231 silly audit   '@mui/core-downloads-tracker': [ '6.4.12' ],
+231 silly audit   '@mui/icons-material': [ '6.4.12' ],
+231 silly audit   '@mui/material': [ '6.4.12' ],
+231 silly audit   '@mui/private-theming': [ '6.4.9' ],
+231 silly audit   '@mui/styled-engine': [ '6.4.11' ],
+231 silly audit   '@mui/system': [ '6.4.12' ],
+231 silly audit   '@mui/types': [ '7.2.24' ],
+231 silly audit   '@mui/utils': [ '6.4.9' ],
+231 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+231 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+231 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+231 silly audit   '@popperjs/core': [ '2.11.8' ],
+231 silly audit   '@rollup/rollup-darwin-arm64': [ '4.41.0' ],
+231 silly audit   '@types/babel__core': [ '7.20.5' ],
+231 silly audit   '@types/babel__generator': [ '7.27.0' ],
+231 silly audit   '@types/babel__template': [ '7.4.4' ],
+231 silly audit   '@types/babel__traverse': [ '7.20.7' ],
+231 silly audit   '@types/estree': [ '1.0.7' ],
+231 silly audit   '@types/json-schema': [ '7.0.15' ],
+231 silly audit   '@types/parse-json': [ '4.0.2' ],
+231 silly audit   '@types/prop-types': [ '15.7.15' ],
+231 silly audit   '@types/react': [ '19.1.5' ],
+231 silly audit   '@types/react-dom': [ '19.1.5' ],
+231 silly audit   '@types/react-transition-group': [ '4.4.12' ],
+231 silly audit   '@typescript-eslint/eslint-plugin': [ '8.32.1' ],
+231 silly audit   ignore: [ '7.0.4', '5.3.2' ],
+231 silly audit   '@typescript-eslint/parser': [ '8.32.1' ],
+231 silly audit   '@typescript-eslint/scope-manager': [ '8.32.1' ],
+231 silly audit   '@typescript-eslint/type-utils': [ '8.32.1' ],
+231 silly audit   '@typescript-eslint/types': [ '8.32.1' ],
+231 silly audit   '@typescript-eslint/typescript-estree': [ '8.32.1' ],
+231 silly audit   'brace-expansion': [ '2.0.1', '1.1.11' ],
+231 silly audit   minimatch: [ '9.0.5', '3.1.2' ],
+231 silly audit   semver: [ '7.7.2', '6.3.1' ],
+231 silly audit   '@typescript-eslint/utils': [ '8.32.1' ],
+231 silly audit   '@typescript-eslint/visitor-keys': [ '8.32.1' ],
+231 silly audit   '@vitejs/plugin-react': [ '4.4.1' ],
+231 silly audit   acorn: [ '8.14.1' ],
+231 silly audit   'acorn-jsx': [ '5.3.2' ],
+231 silly audit   ajv: [ '6.12.6' ],
+231 silly audit   'ansi-styles': [ '4.3.0' ],
+231 silly audit   argparse: [ '2.0.1' ],
+231 silly audit   asynckit: [ '0.4.0' ],
+231 silly audit   axios: [ '1.10.0' ],
+231 silly audit   'babel-plugin-macros': [ '3.1.0' ],
+231 silly audit   'balanced-match': [ '1.0.2' ],
+231 silly audit   braces: [ '3.0.3' ],
+231 silly audit   browserslist: [ '4.24.5' ],
+231 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+231 silly audit   callsites: [ '3.1.0' ],
+231 silly audit   'caniuse-lite': [ '1.0.30001718' ],
+231 silly audit   chalk: [ '4.1.2' ],
+231 silly audit   clsx: [ '2.1.1' ],
+231 silly audit   'color-convert': [ '2.0.1' ],
+231 silly audit   'color-name': [ '1.1.4' ],
+231 silly audit   'combined-stream': [ '1.0.8' ],
+231 silly audit   'concat-map': [ '0.0.1' ],
+231 silly audit   cookie: [ '1.0.2' ],
+231 silly audit   cosmiconfig: [ '7.1.0' ],
+231 silly audit   yaml: [ '1.10.2' ],
+231 silly audit   'cross-spawn': [ '7.0.6' ],
+231 silly audit   csstype: [ '3.1.3' ],
+231 silly audit   debug: [ '4.4.1' ],
+231 silly audit   'deep-is': [ '0.1.4' ],
+231 silly audit   'delayed-stream': [ '1.0.0' ],
+231 silly audit   'dom-helpers': [ '5.2.1' ],
+231 silly audit   'dunder-proto': [ '1.0.1' ],
+231 silly audit   'electron-to-chromium': [ '1.5.155' ],
+231 silly audit   'error-ex': [ '1.3.2' ],
+231 silly audit   'es-define-property': [ '1.0.1' ],
+231 silly audit   'es-errors': [ '1.3.0' ],
+231 silly audit   'es-object-atoms': [ '1.1.1' ],
+231 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+231 silly audit   esbuild: [ '0.25.4' ],
+231 silly audit   escalade: [ '3.2.0' ],
+231 silly audit   'escape-string-regexp': [ '4.0.0' ],
+231 silly audit   eslint: [ '9.27.0' ],
+231 silly audit   'eslint-plugin-react-hooks': [ '5.2.0' ],
+231 silly audit   'eslint-plugin-react-refresh': [ '0.4.20' ],
+231 silly audit   'eslint-scope': [ '8.3.0' ],
+231 silly audit   espree: [ '10.3.0' ],
+231 silly audit   esquery: [ '1.6.0' ],
+231 silly audit   esrecurse: [ '4.3.0' ],
+231 silly audit   estraverse: [ '5.3.0' ],
+231 silly audit   esutils: [ '2.0.3' ],
+231 silly audit   'fast-deep-equal': [ '3.1.3' ],
+231 silly audit   'fast-glob': [ '3.3.3' ],
+231 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+231 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+231 silly audit   'fast-levenshtein': [ '2.0.6' ],
+231 silly audit   fastq: [ '1.19.1' ],
+231 silly audit   fdir: [ '6.4.4' ],
+231 silly audit   'file-entry-cache': [ '8.0.0' ],
+231 silly audit   'fill-range': [ '7.1.1' ],
+231 silly audit   'find-root': [ '1.1.0' ],
+231 silly audit   'find-up': [ '5.0.0' ],
+231 silly audit   'flat-cache': [ '4.0.1' ],
+231 silly audit   flatted: [ '3.3.3' ],
+231 silly audit   'follow-redirects': [ '1.15.9' ],
+231 silly audit   'form-data': [ '4.0.3' ],
+231 silly audit   fsevents: [ '2.3.3' ],
+231 silly audit   'function-bind': [ '1.1.2' ],
+231 silly audit   gensync: [ '1.0.0-beta.2' ],
+231 silly audit   'get-intrinsic': [ '1.3.0' ],
+231 silly audit   'get-proto': [ '1.0.1' ],
+231 silly audit   gopd: [ '1.2.0' ],
+231 silly audit   graphemer: [ '1.4.0' ],
+231 silly audit   'has-flag': [ '4.0.0' ],
+231 silly audit   'has-symbols': [ '1.1.0' ],
+231 silly audit   'has-tostringtag': [ '1.0.2' ],
+231 silly audit   hasown: [ '2.0.2' ],
+231 silly audit   'hoist-non-react-statics': [ '3.3.2' ],
+231 silly audit   'react-is': [ '16.13.1', '19.1.0' ],
+231 silly audit   'import-fresh': [ '3.3.1' ],
+231 silly audit   imurmurhash: [ '0.1.4' ],
+231 silly audit   'is-arrayish': [ '0.2.1' ],
+231 silly audit   'is-core-module': [ '2.16.1' ],
+231 silly audit   'is-extglob': [ '2.1.1' ],
+231 silly audit   'is-glob': [ '4.0.3' ],
+231 silly audit   'is-number': [ '7.0.0' ],
+231 silly audit   isexe: [ '2.0.0' ],
+231 silly audit   'js-tokens': [ '4.0.0' ],
+231 silly audit   'js-yaml': [ '4.1.0' ],
+231 silly audit   jsesc: [ '3.1.0' ],
+231 silly audit   'json-buffer': [ '3.0.1' ],
+231 silly audit   'json-parse-even-better-errors': [ '2.3.1' ],
+231 silly audit   'json-schema-traverse': [ '0.4.1' ],
+231 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+231 silly audit   json5: [ '2.2.3' ],
+231 silly audit   keyv: [ '4.5.4' ],
+231 silly audit   levn: [ '0.4.1' ],
+231 silly audit   'lines-and-columns': [ '1.2.4' ],
+231 silly audit   'locate-path': [ '6.0.0' ],
+231 silly audit   'lodash.merge': [ '4.6.2' ],
+231 silly audit   'loose-envify': [ '1.4.0' ],
+231 silly audit   'lru-cache': [ '5.1.1' ],
+231 silly audit   'math-intrinsics': [ '1.1.0' ],
+231 silly audit   merge2: [ '1.4.1' ],
+231 silly audit   micromatch: [ '4.0.8' ],
+231 silly audit   picomatch: [ '2.3.1', '4.0.2' ],
+231 silly audit   'mime-db': [ '1.52.0' ],
+231 silly audit   'mime-types': [ '2.1.35' ],
+231 silly audit   ms: [ '2.1.3' ],
+231 silly audit   nanoid: [ '3.3.11' ],
+231 silly audit   'natural-compare': [ '1.4.0' ],
+231 silly audit   'node-releases': [ '2.0.19' ],
+231 silly audit   'object-assign': [ '4.1.1' ],
+231 silly audit   optionator: [ '0.9.4' ],
+231 silly audit   'p-limit': [ '3.1.0' ],
+231 silly audit   'p-locate': [ '5.0.0' ],
+231 silly audit   'parent-module': [ '1.0.1' ],
+231 silly audit   'parse-json': [ '5.2.0' ],
+231 silly audit   'path-exists': [ '4.0.0' ],
+231 silly audit   'path-key': [ '3.1.1' ],
+231 silly audit   'path-parse': [ '1.0.7' ],
+231 silly audit   'path-type': [ '4.0.0' ],
+231 silly audit   picocolors: [ '1.1.1' ],
+231 silly audit   postcss: [ '8.5.3' ],
+231 silly audit   'prelude-ls': [ '1.2.1' ],
+231 silly audit   'prop-types': [ '15.8.1' ],
+231 silly audit   'proxy-from-env': [ '1.1.0' ],
+231 silly audit   punycode: [ '2.3.1' ],
+231 silly audit   'queue-microtask': [ '1.2.3' ],
+231 silly audit   'react-dom': [ '19.1.0' ],
+231 silly audit   'react-refresh': [ '0.17.0' ],
+231 silly audit   'react-router': [ '7.6.2' ],
+231 silly audit   'react-router-dom': [ '7.6.2' ],
+231 silly audit   'react-transition-group': [ '4.4.5' ],
+231 silly audit   resolve: [ '1.22.10' ],
+231 silly audit   'resolve-from': [ '4.0.0' ],
+231 silly audit   reusify: [ '1.1.0' ],
+231 silly audit   rollup: [ '4.41.0' ],
+231 silly audit   'run-parallel': [ '1.2.0' ],
+231 silly audit   scheduler: [ '0.26.0' ],
+231 silly audit   'set-cookie-parser': [ '2.7.1' ],
+231 silly audit   'shebang-command': [ '2.0.0' ],
+231 silly audit   'shebang-regex': [ '3.0.0' ],
+231 silly audit   'source-map': [ '0.5.7' ],
+231 silly audit   'source-map-js': [ '1.2.1' ],
+231 silly audit   'strip-json-comments': [ '3.1.1' ],
+231 silly audit   stylis: [ '4.2.0' ],
+231 silly audit   'supports-color': [ '7.2.0' ],
+231 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+231 silly audit   tinyglobby: [ '0.2.13' ],
+231 silly audit   'to-regex-range': [ '5.0.1' ],
+231 silly audit   'ts-api-utils': [ '2.1.0' ],
+231 silly audit   'type-check': [ '0.4.0' ],
+231 silly audit   typescript: [ '5.8.3' ],
+231 silly audit   'typescript-eslint': [ '8.32.1' ],
+231 silly audit   'update-browserslist-db': [ '1.1.3' ],
+231 silly audit   'uri-js': [ '4.4.1' ],
+231 silly audit   vite: [ '6.3.5' ],
+231 silly audit   which: [ '2.0.2' ],
+231 silly audit   'word-wrap': [ '1.2.5' ],
+231 silly audit   yallist: [ '3.1.1' ],
+231 silly audit   'yocto-queue': [ '0.1.0' ],
+231 silly audit   '@esbuild/aix-ppc64': [ '0.25.4' ],
+231 silly audit   '@esbuild/android-arm': [ '0.25.4' ],
+231 silly audit   '@esbuild/android-arm64': [ '0.25.4' ],
+231 silly audit   '@esbuild/android-x64': [ '0.25.4' ],
+231 silly audit   '@esbuild/darwin-x64': [ '0.25.4' ],
+231 silly audit   '@esbuild/freebsd-arm64': [ '0.25.4' ],
+231 silly audit   '@esbuild/freebsd-x64': [ '0.25.4' ],
+231 silly audit   '@esbuild/linux-arm': [ '0.25.4' ],
+231 silly audit   '@esbuild/linux-arm64': [ '0.25.4' ],
+231 silly audit   '@esbuild/linux-ia32': [ '0.25.4' ],
+231 silly audit   '@esbuild/linux-loong64': [ '0.25.4' ],
+231 silly audit   '@esbuild/linux-mips64el': [ '0.25.4' ],
+231 silly audit   '@esbuild/linux-ppc64': [ '0.25.4' ],
+231 silly audit   '@esbuild/linux-riscv64': [ '0.25.4' ],
+231 silly audit   '@esbuild/linux-s390x': [ '0.25.4' ],
+231 silly audit   '@esbuild/linux-x64': [ '0.25.4' ],
+231 silly audit   '@esbuild/netbsd-arm64': [ '0.25.4' ],
+231 silly audit   '@esbuild/netbsd-x64': [ '0.25.4' ],
+231 silly audit   '@esbuild/openbsd-arm64': [ '0.25.4' ],
+231 silly audit   '@esbuild/openbsd-x64': [ '0.25.4' ],
+231 silly audit   '@esbuild/sunos-x64': [ '0.25.4' ],
+231 silly audit   '@esbuild/win32-arm64': [ '0.25.4' ],
+231 silly audit   '@esbuild/win32-ia32': [ '0.25.4' ],
+231 silly audit   '@esbuild/win32-x64': [ '0.25.4' ],
+231 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-android-arm64': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-darwin-x64': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-freebsd-x64': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-linux-loongarch64-gnu': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-linux-powerpc64le-gnu': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.41.0' ],
+231 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.41.0' ]
+231 silly audit }
+232 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk 45ms
+233 verbose audit error HttpErrorGeneral: 404 Not Found - POST https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk - [NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet
+233 verbose audit error     at D:\devSoft\nodejs\node_global\node_modules\npm\node_modules\npm-registry-fetch\lib\check-response.js:103:15
+233 verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+233 verbose audit error     at async #getReport (D:\devSoft\nodejs\node_global\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:275:19)
+233 verbose audit error     at async AuditReport.run (D:\devSoft\nodejs\node_global\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:100:19) {
+233 verbose audit error   headers: [Object: null prototype] {
+233 verbose audit error     server: [ 'Tengine' ],
+233 verbose audit error     date: [ 'Tue, 07 Apr 2026 07:34:08 GMT' ],
+233 verbose audit error     'content-type': [ 'application/json' ],
+233 verbose audit error     'transfer-encoding': [ 'chunked' ],
+233 verbose audit error     connection: [ 'keep-alive' ],
+233 verbose audit error     'strict-transport-security': [ 'max-age=5184000' ],
+233 verbose audit error     via: [ 'kunlun1.cn7971[,404666]' ],
+233 verbose audit error     'timing-allow-origin': [ '*' ],
+233 verbose audit error     eagleid: [ '7ae4d61517755472481197681e' ],
+233 verbose audit error     'x-fetch-attempts': [ '1' ]
+233 verbose audit error   },
+233 verbose audit error   statusCode: 404,
+233 verbose audit error   code: 'E404',
+233 verbose audit error   method: 'POST',
+233 verbose audit error   uri: 'https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk',
+233 verbose audit error   body: {
+233 verbose audit error     error: '[NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet'
+233 verbose audit error   },
+233 verbose audit error   pkgid: undefined
+233 verbose audit error }
+234 silly audit error [object Object]
+235 silly audit report null
+236 http cache yocto-queue@http://mirrors.cloud.tencent.com/npm/yocto-queue/-/yocto-queue-0.1.0.tgz 0ms (cache hit)
+237 http cache @rollup/rollup-win32-x64-msvc@https://registry.npmmirror.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.41.0.tgz 0ms (cache hit)
+238 http cache yallist@http://mirrors.cloud.tencent.com/npm/yallist/-/yallist-3.1.1.tgz 0ms (cache hit)
+239 http cache @esbuild/win32-x64@https://registry.npmmirror.com/@esbuild/win32-x64/-/win32-x64-0.25.4.tgz 0ms (cache hit)
+240 http cache which@http://mirrors.cloud.tencent.com/npm/which/-/which-2.0.2.tgz 0ms (cache hit)
+241 http cache word-wrap@http://mirrors.cloud.tencent.com/npm/word-wrap/-/word-wrap-1.2.5.tgz 0ms (cache hit)
+242 http cache vite@http://mirrors.cloud.tencent.com/npm/vite/-/vite-6.3.5.tgz 0ms (cache hit)
+243 http cache update-browserslist-db@http://mirrors.cloud.tencent.com/npm/update-browserslist-db/-/update-browserslist-db-1.1.3.tgz 0ms (cache hit)
+244 http cache uri-js@http://mirrors.cloud.tencent.com/npm/uri-js/-/uri-js-4.4.1.tgz 0ms (cache hit)
+245 http cache typescript-eslint@http://mirrors.cloud.tencent.com/npm/typescript-eslint/-/typescript-eslint-8.32.1.tgz 0ms (cache hit)
+246 http cache typescript@http://mirrors.cloud.tencent.com/npm/typescript/-/typescript-5.8.3.tgz 0ms (cache hit)
+247 http cache type-check@http://mirrors.cloud.tencent.com/npm/type-check/-/type-check-0.4.0.tgz 0ms (cache hit)
+248 http cache ts-api-utils@http://mirrors.cloud.tencent.com/npm/ts-api-utils/-/ts-api-utils-2.1.0.tgz 0ms (cache hit)
+249 http cache supports-preserve-symlinks-flag@https://mirrors.cloud.tencent.com/npm/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz 0ms (cache hit)
+250 http cache to-regex-range@http://mirrors.cloud.tencent.com/npm/to-regex-range/-/to-regex-range-5.0.1.tgz 0ms (cache hit)
+251 http cache tinyglobby@http://mirrors.cloud.tencent.com/npm/tinyglobby/-/tinyglobby-0.2.13.tgz 0ms (cache hit)
+252 http cache supports-color@http://mirrors.cloud.tencent.com/npm/supports-color/-/supports-color-7.2.0.tgz 0ms (cache hit)
+253 http cache strip-json-comments@http://mirrors.cloud.tencent.com/npm/strip-json-comments/-/strip-json-comments-3.1.1.tgz 0ms (cache hit)
+254 http cache source-map-js@http://mirrors.cloud.tencent.com/npm/source-map-js/-/source-map-js-1.2.1.tgz 0ms (cache hit)
+255 http cache stylis@http://mirrors.cloud.tencent.com/npm/stylis/-/stylis-4.2.0.tgz 0ms (cache hit)
+256 http cache source-map@https://mirrors.cloud.tencent.com/npm/source-map/-/source-map-0.5.7.tgz 0ms (cache hit)
+257 http cache set-cookie-parser@http://mirrors.cloud.tencent.com/npm/set-cookie-parser/-/set-cookie-parser-2.7.1.tgz 0ms (cache hit)
+258 http cache shebang-command@http://mirrors.cloud.tencent.com/npm/shebang-command/-/shebang-command-2.0.0.tgz 0ms (cache hit)
+259 http cache shebang-regex@http://mirrors.cloud.tencent.com/npm/shebang-regex/-/shebang-regex-3.0.0.tgz 0ms (cache hit)
+260 http cache semver@http://mirrors.cloud.tencent.com/npm/semver/-/semver-6.3.1.tgz 0ms (cache hit)
+261 http cache rollup@http://mirrors.cloud.tencent.com/npm/rollup/-/rollup-4.41.0.tgz 0ms (cache hit)
+262 http cache reusify@http://mirrors.cloud.tencent.com/npm/reusify/-/reusify-1.1.0.tgz 0ms (cache hit)
+263 http cache run-parallel@http://mirrors.cloud.tencent.com/npm/run-parallel/-/run-parallel-1.2.0.tgz 0ms (cache hit)
+264 http cache scheduler@http://mirrors.cloud.tencent.com/npm/scheduler/-/scheduler-0.26.0.tgz 0ms (cache hit)
+265 http cache resolve-from@http://mirrors.cloud.tencent.com/npm/resolve-from/-/resolve-from-4.0.0.tgz 0ms (cache hit)
+266 http cache resolve@http://mirrors.cloud.tencent.com/npm/resolve/-/resolve-1.22.10.tgz 0ms (cache hit)
+267 http cache react-transition-group@http://mirrors.cloud.tencent.com/npm/react-transition-group/-/react-transition-group-4.4.5.tgz 0ms (cache hit)
+268 http cache react-router-dom@http://mirrors.cloud.tencent.com/npm/react-router-dom/-/react-router-dom-7.6.2.tgz 0ms (cache hit)
+269 http cache react-router@http://mirrors.cloud.tencent.com/npm/react-router/-/react-router-7.6.2.tgz 0ms (cache hit)
+270 http cache react-refresh@http://mirrors.cloud.tencent.com/npm/react-refresh/-/react-refresh-0.17.0.tgz 0ms (cache hit)
+271 http cache react-is@https://mirrors.cloud.tencent.com/npm/react-is/-/react-is-19.1.0.tgz 0ms (cache hit)
+272 http cache react@http://mirrors.cloud.tencent.com/npm/react/-/react-19.1.0.tgz 0ms (cache hit)
+273 http cache react-dom@http://mirrors.cloud.tencent.com/npm/react-dom/-/react-dom-19.1.0.tgz 0ms (cache hit)
+274 http cache queue-microtask@http://mirrors.cloud.tencent.com/npm/queue-microtask/-/queue-microtask-1.2.3.tgz 0ms (cache hit)
+275 http cache proxy-from-env@https://mirrors.cloud.tencent.com/npm/proxy-from-env/-/proxy-from-env-1.1.0.tgz 0ms (cache hit)
+276 http cache punycode@http://mirrors.cloud.tencent.com/npm/punycode/-/punycode-2.3.1.tgz 0ms (cache hit)
+277 http cache prop-types@http://mirrors.cloud.tencent.com/npm/prop-types/-/prop-types-15.8.1.tgz 0ms (cache hit)
+278 http cache prelude-ls@http://mirrors.cloud.tencent.com/npm/prelude-ls/-/prelude-ls-1.2.1.tgz 0ms (cache hit)
+279 http cache path-type@http://mirrors.cloud.tencent.com/npm/path-type/-/path-type-4.0.0.tgz 0ms (cache hit)
+280 http cache picomatch@http://mirrors.cloud.tencent.com/npm/picomatch/-/picomatch-4.0.2.tgz 0ms (cache hit)
+281 http cache picocolors@http://mirrors.cloud.tencent.com/npm/picocolors/-/picocolors-1.1.1.tgz 0ms (cache hit)
+282 http cache path-parse@http://mirrors.cloud.tencent.com/npm/path-parse/-/path-parse-1.0.7.tgz 0ms (cache hit)
+283 http cache path-key@http://mirrors.cloud.tencent.com/npm/path-key/-/path-key-3.1.1.tgz 0ms (cache hit)
+284 http cache postcss@http://mirrors.cloud.tencent.com/npm/postcss/-/postcss-8.5.3.tgz 0ms (cache hit)
+285 http cache parse-json@http://mirrors.cloud.tencent.com/npm/parse-json/-/parse-json-5.2.0.tgz 0ms (cache hit)
+286 http cache p-limit@http://mirrors.cloud.tencent.com/npm/p-limit/-/p-limit-3.1.0.tgz 0ms (cache hit)
+287 http cache object-assign@http://mirrors.cloud.tencent.com/npm/object-assign/-/object-assign-4.1.1.tgz 0ms (cache hit)
+288 http cache parent-module@http://mirrors.cloud.tencent.com/npm/parent-module/-/parent-module-1.0.1.tgz 0ms (cache hit)
+289 http cache optionator@http://mirrors.cloud.tencent.com/npm/optionator/-/optionator-0.9.4.tgz 0ms (cache hit)
+290 http cache p-locate@http://mirrors.cloud.tencent.com/npm/p-locate/-/p-locate-5.0.0.tgz 0ms (cache hit)
+291 http cache natural-compare@http://mirrors.cloud.tencent.com/npm/natural-compare/-/natural-compare-1.4.0.tgz 0ms (cache hit)
+292 http cache nanoid@http://mirrors.cloud.tencent.com/npm/nanoid/-/nanoid-3.3.11.tgz 0ms (cache hit)
+293 http cache path-exists@http://mirrors.cloud.tencent.com/npm/path-exists/-/path-exists-4.0.0.tgz 0ms (cache hit)
+294 http cache ms@http://mirrors.cloud.tencent.com/npm/ms/-/ms-2.1.3.tgz 0ms (cache hit)
+295 http cache node-releases@http://mirrors.cloud.tencent.com/npm/node-releases/-/node-releases-2.0.19.tgz 0ms (cache hit)
+296 http cache minimatch@http://mirrors.cloud.tencent.com/npm/minimatch/-/minimatch-3.1.2.tgz 0ms (cache hit)
+297 http cache micromatch@http://mirrors.cloud.tencent.com/npm/micromatch/-/micromatch-4.0.8.tgz 0ms (cache hit)
+298 http cache merge2@http://mirrors.cloud.tencent.com/npm/merge2/-/merge2-1.4.1.tgz 0ms (cache hit)
+299 http cache mime-types@http://mirrors.cloud.tencent.com/npm/mime-types/-/mime-types-2.1.35.tgz 0ms (cache hit)
+300 http cache loose-envify@http://mirrors.cloud.tencent.com/npm/loose-envify/-/loose-envify-1.4.0.tgz 0ms (cache hit)
+301 http cache math-intrinsics@http://mirrors.cloud.tencent.com/npm/math-intrinsics/-/math-intrinsics-1.1.0.tgz 0ms (cache hit)
+302 http cache lodash.merge@http://mirrors.cloud.tencent.com/npm/lodash.merge/-/lodash.merge-4.6.2.tgz 0ms (cache hit)
+303 http cache levn@http://mirrors.cloud.tencent.com/npm/levn/-/levn-0.4.1.tgz 0ms (cache hit)
+304 http cache locate-path@http://mirrors.cloud.tencent.com/npm/locate-path/-/locate-path-6.0.0.tgz 0ms (cache hit)
+305 http cache mime-db@https://mirrors.cloud.tencent.com/npm/mime-db/-/mime-db-1.52.0.tgz 0ms (cache hit)
+306 http cache keyv@http://mirrors.cloud.tencent.com/npm/keyv/-/keyv-4.5.4.tgz 0ms (cache hit)
+307 http cache json-stable-stringify-without-jsonify@http://mirrors.cloud.tencent.com/npm/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz 0ms (cache hit)
+308 http cache lru-cache@http://mirrors.cloud.tencent.com/npm/lru-cache/-/lru-cache-5.1.1.tgz 0ms (cache hit)
+309 http cache json5@http://mirrors.cloud.tencent.com/npm/json5/-/json5-2.2.3.tgz 0ms (cache hit)
+310 http cache lines-and-columns@https://mirrors.cloud.tencent.com/npm/lines-and-columns/-/lines-and-columns-1.2.4.tgz 0ms (cache hit)
+311 http cache json-parse-even-better-errors@https://mirrors.cloud.tencent.com/npm/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz 0ms (cache hit)
+312 http cache json-schema-traverse@http://mirrors.cloud.tencent.com/npm/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz 0ms (cache hit)
+313 http cache jsesc@http://mirrors.cloud.tencent.com/npm/jsesc/-/jsesc-3.1.0.tgz 0ms (cache hit)
+314 http cache json-buffer@http://mirrors.cloud.tencent.com/npm/json-buffer/-/json-buffer-3.0.1.tgz 0ms (cache hit)
+315 http cache js-yaml@http://mirrors.cloud.tencent.com/npm/js-yaml/-/js-yaml-4.1.0.tgz 0ms (cache hit)
+316 http cache js-tokens@http://mirrors.cloud.tencent.com/npm/js-tokens/-/js-tokens-4.0.0.tgz 0ms (cache hit)
+317 http cache is-number@http://mirrors.cloud.tencent.com/npm/is-number/-/is-number-7.0.0.tgz 0ms (cache hit)
+318 http cache is-core-module@http://mirrors.cloud.tencent.com/npm/is-core-module/-/is-core-module-2.16.1.tgz 0ms (cache hit)
+319 http cache isexe@http://mirrors.cloud.tencent.com/npm/isexe/-/isexe-2.0.0.tgz 0ms (cache hit)
+320 http cache is-glob@http://mirrors.cloud.tencent.com/npm/is-glob/-/is-glob-4.0.3.tgz 0ms (cache hit)
+321 http cache is-extglob@http://mirrors.cloud.tencent.com/npm/is-extglob/-/is-extglob-2.1.1.tgz 0ms (cache hit)
+322 http cache imurmurhash@http://mirrors.cloud.tencent.com/npm/imurmurhash/-/imurmurhash-0.1.4.tgz 0ms (cache hit)
+323 http cache import-fresh@http://mirrors.cloud.tencent.com/npm/import-fresh/-/import-fresh-3.3.1.tgz 0ms (cache hit)
+324 http cache ignore@http://mirrors.cloud.tencent.com/npm/ignore/-/ignore-5.3.2.tgz 0ms (cache hit)
+325 http cache hasown@http://mirrors.cloud.tencent.com/npm/hasown/-/hasown-2.0.2.tgz 0ms (cache hit)
+326 http cache hoist-non-react-statics@https://mirrors.cloud.tencent.com/npm/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz 0ms (cache hit)
+327 http cache has-tostringtag@http://mirrors.cloud.tencent.com/npm/has-tostringtag/-/has-tostringtag-1.0.2.tgz 0ms (cache hit)
+328 http cache has-symbols@https://mirrors.cloud.tencent.com/npm/has-symbols/-/has-symbols-1.1.0.tgz 0ms (cache hit)
+329 http cache has-flag@http://mirrors.cloud.tencent.com/npm/has-flag/-/has-flag-4.0.0.tgz 0ms (cache hit)
+330 http cache gopd@https://mirrors.cloud.tencent.com/npm/gopd/-/gopd-1.2.0.tgz 0ms (cache hit)
+331 http cache is-arrayish@http://mirrors.cloud.tencent.com/npm/is-arrayish/-/is-arrayish-0.2.1.tgz 0ms (cache hit)
+332 http cache graphemer@http://mirrors.cloud.tencent.com/npm/graphemer/-/graphemer-1.4.0.tgz 0ms (cache hit)
+333 http cache get-proto@http://mirrors.cloud.tencent.com/npm/get-proto/-/get-proto-1.0.1.tgz 0ms (cache hit)
+334 http cache glob-parent@http://mirrors.cloud.tencent.com/npm/glob-parent/-/glob-parent-6.0.2.tgz 0ms (cache hit)
+335 http cache get-intrinsic@https://mirrors.cloud.tencent.com/npm/get-intrinsic/-/get-intrinsic-1.3.0.tgz 0ms (cache hit)
+336 http cache function-bind@http://mirrors.cloud.tencent.com/npm/function-bind/-/function-bind-1.1.2.tgz 0ms (cache hit)
+337 http cache gensync@http://mirrors.cloud.tencent.com/npm/gensync/-/gensync-1.0.0-beta.2.tgz 0ms (cache hit)
+338 http cache globals@http://mirrors.cloud.tencent.com/npm/globals/-/globals-16.1.0.tgz 0ms (cache hit)
+339 http cache form-data@http://mirrors.cloud.tencent.com/npm/form-data/-/form-data-4.0.3.tgz 0ms (cache hit)
+340 http cache follow-redirects@https://mirrors.cloud.tencent.com/npm/follow-redirects/-/follow-redirects-1.15.9.tgz 0ms (cache hit)
+341 http cache flatted@http://mirrors.cloud.tencent.com/npm/flatted/-/flatted-3.3.3.tgz 0ms (cache hit)
+342 http cache flat-cache@http://mirrors.cloud.tencent.com/npm/flat-cache/-/flat-cache-4.0.1.tgz 0ms (cache hit)
+343 http cache fill-range@http://mirrors.cloud.tencent.com/npm/fill-range/-/fill-range-7.1.1.tgz 0ms (cache hit)
+344 http cache find-up@http://mirrors.cloud.tencent.com/npm/find-up/-/find-up-5.0.0.tgz 0ms (cache hit)
+345 http cache find-root@http://mirrors.cloud.tencent.com/npm/find-root/-/find-root-1.1.0.tgz 0ms (cache hit)
+346 http cache file-entry-cache@http://mirrors.cloud.tencent.com/npm/file-entry-cache/-/file-entry-cache-8.0.0.tgz 0ms (cache hit)
+347 http cache fdir@http://mirrors.cloud.tencent.com/npm/fdir/-/fdir-6.4.4.tgz 0ms (cache hit)
+348 http cache fastq@http://mirrors.cloud.tencent.com/npm/fastq/-/fastq-1.19.1.tgz 0ms (cache hit)
+349 http cache fast-levenshtein@http://mirrors.cloud.tencent.com/npm/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz 0ms (cache hit)
+350 http cache fast-deep-equal@http://mirrors.cloud.tencent.com/npm/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz 0ms (cache hit)
+351 http cache fast-glob@http://mirrors.cloud.tencent.com/npm/fast-glob/-/fast-glob-3.3.3.tgz 0ms (cache hit)
+352 http cache esutils@http://mirrors.cloud.tencent.com/npm/esutils/-/esutils-2.0.3.tgz 0ms (cache hit)
+353 http cache esquery@http://mirrors.cloud.tencent.com/npm/esquery/-/esquery-1.6.0.tgz 0ms (cache hit)
+354 http cache esrecurse@http://mirrors.cloud.tencent.com/npm/esrecurse/-/esrecurse-4.3.0.tgz 0ms (cache hit)
+355 http cache fast-json-stable-stringify@http://mirrors.cloud.tencent.com/npm/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz 0ms (cache hit)
+356 http cache estraverse@http://mirrors.cloud.tencent.com/npm/estraverse/-/estraverse-5.3.0.tgz 0ms (cache hit)
+357 http cache eslint-scope@http://mirrors.cloud.tencent.com/npm/eslint-scope/-/eslint-scope-8.3.0.tgz 0ms (cache hit)
+358 http cache eslint-plugin-react-hooks@http://mirrors.cloud.tencent.com/npm/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.2.0.tgz 0ms (cache hit)
+359 http cache eslint-visitor-keys@http://mirrors.cloud.tencent.com/npm/eslint-visitor-keys/-/eslint-visitor-keys-4.2.0.tgz 0ms (cache hit)
+360 http cache eslint-plugin-react-refresh@http://mirrors.cloud.tencent.com/npm/eslint-plugin-react-refresh/-/eslint-plugin-react-refresh-0.4.20.tgz 0ms (cache hit)
+361 http cache eslint@http://mirrors.cloud.tencent.com/npm/eslint/-/eslint-9.27.0.tgz 0ms (cache hit)
+362 http cache escape-string-regexp@http://mirrors.cloud.tencent.com/npm/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz 0ms (cache hit)
+363 http cache esbuild@http://mirrors.cloud.tencent.com/npm/esbuild/-/esbuild-0.25.4.tgz 0ms (cache hit)
+364 http cache escalade@http://mirrors.cloud.tencent.com/npm/escalade/-/escalade-3.2.0.tgz 0ms (cache hit)
+365 http cache espree@http://mirrors.cloud.tencent.com/npm/espree/-/espree-10.3.0.tgz 0ms (cache hit)
+366 http cache es-errors@http://mirrors.cloud.tencent.com/npm/es-errors/-/es-errors-1.3.0.tgz 0ms (cache hit)
+367 http cache es-define-property@http://mirrors.cloud.tencent.com/npm/es-define-property/-/es-define-property-1.0.1.tgz 0ms (cache hit)
+368 http cache es-object-atoms@http://mirrors.cloud.tencent.com/npm/es-object-atoms/-/es-object-atoms-1.1.1.tgz 0ms (cache hit)
+369 http cache es-set-tostringtag@http://mirrors.cloud.tencent.com/npm/es-set-tostringtag/-/es-set-tostringtag-2.1.0.tgz 0ms (cache hit)
+370 http cache error-ex@http://mirrors.cloud.tencent.com/npm/error-ex/-/error-ex-1.3.2.tgz 0ms (cache hit)
+371 http cache electron-to-chromium@http://mirrors.cloud.tencent.com/npm/electron-to-chromium/-/electron-to-chromium-1.5.155.tgz 0ms (cache hit)
+372 http cache dunder-proto@http://mirrors.cloud.tencent.com/npm/dunder-proto/-/dunder-proto-1.0.1.tgz 0ms (cache hit)
+373 http cache dom-helpers@http://mirrors.cloud.tencent.com/npm/dom-helpers/-/dom-helpers-5.2.1.tgz 0ms (cache hit)
+374 http cache delayed-stream@https://mirrors.cloud.tencent.com/npm/delayed-stream/-/delayed-stream-1.0.0.tgz 0ms (cache hit)
+375 http cache deep-is@http://mirrors.cloud.tencent.com/npm/deep-is/-/deep-is-0.1.4.tgz 0ms (cache hit)
+376 http cache csstype@http://mirrors.cloud.tencent.com/npm/csstype/-/csstype-3.1.3.tgz 0ms (cache hit)
+377 http cache debug@http://mirrors.cloud.tencent.com/npm/debug/-/debug-4.4.1.tgz 0ms (cache hit)
+378 http cache convert-source-map@http://mirrors.cloud.tencent.com/npm/convert-source-map/-/convert-source-map-2.0.0.tgz 0ms (cache hit)
+379 http cache cross-spawn@https://mirrors.cloud.tencent.com/npm/cross-spawn/-/cross-spawn-7.0.6.tgz 0ms (cache hit)
+380 http cache cookie@http://mirrors.cloud.tencent.com/npm/cookie/-/cookie-1.0.2.tgz 0ms (cache hit)
+381 http cache cosmiconfig@http://mirrors.cloud.tencent.com/npm/cosmiconfig/-/cosmiconfig-7.1.0.tgz 0ms (cache hit)
+382 http cache concat-map@http://mirrors.cloud.tencent.com/npm/concat-map/-/concat-map-0.0.1.tgz 0ms (cache hit)
+383 http cache combined-stream@http://mirrors.cloud.tencent.com/npm/combined-stream/-/combined-stream-1.0.8.tgz 0ms (cache hit)
+384 http cache color-name@http://mirrors.cloud.tencent.com/npm/color-name/-/color-name-1.1.4.tgz 0ms (cache hit)
+385 http cache color-convert@http://mirrors.cloud.tencent.com/npm/color-convert/-/color-convert-2.0.1.tgz 0ms (cache hit)
+386 http cache clsx@https://mirrors.cloud.tencent.com/npm/clsx/-/clsx-2.1.1.tgz 0ms (cache hit)
+387 http cache caniuse-lite@http://mirrors.cloud.tencent.com/npm/caniuse-lite/-/caniuse-lite-1.0.30001718.tgz 0ms (cache hit)
+388 http cache chalk@http://mirrors.cloud.tencent.com/npm/chalk/-/chalk-4.1.2.tgz 0ms (cache hit)
+389 http cache call-bind-apply-helpers@http://mirrors.cloud.tencent.com/npm/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz 0ms (cache hit)
+390 http cache callsites@http://mirrors.cloud.tencent.com/npm/callsites/-/callsites-3.1.0.tgz 0ms (cache hit)
+391 http cache braces@http://mirrors.cloud.tencent.com/npm/braces/-/braces-3.0.3.tgz 0ms (cache hit)
+392 http cache browserslist@http://mirrors.cloud.tencent.com/npm/browserslist/-/browserslist-4.24.5.tgz 0ms (cache hit)
+393 http cache babel-plugin-macros@https://mirrors.cloud.tencent.com/npm/babel-plugin-macros/-/babel-plugin-macros-3.1.0.tgz 0ms (cache hit)
+394 http cache balanced-match@http://mirrors.cloud.tencent.com/npm/balanced-match/-/balanced-match-1.0.2.tgz 0ms (cache hit)
+395 http cache axios@http://mirrors.cloud.tencent.com/npm/axios/-/axios-1.10.0.tgz 0ms (cache hit)
+396 http cache asynckit@http://mirrors.cloud.tencent.com/npm/asynckit/-/asynckit-0.4.0.tgz 0ms (cache hit)
+397 http cache brace-expansion@http://mirrors.cloud.tencent.com/npm/brace-expansion/-/brace-expansion-1.1.11.tgz 0ms (cache hit)
+398 http cache argparse@http://mirrors.cloud.tencent.com/npm/argparse/-/argparse-2.0.1.tgz 0ms (cache hit)
+399 http cache ansi-styles@http://mirrors.cloud.tencent.com/npm/ansi-styles/-/ansi-styles-4.3.0.tgz 0ms (cache hit)
+400 http cache @vitejs/plugin-react@http://mirrors.cloud.tencent.com/npm/@vitejs/plugin-react/-/plugin-react-4.4.1.tgz 0ms (cache hit)
+401 http cache acorn-jsx@http://mirrors.cloud.tencent.com/npm/acorn-jsx/-/acorn-jsx-5.3.2.tgz 0ms (cache hit)
+402 http cache @typescript-eslint/utils@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/utils/-/utils-8.32.1.tgz 0ms (cache hit)
+403 http cache ajv@http://mirrors.cloud.tencent.com/npm/ajv/-/ajv-6.12.6.tgz 0ms (cache hit)
+404 http cache acorn@http://mirrors.cloud.tencent.com/npm/acorn/-/acorn-8.14.1.tgz 0ms (cache hit)
+405 http cache @typescript-eslint/visitor-keys@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/visitor-keys/-/visitor-keys-8.32.1.tgz 0ms (cache hit)
+406 http cache @typescript-eslint/typescript-estree@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/typescript-estree/-/typescript-estree-8.32.1.tgz 0ms (cache hit)
+407 http cache @typescript-eslint/types@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/types/-/types-8.32.1.tgz 0ms (cache hit)
+408 http cache @typescript-eslint/eslint-plugin@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.32.1.tgz 0ms (cache hit)
+409 http cache @typescript-eslint/scope-manager@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/scope-manager/-/scope-manager-8.32.1.tgz 0ms (cache hit)
+410 http cache @typescript-eslint/type-utils@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/type-utils/-/type-utils-8.32.1.tgz 0ms (cache hit)
+411 http cache @types/react-dom@http://mirrors.cloud.tencent.com/npm/@types/react-dom/-/react-dom-19.1.5.tgz 0ms (cache hit)
+412 http cache @types/parse-json@https://mirrors.cloud.tencent.com/npm/@types/parse-json/-/parse-json-4.0.2.tgz 0ms (cache hit)
+413 http cache @typescript-eslint/parser@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/parser/-/parser-8.32.1.tgz 0ms (cache hit)
+414 http cache @types/react-transition-group@https://mirrors.cloud.tencent.com/npm/@types/react-transition-group/-/react-transition-group-4.4.12.tgz 0ms (cache hit)
+415 http cache @types/prop-types@http://mirrors.cloud.tencent.com/npm/@types/prop-types/-/prop-types-15.7.15.tgz 0ms (cache hit)
+416 http cache @types/json-schema@http://mirrors.cloud.tencent.com/npm/@types/json-schema/-/json-schema-7.0.15.tgz 0ms (cache hit)
+417 http cache @types/react@http://mirrors.cloud.tencent.com/npm/@types/react/-/react-19.1.5.tgz 0ms (cache hit)
+418 http cache @popperjs/core@http://mirrors.cloud.tencent.com/npm/@popperjs/core/-/core-2.11.8.tgz 0ms (cache hit)
+419 http cache @types/babel__traverse@http://mirrors.cloud.tencent.com/npm/@types/babel__traverse/-/babel__traverse-7.20.7.tgz 0ms (cache hit)
+420 http cache @types/babel__template@http://mirrors.cloud.tencent.com/npm/@types/babel__template/-/babel__template-7.4.4.tgz 0ms (cache hit)
+421 http cache @types/babel__generator@http://mirrors.cloud.tencent.com/npm/@types/babel__generator/-/babel__generator-7.27.0.tgz 0ms (cache hit)
+422 http cache @nodelib/fs.walk@http://mirrors.cloud.tencent.com/npm/@nodelib/fs.walk/-/fs.walk-1.2.8.tgz 0ms (cache hit)
+423 http cache @types/estree@http://mirrors.cloud.tencent.com/npm/@types/estree/-/estree-1.0.7.tgz 0ms (cache hit)
+424 http cache @nodelib/fs.stat@http://mirrors.cloud.tencent.com/npm/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz 0ms (cache hit)
+425 http cache @types/babel__core@http://mirrors.cloud.tencent.com/npm/@types/babel__core/-/babel__core-7.20.5.tgz 0ms (cache hit)
+426 http cache @nodelib/fs.scandir@http://mirrors.cloud.tencent.com/npm/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz 0ms (cache hit)
+427 http cache @mui/styled-engine@http://mirrors.cloud.tencent.com/npm/@mui/styled-engine/-/styled-engine-6.4.11.tgz 0ms (cache hit)
+428 http cache @mui/utils@http://mirrors.cloud.tencent.com/npm/@mui/utils/-/utils-6.4.9.tgz 0ms (cache hit)
+429 http cache @mui/types@https://mirrors.cloud.tencent.com/npm/@mui/types/-/types-7.2.24.tgz 0ms (cache hit)
+430 http cache @mui/private-theming@http://mirrors.cloud.tencent.com/npm/@mui/private-theming/-/private-theming-6.4.9.tgz 0ms (cache hit)
+431 http cache @mui/system@http://mirrors.cloud.tencent.com/npm/@mui/system/-/system-6.4.12.tgz 0ms (cache hit)
+432 http cache @jridgewell/sourcemap-codec@http://mirrors.cloud.tencent.com/npm/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.0.tgz 0ms (cache hit)
+433 http cache @jridgewell/set-array@http://mirrors.cloud.tencent.com/npm/@jridgewell/set-array/-/set-array-1.2.1.tgz 0ms (cache hit)
+434 http cache @mui/material@http://mirrors.cloud.tencent.com/npm/@mui/material/-/material-6.4.12.tgz 0ms (cache hit)
+435 http cache @mui/icons-material@https://mirrors.cloud.tencent.com/npm/@mui/icons-material/-/icons-material-6.4.12.tgz 0ms (cache hit)
+436 http cache @mui/core-downloads-tracker@http://mirrors.cloud.tencent.com/npm/@mui/core-downloads-tracker/-/core-downloads-tracker-6.4.12.tgz 0ms (cache hit)
+437 http cache @jridgewell/trace-mapping@http://mirrors.cloud.tencent.com/npm/@jridgewell/trace-mapping/-/trace-mapping-0.3.25.tgz 0ms (cache hit)
+438 http cache @humanwhocodes/retry@http://mirrors.cloud.tencent.com/npm/@humanwhocodes/retry/-/retry-0.4.3.tgz 0ms (cache hit)
+439 http cache @jridgewell/gen-mapping@https://mirrors.cloud.tencent.com/npm/@jridgewell/gen-mapping/-/gen-mapping-0.3.8.tgz 0ms (cache hit)
+440 http cache @jridgewell/resolve-uri@http://mirrors.cloud.tencent.com/npm/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz 0ms (cache hit)
+441 http cache @humanwhocodes/module-importer@http://mirrors.cloud.tencent.com/npm/@humanwhocodes/module-importer/-/module-importer-1.0.1.tgz 0ms (cache hit)
+442 http cache @eslint/plugin-kit@http://mirrors.cloud.tencent.com/npm/@eslint/plugin-kit/-/plugin-kit-0.3.1.tgz 0ms (cache hit)
+443 http cache @humanfs/node@http://mirrors.cloud.tencent.com/npm/@humanfs/node/-/node-0.16.6.tgz 0ms (cache hit)
+444 http cache @eslint-community/regexpp@http://mirrors.cloud.tencent.com/npm/@eslint-community/regexpp/-/regexpp-4.12.1.tgz 0ms (cache hit)
+445 http cache @eslint/object-schema@http://mirrors.cloud.tencent.com/npm/@eslint/object-schema/-/object-schema-2.1.6.tgz 0ms (cache hit)
+446 http cache @eslint/eslintrc@http://mirrors.cloud.tencent.com/npm/@eslint/eslintrc/-/eslintrc-3.3.1.tgz 0ms (cache hit)
+447 http cache @eslint-community/eslint-utils@http://mirrors.cloud.tencent.com/npm/@eslint-community/eslint-utils/-/eslint-utils-4.7.0.tgz 0ms (cache hit)
+448 http cache @humanfs/core@http://mirrors.cloud.tencent.com/npm/@humanfs/core/-/core-0.19.1.tgz 0ms (cache hit)
+449 http cache @eslint/js@http://mirrors.cloud.tencent.com/npm/@eslint/js/-/js-9.27.0.tgz 0ms (cache hit)
+450 http cache @emotion/weak-memoize@http://mirrors.cloud.tencent.com/npm/@emotion/weak-memoize/-/weak-memoize-0.4.0.tgz 0ms (cache hit)
+451 http cache @eslint/core@http://mirrors.cloud.tencent.com/npm/@eslint/core/-/core-0.14.0.tgz 0ms (cache hit)
+452 http cache @eslint/config-array@http://mirrors.cloud.tencent.com/npm/@eslint/config-array/-/config-array-0.20.0.tgz 0ms (cache hit)
+453 http cache @eslint/config-helpers@http://mirrors.cloud.tencent.com/npm/@eslint/config-helpers/-/config-helpers-0.2.2.tgz 0ms (cache hit)
+454 http cache @emotion/unitless@http://mirrors.cloud.tencent.com/npm/@emotion/unitless/-/unitless-0.10.0.tgz 0ms (cache hit)
+455 http cache @emotion/utils@https://mirrors.cloud.tencent.com/npm/@emotion/utils/-/utils-1.4.2.tgz 0ms (cache hit)
+456 http cache @emotion/use-insertion-effect-with-fallbacks@http://mirrors.cloud.tencent.com/npm/@emotion/use-insertion-effect-with-fallbacks/-/use-insertion-effect-with-fallbacks-1.2.0.tgz 0ms (cache hit)
+457 http cache @emotion/styled@http://mirrors.cloud.tencent.com/npm/@emotion/styled/-/styled-11.14.1.tgz 0ms (cache hit)
+458 http cache @emotion/serialize@https://mirrors.cloud.tencent.com/npm/@emotion/serialize/-/serialize-1.3.3.tgz 0ms (cache hit)
+459 http cache @emotion/react@http://mirrors.cloud.tencent.com/npm/@emotion/react/-/react-11.14.0.tgz 0ms (cache hit)
+460 http cache @emotion/sheet@https://mirrors.cloud.tencent.com/npm/@emotion/sheet/-/sheet-1.4.0.tgz 0ms (cache hit)
+461 http cache @emotion/hash@http://mirrors.cloud.tencent.com/npm/@emotion/hash/-/hash-0.9.2.tgz 0ms (cache hit)
+462 http cache @emotion/memoize@https://mirrors.cloud.tencent.com/npm/@emotion/memoize/-/memoize-0.9.0.tgz 0ms (cache hit)
+463 http cache @babel/traverse@http://mirrors.cloud.tencent.com/npm/@babel/traverse/-/traverse-7.27.1.tgz 0ms (cache hit)
+464 http cache @emotion/cache@http://mirrors.cloud.tencent.com/npm/@emotion/cache/-/cache-11.14.0.tgz 1ms (cache hit)
+465 http cache @emotion/babel-plugin@https://mirrors.cloud.tencent.com/npm/@emotion/babel-plugin/-/babel-plugin-11.13.5.tgz 0ms (cache hit)
+466 http cache @emotion/is-prop-valid@http://mirrors.cloud.tencent.com/npm/@emotion/is-prop-valid/-/is-prop-valid-1.3.1.tgz 0ms (cache hit)
+467 http cache @babel/template@http://mirrors.cloud.tencent.com/npm/@babel/template/-/template-7.27.2.tgz 0ms (cache hit)
+468 http cache @babel/types@http://mirrors.cloud.tencent.com/npm/@babel/types/-/types-7.27.1.tgz 0ms (cache hit)
+469 http cache @babel/runtime@http://mirrors.cloud.tencent.com/npm/@babel/runtime/-/runtime-7.27.6.tgz 0ms (cache hit)
+470 http cache @babel/plugin-transform-react-jsx-self@http://mirrors.cloud.tencent.com/npm/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.27.1.tgz 0ms (cache hit)
+471 http cache @babel/parser@http://mirrors.cloud.tencent.com/npm/@babel/parser/-/parser-7.27.2.tgz 0ms (cache hit)
+472 http cache @babel/helpers@http://mirrors.cloud.tencent.com/npm/@babel/helpers/-/helpers-7.27.1.tgz 0ms (cache hit)
+473 http cache @babel/helper-string-parser@http://mirrors.cloud.tencent.com/npm/@babel/helper-string-parser/-/helper-string-parser-7.27.1.tgz 0ms (cache hit)
+474 http cache @babel/helper-plugin-utils@http://mirrors.cloud.tencent.com/npm/@babel/helper-plugin-utils/-/helper-plugin-utils-7.27.1.tgz 0ms (cache hit)
+475 http cache @babel/plugin-transform-react-jsx-source@http://mirrors.cloud.tencent.com/npm/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.27.1.tgz 0ms (cache hit)
+476 http cache @babel/helper-validator-option@http://mirrors.cloud.tencent.com/npm/@babel/helper-validator-option/-/helper-validator-option-7.27.1.tgz 0ms (cache hit)
+477 http cache @babel/helper-module-imports@http://mirrors.cloud.tencent.com/npm/@babel/helper-module-imports/-/helper-module-imports-7.27.1.tgz 0ms (cache hit)
+478 http cache @babel/helper-validator-identifier@http://mirrors.cloud.tencent.com/npm/@babel/helper-validator-identifier/-/helper-validator-identifier-7.27.1.tgz 0ms (cache hit)
+479 http cache @babel/helper-module-transforms@http://mirrors.cloud.tencent.com/npm/@babel/helper-module-transforms/-/helper-module-transforms-7.27.1.tgz 0ms (cache hit)
+480 http cache @babel/generator@http://mirrors.cloud.tencent.com/npm/@babel/generator/-/generator-7.27.1.tgz 0ms (cache hit)
+481 http cache @babel/core@http://mirrors.cloud.tencent.com/npm/@babel/core/-/core-7.27.1.tgz 0ms (cache hit)
+482 http cache @babel/helper-compilation-targets@http://mirrors.cloud.tencent.com/npm/@babel/helper-compilation-targets/-/helper-compilation-targets-7.27.2.tgz 0ms (cache hit)
+483 http cache @ampproject/remapping@http://mirrors.cloud.tencent.com/npm/@ampproject/remapping/-/remapping-2.3.0.tgz 0ms (cache hit)
+484 http cache @babel/compat-data@http://mirrors.cloud.tencent.com/npm/@babel/compat-data/-/compat-data-7.27.2.tgz 0ms (cache hit)
+485 http cache @babel/code-frame@http://mirrors.cloud.tencent.com/npm/@babel/code-frame/-/code-frame-7.27.1.tgz 0ms (cache hit)
+486 http cache react-is@https://mirrors.cloud.tencent.com/npm/react-is/-/react-is-16.13.1.tgz 0ms (cache hit)
+487 http cache react-is@https://mirrors.cloud.tencent.com/npm/react-is/-/react-is-16.13.1.tgz 0ms (cache hit)
+488 http cache glob-parent@http://mirrors.cloud.tencent.com/npm/glob-parent/-/glob-parent-5.1.2.tgz 0ms (cache hit)
+489 http cache yaml@http://mirrors.cloud.tencent.com/npm/yaml/-/yaml-1.10.2.tgz 0ms (cache hit)
+490 http cache semver@http://mirrors.cloud.tencent.com/npm/semver/-/semver-7.7.2.tgz 0ms (cache hit)
+491 http cache picomatch@http://mirrors.cloud.tencent.com/npm/picomatch/-/picomatch-2.3.1.tgz 0ms (cache hit)
+492 http cache ignore@http://mirrors.cloud.tencent.com/npm/ignore/-/ignore-7.0.4.tgz 0ms (cache hit)
+493 http cache brace-expansion@http://mirrors.cloud.tencent.com/npm/brace-expansion/-/brace-expansion-2.0.1.tgz 0ms (cache hit)
+494 http cache minimatch@http://mirrors.cloud.tencent.com/npm/minimatch/-/minimatch-9.0.5.tgz 0ms (cache hit)
+495 http cache globals@http://mirrors.cloud.tencent.com/npm/globals/-/globals-14.0.0.tgz 0ms (cache hit)
+496 http cache globals@http://mirrors.cloud.tencent.com/npm/globals/-/globals-11.12.0.tgz 0ms (cache hit)
+497 silly tarball no local data for yocto-queue@http://mirrors.cloud.tencent.com/npm/yocto-queue/-/yocto-queue-0.1.0.tgz. Extracting by manifest.
+498 silly tarball no local data for @rollup/rollup-win32-x64-msvc@https://registry.npmmirror.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.41.0.tgz. Extracting by manifest.
+499 silly tarball no local data for yallist@http://mirrors.cloud.tencent.com/npm/yallist/-/yallist-3.1.1.tgz. Extracting by manifest.
+500 silly tarball no local data for @esbuild/win32-x64@https://registry.npmmirror.com/@esbuild/win32-x64/-/win32-x64-0.25.4.tgz. Extracting by manifest.
+501 silly tarball no local data for which@http://mirrors.cloud.tencent.com/npm/which/-/which-2.0.2.tgz. Extracting by manifest.
+502 silly tarball no local data for word-wrap@http://mirrors.cloud.tencent.com/npm/word-wrap/-/word-wrap-1.2.5.tgz. Extracting by manifest.
+503 silly tarball no local data for vite@http://mirrors.cloud.tencent.com/npm/vite/-/vite-6.3.5.tgz. Extracting by manifest.
+504 silly tarball no local data for update-browserslist-db@http://mirrors.cloud.tencent.com/npm/update-browserslist-db/-/update-browserslist-db-1.1.3.tgz. Extracting by manifest.
+505 silly tarball no local data for uri-js@http://mirrors.cloud.tencent.com/npm/uri-js/-/uri-js-4.4.1.tgz. Extracting by manifest.
+506 silly tarball no local data for typescript-eslint@http://mirrors.cloud.tencent.com/npm/typescript-eslint/-/typescript-eslint-8.32.1.tgz. Extracting by manifest.
+507 silly tarball no local data for typescript@http://mirrors.cloud.tencent.com/npm/typescript/-/typescript-5.8.3.tgz. Extracting by manifest.
+508 silly tarball no local data for type-check@http://mirrors.cloud.tencent.com/npm/type-check/-/type-check-0.4.0.tgz. Extracting by manifest.
+509 silly tarball no local data for ts-api-utils@http://mirrors.cloud.tencent.com/npm/ts-api-utils/-/ts-api-utils-2.1.0.tgz. Extracting by manifest.
+510 silly tarball no local data for supports-preserve-symlinks-flag@https://mirrors.cloud.tencent.com/npm/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz. Extracting by manifest.
+511 silly tarball no local data for to-regex-range@http://mirrors.cloud.tencent.com/npm/to-regex-range/-/to-regex-range-5.0.1.tgz. Extracting by manifest.
+512 silly tarball no local data for tinyglobby@http://mirrors.cloud.tencent.com/npm/tinyglobby/-/tinyglobby-0.2.13.tgz. Extracting by manifest.
+513 silly tarball no local data for supports-color@http://mirrors.cloud.tencent.com/npm/supports-color/-/supports-color-7.2.0.tgz. Extracting by manifest.
+514 silly tarball no local data for strip-json-comments@http://mirrors.cloud.tencent.com/npm/strip-json-comments/-/strip-json-comments-3.1.1.tgz. Extracting by manifest.
+515 silly tarball no local data for source-map-js@http://mirrors.cloud.tencent.com/npm/source-map-js/-/source-map-js-1.2.1.tgz. Extracting by manifest.
+516 silly tarball no local data for stylis@http://mirrors.cloud.tencent.com/npm/stylis/-/stylis-4.2.0.tgz. Extracting by manifest.
+517 silly tarball no local data for source-map@https://mirrors.cloud.tencent.com/npm/source-map/-/source-map-0.5.7.tgz. Extracting by manifest.
+518 silly tarball no local data for set-cookie-parser@http://mirrors.cloud.tencent.com/npm/set-cookie-parser/-/set-cookie-parser-2.7.1.tgz. Extracting by manifest.
+519 http cache @humanwhocodes/retry@http://mirrors.cloud.tencent.com/npm/@humanwhocodes/retry/-/retry-0.3.1.tgz 0ms (cache hit)
+520 silly tarball no local data for shebang-command@http://mirrors.cloud.tencent.com/npm/shebang-command/-/shebang-command-2.0.0.tgz. Extracting by manifest.
+521 silly tarball no local data for shebang-regex@http://mirrors.cloud.tencent.com/npm/shebang-regex/-/shebang-regex-3.0.0.tgz. Extracting by manifest.
+522 silly tarball no local data for semver@http://mirrors.cloud.tencent.com/npm/semver/-/semver-6.3.1.tgz. Extracting by manifest.
+523 silly tarball no local data for rollup@http://mirrors.cloud.tencent.com/npm/rollup/-/rollup-4.41.0.tgz. Extracting by manifest.
+524 silly tarball no local data for reusify@http://mirrors.cloud.tencent.com/npm/reusify/-/reusify-1.1.0.tgz. Extracting by manifest.
+525 silly tarball no local data for run-parallel@http://mirrors.cloud.tencent.com/npm/run-parallel/-/run-parallel-1.2.0.tgz. Extracting by manifest.
+526 silly tarball no local data for scheduler@http://mirrors.cloud.tencent.com/npm/scheduler/-/scheduler-0.26.0.tgz. Extracting by manifest.
+527 silly tarball no local data for resolve-from@http://mirrors.cloud.tencent.com/npm/resolve-from/-/resolve-from-4.0.0.tgz. Extracting by manifest.
+528 silly tarball no local data for resolve@http://mirrors.cloud.tencent.com/npm/resolve/-/resolve-1.22.10.tgz. Extracting by manifest.
+529 silly tarball no local data for react-transition-group@http://mirrors.cloud.tencent.com/npm/react-transition-group/-/react-transition-group-4.4.5.tgz. Extracting by manifest.
+530 silly tarball no local data for react-router-dom@http://mirrors.cloud.tencent.com/npm/react-router-dom/-/react-router-dom-7.6.2.tgz. Extracting by manifest.
+531 silly tarball no local data for react-router@http://mirrors.cloud.tencent.com/npm/react-router/-/react-router-7.6.2.tgz. Extracting by manifest.
+532 silly tarball no local data for react-refresh@http://mirrors.cloud.tencent.com/npm/react-refresh/-/react-refresh-0.17.0.tgz. Extracting by manifest.
+533 silly tarball no local data for react-is@https://mirrors.cloud.tencent.com/npm/react-is/-/react-is-19.1.0.tgz. Extracting by manifest.
+534 silly tarball no local data for react@http://mirrors.cloud.tencent.com/npm/react/-/react-19.1.0.tgz. Extracting by manifest.
+535 silly tarball no local data for react-dom@http://mirrors.cloud.tencent.com/npm/react-dom/-/react-dom-19.1.0.tgz. Extracting by manifest.
+536 silly tarball no local data for queue-microtask@http://mirrors.cloud.tencent.com/npm/queue-microtask/-/queue-microtask-1.2.3.tgz. Extracting by manifest.
+537 silly tarball no local data for proxy-from-env@https://mirrors.cloud.tencent.com/npm/proxy-from-env/-/proxy-from-env-1.1.0.tgz. Extracting by manifest.
+538 silly tarball no local data for punycode@http://mirrors.cloud.tencent.com/npm/punycode/-/punycode-2.3.1.tgz. Extracting by manifest.
+539 http cache eslint-visitor-keys@http://mirrors.cloud.tencent.com/npm/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz 0ms (cache hit)
+540 silly tarball no local data for prop-types@http://mirrors.cloud.tencent.com/npm/prop-types/-/prop-types-15.8.1.tgz. Extracting by manifest.
+541 silly tarball no local data for prelude-ls@http://mirrors.cloud.tencent.com/npm/prelude-ls/-/prelude-ls-1.2.1.tgz. Extracting by manifest.
+542 silly tarball no local data for path-type@http://mirrors.cloud.tencent.com/npm/path-type/-/path-type-4.0.0.tgz. Extracting by manifest.
+543 silly tarball no local data for picomatch@http://mirrors.cloud.tencent.com/npm/picomatch/-/picomatch-4.0.2.tgz. Extracting by manifest.
+544 silly tarball no local data for picocolors@http://mirrors.cloud.tencent.com/npm/picocolors/-/picocolors-1.1.1.tgz. Extracting by manifest.
+545 silly tarball no local data for path-parse@http://mirrors.cloud.tencent.com/npm/path-parse/-/path-parse-1.0.7.tgz. Extracting by manifest.
+546 http cache convert-source-map@https://mirrors.cloud.tencent.com/npm/convert-source-map/-/convert-source-map-1.9.0.tgz 0ms (cache hit)
+547 silly tarball no local data for path-key@http://mirrors.cloud.tencent.com/npm/path-key/-/path-key-3.1.1.tgz. Extracting by manifest.
+548 silly tarball no local data for postcss@http://mirrors.cloud.tencent.com/npm/postcss/-/postcss-8.5.3.tgz. Extracting by manifest.
+549 silly tarball no local data for parse-json@http://mirrors.cloud.tencent.com/npm/parse-json/-/parse-json-5.2.0.tgz. Extracting by manifest.
+550 silly tarball no local data for p-limit@http://mirrors.cloud.tencent.com/npm/p-limit/-/p-limit-3.1.0.tgz. Extracting by manifest.
+551 silly tarball no local data for object-assign@http://mirrors.cloud.tencent.com/npm/object-assign/-/object-assign-4.1.1.tgz. Extracting by manifest.
+552 silly tarball no local data for parent-module@http://mirrors.cloud.tencent.com/npm/parent-module/-/parent-module-1.0.1.tgz. Extracting by manifest.
+553 silly tarball no local data for optionator@http://mirrors.cloud.tencent.com/npm/optionator/-/optionator-0.9.4.tgz. Extracting by manifest.
+554 silly tarball no local data for p-locate@http://mirrors.cloud.tencent.com/npm/p-locate/-/p-locate-5.0.0.tgz. Extracting by manifest.
+555 silly tarball no local data for natural-compare@http://mirrors.cloud.tencent.com/npm/natural-compare/-/natural-compare-1.4.0.tgz. Extracting by manifest.
+556 silly tarball no local data for nanoid@http://mirrors.cloud.tencent.com/npm/nanoid/-/nanoid-3.3.11.tgz. Extracting by manifest.
+557 silly tarball no local data for path-exists@http://mirrors.cloud.tencent.com/npm/path-exists/-/path-exists-4.0.0.tgz. Extracting by manifest.
+558 silly tarball no local data for ms@http://mirrors.cloud.tencent.com/npm/ms/-/ms-2.1.3.tgz. Extracting by manifest.
+559 silly tarball no local data for node-releases@http://mirrors.cloud.tencent.com/npm/node-releases/-/node-releases-2.0.19.tgz. Extracting by manifest.
+560 silly tarball no local data for minimatch@http://mirrors.cloud.tencent.com/npm/minimatch/-/minimatch-3.1.2.tgz. Extracting by manifest.
+561 silly tarball no local data for micromatch@http://mirrors.cloud.tencent.com/npm/micromatch/-/micromatch-4.0.8.tgz. Extracting by manifest.
+562 silly tarball no local data for merge2@http://mirrors.cloud.tencent.com/npm/merge2/-/merge2-1.4.1.tgz. Extracting by manifest.
+563 silly tarball no local data for mime-types@http://mirrors.cloud.tencent.com/npm/mime-types/-/mime-types-2.1.35.tgz. Extracting by manifest.
+564 silly tarball no local data for loose-envify@http://mirrors.cloud.tencent.com/npm/loose-envify/-/loose-envify-1.4.0.tgz. Extracting by manifest.
+565 silly tarball no local data for math-intrinsics@http://mirrors.cloud.tencent.com/npm/math-intrinsics/-/math-intrinsics-1.1.0.tgz. Extracting by manifest.
+566 silly tarball no local data for lodash.merge@http://mirrors.cloud.tencent.com/npm/lodash.merge/-/lodash.merge-4.6.2.tgz. Extracting by manifest.
+567 silly tarball no local data for levn@http://mirrors.cloud.tencent.com/npm/levn/-/levn-0.4.1.tgz. Extracting by manifest.
+568 silly tarball no local data for locate-path@http://mirrors.cloud.tencent.com/npm/locate-path/-/locate-path-6.0.0.tgz. Extracting by manifest.
+569 silly tarball no local data for mime-db@https://mirrors.cloud.tencent.com/npm/mime-db/-/mime-db-1.52.0.tgz. Extracting by manifest.
+570 silly tarball no local data for keyv@http://mirrors.cloud.tencent.com/npm/keyv/-/keyv-4.5.4.tgz. Extracting by manifest.
+571 silly tarball no local data for json-stable-stringify-without-jsonify@http://mirrors.cloud.tencent.com/npm/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz. Extracting by manifest.
+572 silly tarball no local data for lru-cache@http://mirrors.cloud.tencent.com/npm/lru-cache/-/lru-cache-5.1.1.tgz. Extracting by manifest.
+573 silly tarball no local data for json5@http://mirrors.cloud.tencent.com/npm/json5/-/json5-2.2.3.tgz. Extracting by manifest.
+574 silly tarball no local data for lines-and-columns@https://mirrors.cloud.tencent.com/npm/lines-and-columns/-/lines-and-columns-1.2.4.tgz. Extracting by manifest.
+575 silly tarball no local data for json-parse-even-better-errors@https://mirrors.cloud.tencent.com/npm/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz. Extracting by manifest.
+576 silly tarball no local data for json-schema-traverse@http://mirrors.cloud.tencent.com/npm/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz. Extracting by manifest.
+577 silly tarball no local data for jsesc@http://mirrors.cloud.tencent.com/npm/jsesc/-/jsesc-3.1.0.tgz. Extracting by manifest.
+578 silly tarball no local data for json-buffer@http://mirrors.cloud.tencent.com/npm/json-buffer/-/json-buffer-3.0.1.tgz. Extracting by manifest.
+579 silly tarball no local data for js-yaml@http://mirrors.cloud.tencent.com/npm/js-yaml/-/js-yaml-4.1.0.tgz. Extracting by manifest.
+580 silly tarball no local data for js-tokens@http://mirrors.cloud.tencent.com/npm/js-tokens/-/js-tokens-4.0.0.tgz. Extracting by manifest.
+581 silly tarball no local data for is-number@http://mirrors.cloud.tencent.com/npm/is-number/-/is-number-7.0.0.tgz. Extracting by manifest.
+582 silly tarball no local data for is-core-module@http://mirrors.cloud.tencent.com/npm/is-core-module/-/is-core-module-2.16.1.tgz. Extracting by manifest.
+583 silly tarball no local data for isexe@http://mirrors.cloud.tencent.com/npm/isexe/-/isexe-2.0.0.tgz. Extracting by manifest.
+584 silly tarball no local data for is-glob@http://mirrors.cloud.tencent.com/npm/is-glob/-/is-glob-4.0.3.tgz. Extracting by manifest.
+585 silly tarball no local data for is-extglob@http://mirrors.cloud.tencent.com/npm/is-extglob/-/is-extglob-2.1.1.tgz. Extracting by manifest.
+586 silly tarball no local data for imurmurhash@http://mirrors.cloud.tencent.com/npm/imurmurhash/-/imurmurhash-0.1.4.tgz. Extracting by manifest.
+587 silly tarball no local data for import-fresh@http://mirrors.cloud.tencent.com/npm/import-fresh/-/import-fresh-3.3.1.tgz. Extracting by manifest.
+588 silly tarball no local data for ignore@http://mirrors.cloud.tencent.com/npm/ignore/-/ignore-5.3.2.tgz. Extracting by manifest.
+589 silly tarball no local data for hasown@http://mirrors.cloud.tencent.com/npm/hasown/-/hasown-2.0.2.tgz. Extracting by manifest.
+590 silly tarball no local data for hoist-non-react-statics@https://mirrors.cloud.tencent.com/npm/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz. Extracting by manifest.
+591 silly tarball no local data for has-tostringtag@http://mirrors.cloud.tencent.com/npm/has-tostringtag/-/has-tostringtag-1.0.2.tgz. Extracting by manifest.
+592 silly tarball no local data for has-symbols@https://mirrors.cloud.tencent.com/npm/has-symbols/-/has-symbols-1.1.0.tgz. Extracting by manifest.
+593 silly tarball no local data for has-flag@http://mirrors.cloud.tencent.com/npm/has-flag/-/has-flag-4.0.0.tgz. Extracting by manifest.
+594 silly tarball no local data for gopd@https://mirrors.cloud.tencent.com/npm/gopd/-/gopd-1.2.0.tgz. Extracting by manifest.
+595 silly tarball no local data for is-arrayish@http://mirrors.cloud.tencent.com/npm/is-arrayish/-/is-arrayish-0.2.1.tgz. Extracting by manifest.
+596 silly tarball no local data for graphemer@http://mirrors.cloud.tencent.com/npm/graphemer/-/graphemer-1.4.0.tgz. Extracting by manifest.
+597 silly tarball no local data for get-proto@http://mirrors.cloud.tencent.com/npm/get-proto/-/get-proto-1.0.1.tgz. Extracting by manifest.
+598 silly tarball no local data for glob-parent@http://mirrors.cloud.tencent.com/npm/glob-parent/-/glob-parent-6.0.2.tgz. Extracting by manifest.
+599 silly tarball no local data for get-intrinsic@https://mirrors.cloud.tencent.com/npm/get-intrinsic/-/get-intrinsic-1.3.0.tgz. Extracting by manifest.
+600 silly tarball no local data for function-bind@http://mirrors.cloud.tencent.com/npm/function-bind/-/function-bind-1.1.2.tgz. Extracting by manifest.
+601 silly tarball no local data for gensync@http://mirrors.cloud.tencent.com/npm/gensync/-/gensync-1.0.0-beta.2.tgz. Extracting by manifest.
+602 silly tarball no local data for globals@http://mirrors.cloud.tencent.com/npm/globals/-/globals-16.1.0.tgz. Extracting by manifest.
+603 silly tarball no local data for form-data@http://mirrors.cloud.tencent.com/npm/form-data/-/form-data-4.0.3.tgz. Extracting by manifest.
+604 silly tarball no local data for follow-redirects@https://mirrors.cloud.tencent.com/npm/follow-redirects/-/follow-redirects-1.15.9.tgz. Extracting by manifest.
+605 silly tarball no local data for flatted@http://mirrors.cloud.tencent.com/npm/flatted/-/flatted-3.3.3.tgz. Extracting by manifest.
+606 silly tarball no local data for flat-cache@http://mirrors.cloud.tencent.com/npm/flat-cache/-/flat-cache-4.0.1.tgz. Extracting by manifest.
+607 silly tarball no local data for fill-range@http://mirrors.cloud.tencent.com/npm/fill-range/-/fill-range-7.1.1.tgz. Extracting by manifest.
+608 silly tarball no local data for find-up@http://mirrors.cloud.tencent.com/npm/find-up/-/find-up-5.0.0.tgz. Extracting by manifest.
+609 silly tarball no local data for find-root@http://mirrors.cloud.tencent.com/npm/find-root/-/find-root-1.1.0.tgz. Extracting by manifest.
+610 silly tarball no local data for file-entry-cache@http://mirrors.cloud.tencent.com/npm/file-entry-cache/-/file-entry-cache-8.0.0.tgz. Extracting by manifest.
+611 silly tarball no local data for fdir@http://mirrors.cloud.tencent.com/npm/fdir/-/fdir-6.4.4.tgz. Extracting by manifest.
+612 silly tarball no local data for fastq@http://mirrors.cloud.tencent.com/npm/fastq/-/fastq-1.19.1.tgz. Extracting by manifest.
+613 silly tarball no local data for fast-levenshtein@http://mirrors.cloud.tencent.com/npm/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz. Extracting by manifest.
+614 silly tarball no local data for fast-deep-equal@http://mirrors.cloud.tencent.com/npm/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz. Extracting by manifest.
+615 silly tarball no local data for fast-glob@http://mirrors.cloud.tencent.com/npm/fast-glob/-/fast-glob-3.3.3.tgz. Extracting by manifest.
+616 silly tarball no local data for esutils@http://mirrors.cloud.tencent.com/npm/esutils/-/esutils-2.0.3.tgz. Extracting by manifest.
+617 silly tarball no local data for esquery@http://mirrors.cloud.tencent.com/npm/esquery/-/esquery-1.6.0.tgz. Extracting by manifest.
+618 silly tarball no local data for esrecurse@http://mirrors.cloud.tencent.com/npm/esrecurse/-/esrecurse-4.3.0.tgz. Extracting by manifest.
+619 silly tarball no local data for fast-json-stable-stringify@http://mirrors.cloud.tencent.com/npm/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz. Extracting by manifest.
+620 silly tarball no local data for estraverse@http://mirrors.cloud.tencent.com/npm/estraverse/-/estraverse-5.3.0.tgz. Extracting by manifest.
+621 silly tarball no local data for eslint-scope@http://mirrors.cloud.tencent.com/npm/eslint-scope/-/eslint-scope-8.3.0.tgz. Extracting by manifest.
+622 silly tarball no local data for eslint-plugin-react-hooks@http://mirrors.cloud.tencent.com/npm/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.2.0.tgz. Extracting by manifest.
+623 silly tarball no local data for eslint-visitor-keys@http://mirrors.cloud.tencent.com/npm/eslint-visitor-keys/-/eslint-visitor-keys-4.2.0.tgz. Extracting by manifest.
+624 silly tarball no local data for eslint-plugin-react-refresh@http://mirrors.cloud.tencent.com/npm/eslint-plugin-react-refresh/-/eslint-plugin-react-refresh-0.4.20.tgz. Extracting by manifest.
+625 silly tarball no local data for eslint@http://mirrors.cloud.tencent.com/npm/eslint/-/eslint-9.27.0.tgz. Extracting by manifest.
+626 silly tarball no local data for escape-string-regexp@http://mirrors.cloud.tencent.com/npm/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz. Extracting by manifest.
+627 silly tarball no local data for esbuild@http://mirrors.cloud.tencent.com/npm/esbuild/-/esbuild-0.25.4.tgz. Extracting by manifest.
+628 silly tarball no local data for escalade@http://mirrors.cloud.tencent.com/npm/escalade/-/escalade-3.2.0.tgz. Extracting by manifest.
+629 silly tarball no local data for espree@http://mirrors.cloud.tencent.com/npm/espree/-/espree-10.3.0.tgz. Extracting by manifest.
+630 silly tarball no local data for es-errors@http://mirrors.cloud.tencent.com/npm/es-errors/-/es-errors-1.3.0.tgz. Extracting by manifest.
+631 silly tarball no local data for es-define-property@http://mirrors.cloud.tencent.com/npm/es-define-property/-/es-define-property-1.0.1.tgz. Extracting by manifest.
+632 silly tarball no local data for es-object-atoms@http://mirrors.cloud.tencent.com/npm/es-object-atoms/-/es-object-atoms-1.1.1.tgz. Extracting by manifest.
+633 silly tarball no local data for es-set-tostringtag@http://mirrors.cloud.tencent.com/npm/es-set-tostringtag/-/es-set-tostringtag-2.1.0.tgz. Extracting by manifest.
+634 silly tarball no local data for error-ex@http://mirrors.cloud.tencent.com/npm/error-ex/-/error-ex-1.3.2.tgz. Extracting by manifest.
+635 silly tarball no local data for electron-to-chromium@http://mirrors.cloud.tencent.com/npm/electron-to-chromium/-/electron-to-chromium-1.5.155.tgz. Extracting by manifest.
+636 silly tarball no local data for dunder-proto@http://mirrors.cloud.tencent.com/npm/dunder-proto/-/dunder-proto-1.0.1.tgz. Extracting by manifest.
+637 silly tarball no local data for dom-helpers@http://mirrors.cloud.tencent.com/npm/dom-helpers/-/dom-helpers-5.2.1.tgz. Extracting by manifest.
+638 silly tarball no local data for delayed-stream@https://mirrors.cloud.tencent.com/npm/delayed-stream/-/delayed-stream-1.0.0.tgz. Extracting by manifest.
+639 silly tarball no local data for deep-is@http://mirrors.cloud.tencent.com/npm/deep-is/-/deep-is-0.1.4.tgz. Extracting by manifest.
+640 silly tarball no local data for csstype@http://mirrors.cloud.tencent.com/npm/csstype/-/csstype-3.1.3.tgz. Extracting by manifest.
+641 silly tarball no local data for debug@http://mirrors.cloud.tencent.com/npm/debug/-/debug-4.4.1.tgz. Extracting by manifest.
+642 silly tarball no local data for convert-source-map@http://mirrors.cloud.tencent.com/npm/convert-source-map/-/convert-source-map-2.0.0.tgz. Extracting by manifest.
+643 silly tarball no local data for cross-spawn@https://mirrors.cloud.tencent.com/npm/cross-spawn/-/cross-spawn-7.0.6.tgz. Extracting by manifest.
+644 silly tarball no local data for cookie@http://mirrors.cloud.tencent.com/npm/cookie/-/cookie-1.0.2.tgz. Extracting by manifest.
+645 silly tarball no local data for cosmiconfig@http://mirrors.cloud.tencent.com/npm/cosmiconfig/-/cosmiconfig-7.1.0.tgz. Extracting by manifest.
+646 silly tarball no local data for concat-map@http://mirrors.cloud.tencent.com/npm/concat-map/-/concat-map-0.0.1.tgz. Extracting by manifest.
+647 silly tarball no local data for combined-stream@http://mirrors.cloud.tencent.com/npm/combined-stream/-/combined-stream-1.0.8.tgz. Extracting by manifest.
+648 silly tarball no local data for color-name@http://mirrors.cloud.tencent.com/npm/color-name/-/color-name-1.1.4.tgz. Extracting by manifest.
+649 silly tarball no local data for color-convert@http://mirrors.cloud.tencent.com/npm/color-convert/-/color-convert-2.0.1.tgz. Extracting by manifest.
+650 silly tarball no local data for clsx@https://mirrors.cloud.tencent.com/npm/clsx/-/clsx-2.1.1.tgz. Extracting by manifest.
+651 silly tarball no local data for caniuse-lite@http://mirrors.cloud.tencent.com/npm/caniuse-lite/-/caniuse-lite-1.0.30001718.tgz. Extracting by manifest.
+652 silly tarball no local data for chalk@http://mirrors.cloud.tencent.com/npm/chalk/-/chalk-4.1.2.tgz. Extracting by manifest.
+653 silly tarball no local data for call-bind-apply-helpers@http://mirrors.cloud.tencent.com/npm/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz. Extracting by manifest.
+654 silly tarball no local data for callsites@http://mirrors.cloud.tencent.com/npm/callsites/-/callsites-3.1.0.tgz. Extracting by manifest.
+655 silly tarball no local data for braces@http://mirrors.cloud.tencent.com/npm/braces/-/braces-3.0.3.tgz. Extracting by manifest.
+656 silly tarball no local data for browserslist@http://mirrors.cloud.tencent.com/npm/browserslist/-/browserslist-4.24.5.tgz. Extracting by manifest.
+657 silly tarball no local data for babel-plugin-macros@https://mirrors.cloud.tencent.com/npm/babel-plugin-macros/-/babel-plugin-macros-3.1.0.tgz. Extracting by manifest.
+658 silly tarball no local data for balanced-match@http://mirrors.cloud.tencent.com/npm/balanced-match/-/balanced-match-1.0.2.tgz. Extracting by manifest.
+659 silly tarball no local data for axios@http://mirrors.cloud.tencent.com/npm/axios/-/axios-1.10.0.tgz. Extracting by manifest.
+660 silly tarball no local data for asynckit@http://mirrors.cloud.tencent.com/npm/asynckit/-/asynckit-0.4.0.tgz. Extracting by manifest.
+661 silly tarball no local data for brace-expansion@http://mirrors.cloud.tencent.com/npm/brace-expansion/-/brace-expansion-1.1.11.tgz. Extracting by manifest.
+662 silly tarball no local data for argparse@http://mirrors.cloud.tencent.com/npm/argparse/-/argparse-2.0.1.tgz. Extracting by manifest.
+663 silly tarball no local data for ansi-styles@http://mirrors.cloud.tencent.com/npm/ansi-styles/-/ansi-styles-4.3.0.tgz. Extracting by manifest.
+664 silly tarball no local data for @vitejs/plugin-react@http://mirrors.cloud.tencent.com/npm/@vitejs/plugin-react/-/plugin-react-4.4.1.tgz. Extracting by manifest.
+665 silly tarball no local data for acorn-jsx@http://mirrors.cloud.tencent.com/npm/acorn-jsx/-/acorn-jsx-5.3.2.tgz. Extracting by manifest.
+666 silly tarball no local data for @typescript-eslint/utils@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/utils/-/utils-8.32.1.tgz. Extracting by manifest.
+667 silly tarball no local data for ajv@http://mirrors.cloud.tencent.com/npm/ajv/-/ajv-6.12.6.tgz. Extracting by manifest.
+668 silly tarball no local data for acorn@http://mirrors.cloud.tencent.com/npm/acorn/-/acorn-8.14.1.tgz. Extracting by manifest.
+669 silly tarball no local data for @typescript-eslint/visitor-keys@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/visitor-keys/-/visitor-keys-8.32.1.tgz. Extracting by manifest.
+670 silly tarball no local data for @typescript-eslint/typescript-estree@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/typescript-estree/-/typescript-estree-8.32.1.tgz. Extracting by manifest.
+671 silly tarball no local data for @typescript-eslint/types@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/types/-/types-8.32.1.tgz. Extracting by manifest.
+672 silly tarball no local data for @typescript-eslint/eslint-plugin@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.32.1.tgz. Extracting by manifest.
+673 silly tarball no local data for @typescript-eslint/scope-manager@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/scope-manager/-/scope-manager-8.32.1.tgz. Extracting by manifest.
+674 silly tarball no local data for @typescript-eslint/type-utils@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/type-utils/-/type-utils-8.32.1.tgz. Extracting by manifest.
+675 silly tarball no local data for @types/react-dom@http://mirrors.cloud.tencent.com/npm/@types/react-dom/-/react-dom-19.1.5.tgz. Extracting by manifest.
+676 silly tarball no local data for @types/parse-json@https://mirrors.cloud.tencent.com/npm/@types/parse-json/-/parse-json-4.0.2.tgz. Extracting by manifest.
+677 silly tarball no local data for @typescript-eslint/parser@http://mirrors.cloud.tencent.com/npm/@typescript-eslint/parser/-/parser-8.32.1.tgz. Extracting by manifest.
+678 silly tarball no local data for @types/react-transition-group@https://mirrors.cloud.tencent.com/npm/@types/react-transition-group/-/react-transition-group-4.4.12.tgz. Extracting by manifest.
+679 silly tarball no local data for @types/prop-types@http://mirrors.cloud.tencent.com/npm/@types/prop-types/-/prop-types-15.7.15.tgz. Extracting by manifest.
+680 silly tarball no local data for @types/json-schema@http://mirrors.cloud.tencent.com/npm/@types/json-schema/-/json-schema-7.0.15.tgz. Extracting by manifest.
+681 silly tarball no local data for @types/react@http://mirrors.cloud.tencent.com/npm/@types/react/-/react-19.1.5.tgz. Extracting by manifest.
+682 silly tarball no local data for @popperjs/core@http://mirrors.cloud.tencent.com/npm/@popperjs/core/-/core-2.11.8.tgz. Extracting by manifest.
+683 silly tarball no local data for @types/babel__traverse@http://mirrors.cloud.tencent.com/npm/@types/babel__traverse/-/babel__traverse-7.20.7.tgz. Extracting by manifest.
+684 silly tarball no local data for @types/babel__template@http://mirrors.cloud.tencent.com/npm/@types/babel__template/-/babel__template-7.4.4.tgz. Extracting by manifest.
+685 silly tarball no local data for @types/babel__generator@http://mirrors.cloud.tencent.com/npm/@types/babel__generator/-/babel__generator-7.27.0.tgz. Extracting by manifest.
+686 silly tarball no local data for @nodelib/fs.walk@http://mirrors.cloud.tencent.com/npm/@nodelib/fs.walk/-/fs.walk-1.2.8.tgz. Extracting by manifest.
+687 silly tarball no local data for @types/estree@http://mirrors.cloud.tencent.com/npm/@types/estree/-/estree-1.0.7.tgz. Extracting by manifest.
+688 silly tarball no local data for @nodelib/fs.stat@http://mirrors.cloud.tencent.com/npm/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz. Extracting by manifest.
+689 silly tarball no local data for @types/babel__core@http://mirrors.cloud.tencent.com/npm/@types/babel__core/-/babel__core-7.20.5.tgz. Extracting by manifest.
+690 silly tarball no local data for @nodelib/fs.scandir@http://mirrors.cloud.tencent.com/npm/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz. Extracting by manifest.
+691 silly tarball no local data for @mui/styled-engine@http://mirrors.cloud.tencent.com/npm/@mui/styled-engine/-/styled-engine-6.4.11.tgz. Extracting by manifest.
+692 silly tarball no local data for @mui/utils@http://mirrors.cloud.tencent.com/npm/@mui/utils/-/utils-6.4.9.tgz. Extracting by manifest.
+693 silly tarball no local data for @mui/types@https://mirrors.cloud.tencent.com/npm/@mui/types/-/types-7.2.24.tgz. Extracting by manifest.
+694 silly tarball no local data for @mui/private-theming@http://mirrors.cloud.tencent.com/npm/@mui/private-theming/-/private-theming-6.4.9.tgz. Extracting by manifest.
+695 silly tarball no local data for @mui/system@http://mirrors.cloud.tencent.com/npm/@mui/system/-/system-6.4.12.tgz. Extracting by manifest.
+696 silly tarball no local data for @jridgewell/sourcemap-codec@http://mirrors.cloud.tencent.com/npm/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.0.tgz. Extracting by manifest.
+697 silly tarball no local data for @jridgewell/set-array@http://mirrors.cloud.tencent.com/npm/@jridgewell/set-array/-/set-array-1.2.1.tgz. Extracting by manifest.
+698 silly tarball no local data for @mui/material@http://mirrors.cloud.tencent.com/npm/@mui/material/-/material-6.4.12.tgz. Extracting by manifest.
+699 silly tarball no local data for @mui/icons-material@https://mirrors.cloud.tencent.com/npm/@mui/icons-material/-/icons-material-6.4.12.tgz. Extracting by manifest.
+700 silly tarball no local data for @mui/core-downloads-tracker@http://mirrors.cloud.tencent.com/npm/@mui/core-downloads-tracker/-/core-downloads-tracker-6.4.12.tgz. Extracting by manifest.
+701 silly tarball no local data for @jridgewell/trace-mapping@http://mirrors.cloud.tencent.com/npm/@jridgewell/trace-mapping/-/trace-mapping-0.3.25.tgz. Extracting by manifest.
+702 silly tarball no local data for @humanwhocodes/retry@http://mirrors.cloud.tencent.com/npm/@humanwhocodes/retry/-/retry-0.4.3.tgz. Extracting by manifest.
+703 silly tarball no local data for @jridgewell/gen-mapping@https://mirrors.cloud.tencent.com/npm/@jridgewell/gen-mapping/-/gen-mapping-0.3.8.tgz. Extracting by manifest.
+704 silly tarball no local data for @jridgewell/resolve-uri@http://mirrors.cloud.tencent.com/npm/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz. Extracting by manifest.
+705 silly tarball no local data for @humanwhocodes/module-importer@http://mirrors.cloud.tencent.com/npm/@humanwhocodes/module-importer/-/module-importer-1.0.1.tgz. Extracting by manifest.
+706 silly tarball no local data for @eslint/plugin-kit@http://mirrors.cloud.tencent.com/npm/@eslint/plugin-kit/-/plugin-kit-0.3.1.tgz. Extracting by manifest.
+707 silly tarball no local data for @humanfs/node@http://mirrors.cloud.tencent.com/npm/@humanfs/node/-/node-0.16.6.tgz. Extracting by manifest.
+708 silly tarball no local data for @eslint-community/regexpp@http://mirrors.cloud.tencent.com/npm/@eslint-community/regexpp/-/regexpp-4.12.1.tgz. Extracting by manifest.
+709 silly tarball no local data for @eslint/object-schema@http://mirrors.cloud.tencent.com/npm/@eslint/object-schema/-/object-schema-2.1.6.tgz. Extracting by manifest.
+710 silly tarball no local data for @eslint/eslintrc@http://mirrors.cloud.tencent.com/npm/@eslint/eslintrc/-/eslintrc-3.3.1.tgz. Extracting by manifest.
+711 silly tarball no local data for @eslint-community/eslint-utils@http://mirrors.cloud.tencent.com/npm/@eslint-community/eslint-utils/-/eslint-utils-4.7.0.tgz. Extracting by manifest.
+712 silly tarball no local data for @humanfs/core@http://mirrors.cloud.tencent.com/npm/@humanfs/core/-/core-0.19.1.tgz. Extracting by manifest.
+713 silly tarball no local data for @eslint/js@http://mirrors.cloud.tencent.com/npm/@eslint/js/-/js-9.27.0.tgz. Extracting by manifest.
+714 silly tarball no local data for @emotion/weak-memoize@http://mirrors.cloud.tencent.com/npm/@emotion/weak-memoize/-/weak-memoize-0.4.0.tgz. Extracting by manifest.
+715 silly tarball no local data for @eslint/core@http://mirrors.cloud.tencent.com/npm/@eslint/core/-/core-0.14.0.tgz. Extracting by manifest.
+716 silly tarball no local data for @eslint/config-array@http://mirrors.cloud.tencent.com/npm/@eslint/config-array/-/config-array-0.20.0.tgz. Extracting by manifest.
+717 silly tarball no local data for @eslint/config-helpers@http://mirrors.cloud.tencent.com/npm/@eslint/config-helpers/-/config-helpers-0.2.2.tgz. Extracting by manifest.
+718 silly tarball no local data for @emotion/unitless@http://mirrors.cloud.tencent.com/npm/@emotion/unitless/-/unitless-0.10.0.tgz. Extracting by manifest.
+719 silly tarball no local data for @emotion/utils@https://mirrors.cloud.tencent.com/npm/@emotion/utils/-/utils-1.4.2.tgz. Extracting by manifest.
+720 silly tarball no local data for @emotion/use-insertion-effect-with-fallbacks@http://mirrors.cloud.tencent.com/npm/@emotion/use-insertion-effect-with-fallbacks/-/use-insertion-effect-with-fallbacks-1.2.0.tgz. Extracting by manifest.
+721 silly tarball no local data for @emotion/styled@http://mirrors.cloud.tencent.com/npm/@emotion/styled/-/styled-11.14.1.tgz. Extracting by manifest.
+722 silly tarball no local data for @emotion/serialize@https://mirrors.cloud.tencent.com/npm/@emotion/serialize/-/serialize-1.3.3.tgz. Extracting by manifest.
+723 silly tarball no local data for @emotion/react@http://mirrors.cloud.tencent.com/npm/@emotion/react/-/react-11.14.0.tgz. Extracting by manifest.
+724 silly tarball no local data for @emotion/sheet@https://mirrors.cloud.tencent.com/npm/@emotion/sheet/-/sheet-1.4.0.tgz. Extracting by manifest.
+725 silly tarball no local data for @emotion/hash@http://mirrors.cloud.tencent.com/npm/@emotion/hash/-/hash-0.9.2.tgz. Extracting by manifest.
+726 silly tarball no local data for @emotion/memoize@https://mirrors.cloud.tencent.com/npm/@emotion/memoize/-/memoize-0.9.0.tgz. Extracting by manifest.
+727 silly tarball no local data for @babel/traverse@http://mirrors.cloud.tencent.com/npm/@babel/traverse/-/traverse-7.27.1.tgz. Extracting by manifest.
+728 silly tarball no local data for @emotion/cache@http://mirrors.cloud.tencent.com/npm/@emotion/cache/-/cache-11.14.0.tgz. Extracting by manifest.
+729 silly tarball no local data for @emotion/babel-plugin@https://mirrors.cloud.tencent.com/npm/@emotion/babel-plugin/-/babel-plugin-11.13.5.tgz. Extracting by manifest.
+730 silly tarball no local data for @emotion/is-prop-valid@http://mirrors.cloud.tencent.com/npm/@emotion/is-prop-valid/-/is-prop-valid-1.3.1.tgz. Extracting by manifest.
+731 silly tarball no local data for @babel/template@http://mirrors.cloud.tencent.com/npm/@babel/template/-/template-7.27.2.tgz. Extracting by manifest.
+732 silly tarball no local data for @babel/types@http://mirrors.cloud.tencent.com/npm/@babel/types/-/types-7.27.1.tgz. Extracting by manifest.
+733 silly tarball no local data for @babel/runtime@http://mirrors.cloud.tencent.com/npm/@babel/runtime/-/runtime-7.27.6.tgz. Extracting by manifest.
+734 silly tarball no local data for @babel/plugin-transform-react-jsx-self@http://mirrors.cloud.tencent.com/npm/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.27.1.tgz. Extracting by manifest.
+735 silly tarball no local data for @babel/parser@http://mirrors.cloud.tencent.com/npm/@babel/parser/-/parser-7.27.2.tgz. Extracting by manifest.
+736 silly tarball no local data for @babel/helpers@http://mirrors.cloud.tencent.com/npm/@babel/helpers/-/helpers-7.27.1.tgz. Extracting by manifest.
+737 silly tarball no local data for @babel/helper-string-parser@http://mirrors.cloud.tencent.com/npm/@babel/helper-string-parser/-/helper-string-parser-7.27.1.tgz. Extracting by manifest.
+738 silly tarball no local data for @babel/helper-plugin-utils@http://mirrors.cloud.tencent.com/npm/@babel/helper-plugin-utils/-/helper-plugin-utils-7.27.1.tgz. Extracting by manifest.
+739 silly tarball no local data for @babel/plugin-transform-react-jsx-source@http://mirrors.cloud.tencent.com/npm/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.27.1.tgz. Extracting by manifest.
+740 silly tarball no local data for @babel/helper-validator-option@http://mirrors.cloud.tencent.com/npm/@babel/helper-validator-option/-/helper-validator-option-7.27.1.tgz. Extracting by manifest.
+741 silly tarball no local data for @babel/helper-module-imports@http://mirrors.cloud.tencent.com/npm/@babel/helper-module-imports/-/helper-module-imports-7.27.1.tgz. Extracting by manifest.
+742 silly tarball no local data for @babel/helper-validator-identifier@http://mirrors.cloud.tencent.com/npm/@babel/helper-validator-identifier/-/helper-validator-identifier-7.27.1.tgz. Extracting by manifest.
+743 silly tarball no local data for @babel/helper-module-transforms@http://mirrors.cloud.tencent.com/npm/@babel/helper-module-transforms/-/helper-module-transforms-7.27.1.tgz. Extracting by manifest.
+744 silly tarball no local data for @babel/generator@http://mirrors.cloud.tencent.com/npm/@babel/generator/-/generator-7.27.1.tgz. Extracting by manifest.
+745 silly tarball no local data for @babel/core@http://mirrors.cloud.tencent.com/npm/@babel/core/-/core-7.27.1.tgz. Extracting by manifest.
+746 silly tarball no local data for @babel/helper-compilation-targets@http://mirrors.cloud.tencent.com/npm/@babel/helper-compilation-targets/-/helper-compilation-targets-7.27.2.tgz. Extracting by manifest.
+747 silly tarball no local data for @ampproject/remapping@http://mirrors.cloud.tencent.com/npm/@ampproject/remapping/-/remapping-2.3.0.tgz. Extracting by manifest.
+748 silly tarball no local data for @babel/compat-data@http://mirrors.cloud.tencent.com/npm/@babel/compat-data/-/compat-data-7.27.2.tgz. Extracting by manifest.
+749 silly tarball no local data for @babel/code-frame@http://mirrors.cloud.tencent.com/npm/@babel/code-frame/-/code-frame-7.27.1.tgz. Extracting by manifest.
+750 silly tarball no local data for react-is@https://mirrors.cloud.tencent.com/npm/react-is/-/react-is-16.13.1.tgz. Extracting by manifest.
+751 silly tarball no local data for react-is@https://mirrors.cloud.tencent.com/npm/react-is/-/react-is-16.13.1.tgz. Extracting by manifest.
+752 silly tarball no local data for glob-parent@http://mirrors.cloud.tencent.com/npm/glob-parent/-/glob-parent-5.1.2.tgz. Extracting by manifest.
+753 silly tarball no local data for yaml@http://mirrors.cloud.tencent.com/npm/yaml/-/yaml-1.10.2.tgz. Extracting by manifest.
+754 silly tarball no local data for semver@http://mirrors.cloud.tencent.com/npm/semver/-/semver-7.7.2.tgz. Extracting by manifest.
+755 silly tarball no local data for picomatch@http://mirrors.cloud.tencent.com/npm/picomatch/-/picomatch-2.3.1.tgz. Extracting by manifest.
+756 silly tarball no local data for ignore@http://mirrors.cloud.tencent.com/npm/ignore/-/ignore-7.0.4.tgz. Extracting by manifest.
+757 silly tarball no local data for brace-expansion@http://mirrors.cloud.tencent.com/npm/brace-expansion/-/brace-expansion-2.0.1.tgz. Extracting by manifest.
+758 silly tarball no local data for minimatch@http://mirrors.cloud.tencent.com/npm/minimatch/-/minimatch-9.0.5.tgz. Extracting by manifest.
+759 silly tarball no local data for globals@http://mirrors.cloud.tencent.com/npm/globals/-/globals-14.0.0.tgz. Extracting by manifest.
+760 silly tarball no local data for globals@http://mirrors.cloud.tencent.com/npm/globals/-/globals-11.12.0.tgz. Extracting by manifest.
+761 silly tarball no local data for @humanwhocodes/retry@http://mirrors.cloud.tencent.com/npm/@humanwhocodes/retry/-/retry-0.3.1.tgz. Extracting by manifest.
+762 silly tarball no local data for eslint-visitor-keys@http://mirrors.cloud.tencent.com/npm/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz. Extracting by manifest.
+763 silly tarball no local data for convert-source-map@https://mirrors.cloud.tencent.com/npm/convert-source-map/-/convert-source-map-1.9.0.tgz. Extracting by manifest.
+764 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/delayed-stream/-/delayed-stream-1.0.0.tgz 382ms (cache miss)
+765 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz 431ms (cache miss)
+766 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz 488ms (cache miss)
+767 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/proxy-from-env/-/proxy-from-env-1.1.0.tgz 515ms (cache miss)
+768 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/has-symbols/-/has-symbols-1.1.0.tgz 531ms (cache miss)
+769 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/get-intrinsic/-/get-intrinsic-1.3.0.tgz 539ms (cache miss)
+770 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz 551ms (cache miss)
+771 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/gopd/-/gopd-1.2.0.tgz 601ms (cache miss)
+772 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/follow-redirects/-/follow-redirects-1.15.9.tgz 629ms (cache miss)
+773 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/clsx/-/clsx-2.1.1.tgz 614ms (cache miss)
+774 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/react-is/-/react-is-19.1.0.tgz 682ms (cache miss)
+775 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/mime-db/-/mime-db-1.52.0.tgz 748ms (cache miss)
+776 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/cross-spawn/-/cross-spawn-7.0.6.tgz 732ms (cache miss)
+777 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/utils/-/utils-1.4.2.tgz 844ms (cache miss)
+778 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@types/parse-json/-/parse-json-4.0.2.tgz 897ms (cache miss)
+779 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/babel-plugin-macros/-/babel-plugin-macros-3.1.0.tgz 930ms (cache miss)
+780 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@types/react-transition-group/-/react-transition-group-4.4.12.tgz 939ms (cache miss)
+781 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/serialize/-/serialize-1.3.3.tgz 989ms (cache miss)
+782 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@jridgewell/gen-mapping/-/gen-mapping-0.3.8.tgz 1018ms (cache miss)
+783 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@mui/types/-/types-7.2.24.tgz 1023ms (cache miss)
+784 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/sheet/-/sheet-1.4.0.tgz 1083ms (cache miss)
+785 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/react-is/-/react-is-16.13.1.tgz 1095ms (cache miss)
+786 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/memoize/-/memoize-0.9.0.tgz 1124ms (cache miss)
+787 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/react-is/-/react-is-16.13.1.tgz 1160ms (cache miss)
+788 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/lines-and-columns/-/lines-and-columns-1.2.4.tgz 1236ms (cache miss)
+789 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/babel-plugin/-/babel-plugin-11.13.5.tgz 1313ms (cache miss)
+790 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/convert-source-map/-/convert-source-map-1.9.0.tgz 1305ms (cache miss)
+791 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/source-map/-/source-map-0.5.7.tgz 1412ms (cache miss)
+792 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/to-regex-range/-/to-regex-range-5.0.1.tgz 1605ms (cache miss)
+793 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/type-check/-/type-check-0.4.0.tgz 1612ms (cache miss)
+794 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/ts-api-utils/-/ts-api-utils-2.1.0.tgz 1643ms (cache miss)
+795 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/tinyglobby/-/tinyglobby-0.2.13.tgz 1660ms (cache miss)
+796 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/yocto-queue/-/yocto-queue-0.1.0.tgz 1670ms (cache miss)
+797 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/word-wrap/-/word-wrap-1.2.5.tgz 1719ms (cache miss)
+798 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/update-browserslist-db/-/update-browserslist-db-1.1.3.tgz 1775ms (cache miss)
+799 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/strip-json-comments/-/strip-json-comments-3.1.1.tgz 1803ms (cache miss)
+800 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/typescript-eslint/-/typescript-eslint-8.32.1.tgz 1830ms (cache miss)
+801 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/which/-/which-2.0.2.tgz 1915ms (cache miss)
+802 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/uri-js/-/uri-js-4.4.1.tgz 1950ms (cache miss)
+803 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/supports-color/-/supports-color-7.2.0.tgz 2041ms (cache miss)
+804 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/stylis/-/stylis-4.2.0.tgz 2105ms (cache miss)
+805 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/shebang-command/-/shebang-command-2.0.0.tgz 2307ms (cache miss)
+806 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/shebang-regex/-/shebang-regex-3.0.0.tgz 2365ms (cache miss)
+807 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/set-cookie-parser/-/set-cookie-parser-2.7.1.tgz 2386ms (cache miss)
+808 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/source-map-js/-/source-map-js-1.2.1.tgz 2427ms (cache miss)
+809 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/semver/-/semver-6.3.1.tgz 2563ms (cache miss)
+810 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/scheduler/-/scheduler-0.26.0.tgz 2607ms (cache miss)
+811 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/reusify/-/reusify-1.1.0.tgz 2674ms (cache miss)
+812 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/resolve-from/-/resolve-from-4.0.0.tgz 2678ms (cache miss)
+813 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/resolve/-/resolve-1.22.10.tgz 2810ms (cache miss)
+814 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/run-parallel/-/run-parallel-1.2.0.tgz 2818ms (cache miss)
+815 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/yallist/-/yallist-3.1.1.tgz 3091ms (cache miss)
+816 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/react-refresh/-/react-refresh-0.17.0.tgz 3124ms (cache miss)
+817 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/react-router-dom/-/react-router-dom-7.6.2.tgz 3127ms (cache miss)
+818 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/prop-types/-/prop-types-15.8.1.tgz 3359ms (cache miss)
+819 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/punycode/-/punycode-2.3.1.tgz 3519ms (cache miss)
+820 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/prelude-ls/-/prelude-ls-1.2.1.tgz 3674ms (cache miss)
+821 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/path-type/-/path-type-4.0.0.tgz 3802ms (cache miss)
+822 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/queue-microtask/-/queue-microtask-1.2.3.tgz 3822ms (cache miss)
+823 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/picocolors/-/picocolors-1.1.1.tgz 3826ms (cache miss)
+824 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/picomatch/-/picomatch-4.0.2.tgz 3849ms (cache miss)
+825 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/path-parse/-/path-parse-1.0.7.tgz 3867ms (cache miss)
+826 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/p-limit/-/p-limit-3.1.0.tgz 4117ms (cache miss)
+827 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/react-transition-group/-/react-transition-group-4.4.5.tgz 4413ms (cache miss)
+828 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/parse-json/-/parse-json-5.2.0.tgz 4469ms (cache miss)
+829 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/path-key/-/path-key-3.1.1.tgz 4492ms (cache miss)
+830 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/parent-module/-/parent-module-1.0.1.tgz 4727ms (cache miss)
+831 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/object-assign/-/object-assign-4.1.1.tgz 4736ms (cache miss)
+832 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/p-locate/-/p-locate-5.0.0.tgz 4982ms (cache miss)
+833 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/path-exists/-/path-exists-4.0.0.tgz 5376ms (cache miss)
+834 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/ms/-/ms-2.1.3.tgz 5494ms (cache miss)
+835 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/minimatch/-/minimatch-3.1.2.tgz 5508ms (cache miss)
+836 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/node-releases/-/node-releases-2.0.19.tgz 5600ms (cache miss)
+837 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/optionator/-/optionator-0.9.4.tgz 5751ms (cache miss)
+838 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/nanoid/-/nanoid-3.3.11.tgz 5793ms (cache miss)
+839 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/micromatch/-/micromatch-4.0.8.tgz 5989ms (cache miss)
+840 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/merge2/-/merge2-1.4.1.tgz 5998ms (cache miss)
+841 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/mime-types/-/mime-types-2.1.35.tgz 6021ms (cache miss)
+842 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/loose-envify/-/loose-envify-1.4.0.tgz 6033ms (cache miss)
+843 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/natural-compare/-/natural-compare-1.4.0.tgz 6129ms (cache miss)
+844 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/react/-/react-19.1.0.tgz 6173ms (cache miss)
+845 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/math-intrinsics/-/math-intrinsics-1.1.0.tgz 6374ms (cache miss)
+846 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/lodash.merge/-/lodash.merge-4.6.2.tgz 6456ms (cache miss)
+847 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/locate-path/-/locate-path-6.0.0.tgz 6607ms (cache miss)
+848 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/levn/-/levn-0.4.1.tgz 6668ms (cache miss)
+849 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/keyv/-/keyv-4.5.4.tgz 6797ms (cache miss)
+850 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz 6835ms (cache miss)
+851 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/lru-cache/-/lru-cache-5.1.1.tgz 6883ms (cache miss)
+852 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/jsesc/-/jsesc-3.1.0.tgz 7413ms (cache miss)
+853 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/json-buffer/-/json-buffer-3.0.1.tgz 7694ms (cache miss)
+854 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/isexe/-/isexe-2.0.0.tgz 8266ms (cache miss)
+855 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/is-glob/-/is-glob-4.0.3.tgz 8362ms (cache miss)
+856 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/rollup/-/rollup-4.41.0.tgz 8398ms (cache miss)
+857 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/postcss/-/postcss-8.5.3.tgz 8411ms (cache miss)
+858 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/json5/-/json5-2.2.3.tgz 8556ms (cache miss)
+859 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/imurmurhash/-/imurmurhash-0.1.4.tgz 8701ms (cache miss)
+860 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/is-extglob/-/is-extglob-2.1.1.tgz 8718ms (cache miss)
+861 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz 8769ms (cache miss)
+862 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/react-dom/-/react-dom-19.1.0.tgz 8785ms (cache miss)
+863 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/js-tokens/-/js-tokens-4.0.0.tgz 8789ms (cache miss)
+864 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/import-fresh/-/import-fresh-3.3.1.tgz 8889ms (cache miss)
+865 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/hasown/-/hasown-2.0.2.tgz 9109ms (cache miss)
+866 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/gensync/-/gensync-1.0.0-beta.2.tgz 9253ms (cache miss)
+867 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/has-tostringtag/-/has-tostringtag-1.0.2.tgz 9299ms (cache miss)
+868 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/has-flag/-/has-flag-4.0.0.tgz 9352ms (cache miss)
+869 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/is-number/-/is-number-7.0.0.tgz 9375ms (cache miss)
+870 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/glob-parent/-/glob-parent-6.0.2.tgz 9426ms (cache miss)
+871 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/is-arrayish/-/is-arrayish-0.2.1.tgz 9464ms (cache miss)
+872 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/ignore/-/ignore-5.3.2.tgz 9599ms (cache miss)
+873 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/graphemer/-/graphemer-1.4.0.tgz 9664ms (cache miss)
+874 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/is-core-module/-/is-core-module-2.16.1.tgz 9715ms (cache miss)
+875 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/vite/-/vite-6.3.5.tgz 9850ms (cache miss)
+876 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/get-proto/-/get-proto-1.0.1.tgz 9907ms (cache miss)
+877 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/form-data/-/form-data-4.0.3.tgz 9948ms (cache miss)
+878 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/function-bind/-/function-bind-1.1.2.tgz 9997ms (cache miss)
+879 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/flatted/-/flatted-3.3.3.tgz 10014ms (cache miss)
+880 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/fill-range/-/fill-range-7.1.1.tgz 10026ms (cache miss)
+881 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/globals/-/globals-16.1.0.tgz 10071ms (cache miss)
+882 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/flat-cache/-/flat-cache-4.0.1.tgz 10095ms (cache miss)
+883 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/find-root/-/find-root-1.1.0.tgz 10119ms (cache miss)
+884 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/find-up/-/find-up-5.0.0.tgz 10130ms (cache miss)
+885 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/file-entry-cache/-/file-entry-cache-8.0.0.tgz 10254ms (cache miss)
+886 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/fdir/-/fdir-6.4.4.tgz 10308ms (cache miss)
+887 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz 10401ms (cache miss)
+888 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/fastq/-/fastq-1.19.1.tgz 10518ms (cache miss)
+889 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/esutils/-/esutils-2.0.3.tgz 10560ms (cache miss)
+890 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/esrecurse/-/esrecurse-4.3.0.tgz 10577ms (cache miss)
+891 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/fast-glob/-/fast-glob-3.3.3.tgz 10583ms (cache miss)
+892 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz 10591ms (cache miss)
+893 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz 10603ms (cache miss)
+894 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/estraverse/-/estraverse-5.3.0.tgz 10632ms (cache miss)
+895 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/eslint-visitor-keys/-/eslint-visitor-keys-4.2.0.tgz 10817ms (cache miss)
+896 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/eslint-scope/-/eslint-scope-8.3.0.tgz 10938ms (cache miss)
+897 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/eslint-plugin-react-refresh/-/eslint-plugin-react-refresh-0.4.20.tgz 10961ms (cache miss)
+898 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/es-define-property/-/es-define-property-1.0.1.tgz 11152ms (cache miss)
+899 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/es-errors/-/es-errors-1.3.0.tgz 11290ms (cache miss)
+900 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/escalade/-/escalade-3.2.0.tgz 11310ms (cache miss)
+901 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz 11345ms (cache miss)
+902 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.2.0.tgz 11517ms (cache miss)
+903 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/espree/-/espree-10.3.0.tgz 11530ms (cache miss)
+904 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/es-object-atoms/-/es-object-atoms-1.1.1.tgz 11544ms (cache miss)
+905 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/es-set-tostringtag/-/es-set-tostringtag-2.1.0.tgz 11627ms (cache miss)
+906 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/error-ex/-/error-ex-1.3.2.tgz 11662ms (cache miss)
+907 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/esbuild/-/esbuild-0.25.4.tgz 11935ms (cache miss)
+908 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/dunder-proto/-/dunder-proto-1.0.1.tgz 11937ms (cache miss)
+909 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/electron-to-chromium/-/electron-to-chromium-1.5.155.tgz 12020ms (cache miss)
+910 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/esquery/-/esquery-1.6.0.tgz 12155ms (cache miss)
+911 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/debug/-/debug-4.4.1.tgz 12172ms (cache miss)
+912 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/deep-is/-/deep-is-0.1.4.tgz 12175ms (cache miss)
+913 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/convert-source-map/-/convert-source-map-2.0.0.tgz 12179ms (cache miss)
+914 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/cosmiconfig/-/cosmiconfig-7.1.0.tgz 12371ms (cache miss)
+915 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/dom-helpers/-/dom-helpers-5.2.1.tgz 12383ms (cache miss)
+916 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/cookie/-/cookie-1.0.2.tgz 12451ms (cache miss)
+917 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/concat-map/-/concat-map-0.0.1.tgz 12636ms (cache miss)
+918 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/combined-stream/-/combined-stream-1.0.8.tgz 12688ms (cache miss)
+919 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/color-name/-/color-name-1.1.4.tgz 12723ms (cache miss)
+920 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/color-convert/-/color-convert-2.0.1.tgz 12839ms (cache miss)
+921 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/callsites/-/callsites-3.1.0.tgz 12841ms (cache miss)
+922 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/chalk/-/chalk-4.1.2.tgz 12900ms (cache miss)
+923 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz 13062ms (cache miss)
+924 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/braces/-/braces-3.0.3.tgz 13165ms (cache miss)
+925 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/balanced-match/-/balanced-match-1.0.2.tgz 13272ms (cache miss)
+926 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/brace-expansion/-/brace-expansion-1.1.11.tgz 13426ms (cache miss)
+927 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/ansi-styles/-/ansi-styles-4.3.0.tgz 13573ms (cache miss)
+928 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/argparse/-/argparse-2.0.1.tgz 13658ms (cache miss)
+929 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/csstype/-/csstype-3.1.3.tgz 13665ms (cache miss)
+930 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@vitejs/plugin-react/-/plugin-react-4.4.1.tgz 13687ms (cache miss)
+931 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/acorn-jsx/-/acorn-jsx-5.3.2.tgz 13711ms (cache miss)
+932 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/react-router/-/react-router-7.6.2.tgz 14272ms (cache miss)
+933 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@typescript-eslint/visitor-keys/-/visitor-keys-8.32.1.tgz 14234ms (cache miss)
+934 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/asynckit/-/asynckit-0.4.0.tgz 14289ms (cache miss)
+935 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@typescript-eslint/types/-/types-8.32.1.tgz 14412ms (cache miss)
+936 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/js-yaml/-/js-yaml-4.1.0.tgz 14665ms (cache miss)
+937 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/browserslist/-/browserslist-4.24.5.tgz 14690ms (cache miss)
+938 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@typescript-eslint/parser/-/parser-8.32.1.tgz 14762ms (cache miss)
+939 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@typescript-eslint/typescript-estree/-/typescript-estree-8.32.1.tgz 14955ms (cache miss)
+940 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@typescript-eslint/type-utils/-/type-utils-8.32.1.tgz 15050ms (cache miss)
+941 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@typescript-eslint/scope-manager/-/scope-manager-8.32.1.tgz 15266ms (cache miss)
+942 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@types/babel__template/-/babel__template-7.4.4.tgz 15717ms (cache miss)
+943 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@types/babel__traverse/-/babel__traverse-7.20.7.tgz 15787ms (cache miss)
+944 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@types/json-schema/-/json-schema-7.0.15.tgz 15962ms (cache miss)
+945 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@types/prop-types/-/prop-types-15.7.15.tgz 16302ms (cache miss)
+946 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@types/react-dom/-/react-dom-19.1.5.tgz 16627ms (cache miss)
+947 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@nodelib/fs.walk/-/fs.walk-1.2.8.tgz 16677ms (cache miss)
+948 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@types/estree/-/estree-1.0.7.tgz 16707ms (cache miss)
+949 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/caniuse-lite/-/caniuse-lite-1.0.30001718.tgz 16764ms (cache miss)
+950 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@types/react/-/react-19.1.5.tgz 16777ms (cache miss)
+951 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@types/babel__generator/-/babel__generator-7.27.0.tgz 16828ms (cache miss)
+952 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@mui/styled-engine/-/styled-engine-6.4.11.tgz 16888ms (cache miss)
+953 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/typescript/-/typescript-5.8.3.tgz 17183ms (cache miss)
+954 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@types/babel__core/-/babel__core-7.20.5.tgz 17159ms (cache miss)
+955 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz 17189ms (cache miss)
+956 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz 17222ms (cache miss)
+957 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@popperjs/core/-/core-2.11.8.tgz 17324ms (cache miss)
+958 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@jridgewell/set-array/-/set-array-1.2.1.tgz 17471ms (cache miss)
+959 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.0.tgz 17496ms (cache miss)
+960 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@mui/private-theming/-/private-theming-6.4.9.tgz 17560ms (cache miss)
+961 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/axios/-/axios-1.10.0.tgz 17614ms (cache miss)
+962 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@humanwhocodes/retry/-/retry-0.4.3.tgz 17784ms (cache miss)
+963 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/acorn/-/acorn-8.14.1.tgz 17807ms (cache miss)
+964 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@mui/core-downloads-tracker/-/core-downloads-tracker-6.4.12.tgz 17846ms (cache miss)
+965 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@jridgewell/trace-mapping/-/trace-mapping-0.3.25.tgz 17859ms (cache miss)
+966 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz 17861ms (cache miss)
+967 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@mui/utils/-/utils-6.4.9.tgz 17942ms (cache miss)
+968 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/eslint/-/eslint-9.27.0.tgz 17984ms (cache miss)
+969 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@humanwhocodes/module-importer/-/module-importer-1.0.1.tgz 17972ms (cache miss)
+970 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@typescript-eslint/utils/-/utils-8.32.1.tgz 18068ms (cache miss)
+971 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@eslint/plugin-kit/-/plugin-kit-0.3.1.tgz 18086ms (cache miss)
+972 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@eslint/object-schema/-/object-schema-2.1.6.tgz 18212ms (cache miss)
+973 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@eslint-community/regexpp/-/regexpp-4.12.1.tgz 18274ms (cache miss)
+974 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@eslint/js/-/js-9.27.0.tgz 18559ms (cache miss)
+975 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@humanfs/core/-/core-0.19.1.tgz 18563ms (cache miss)
+976 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@mui/system/-/system-6.4.12.tgz 18599ms (cache miss)
+977 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/weak-memoize/-/weak-memoize-0.4.0.tgz 18638ms (cache miss)
+978 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@eslint/core/-/core-0.14.0.tgz 18781ms (cache miss)
+979 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/unitless/-/unitless-0.10.0.tgz 18836ms (cache miss)
+980 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@eslint/config-helpers/-/config-helpers-0.2.2.tgz 18917ms (cache miss)
+981 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@eslint/config-array/-/config-array-0.20.0.tgz 18919ms (cache miss)
+982 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@eslint-community/eslint-utils/-/eslint-utils-4.7.0.tgz 19104ms (cache miss)
+983 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/use-insertion-effect-with-fallbacks/-/use-insertion-effect-with-fallbacks-1.2.0.tgz 19131ms (cache miss)
+984 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/styled/-/styled-11.14.1.tgz 19385ms (cache miss)
+985 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@humanfs/node/-/node-0.16.6.tgz 19390ms (cache miss)
+986 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/is-prop-valid/-/is-prop-valid-1.3.1.tgz 19563ms (cache miss)
+987 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@eslint/eslintrc/-/eslintrc-3.3.1.tgz 19637ms (cache miss)
+988 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/hash/-/hash-0.9.2.tgz 19644ms (cache miss)
+989 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/template/-/template-7.27.2.tgz 19788ms (cache miss)
+990 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.27.1.tgz 19953ms (cache miss)
+991 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/helper-string-parser/-/helper-string-parser-7.27.1.tgz 20395ms (cache miss)
+992 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.27.1.tgz 20442ms (cache miss)
+993 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/runtime/-/runtime-7.27.6.tgz 20450ms (cache miss)
+994 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/helper-plugin-utils/-/helper-plugin-utils-7.27.1.tgz 20503ms (cache miss)
+995 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/helper-validator-option/-/helper-validator-option-7.27.1.tgz 20524ms (cache miss)
+996 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/ajv/-/ajv-6.12.6.tgz 20550ms (cache miss)
+997 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/helper-module-imports/-/helper-module-imports-7.27.1.tgz 20564ms (cache miss)
+998 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/helper-validator-identifier/-/helper-validator-identifier-7.27.1.tgz 20809ms (cache miss)
+999 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/generator/-/generator-7.27.1.tgz 20948ms (cache miss)
+1000 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@ampproject/remapping/-/remapping-2.3.0.tgz 21205ms (cache miss)
+1001 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/helper-module-transforms/-/helper-module-transforms-7.27.1.tgz 21256ms (cache miss)
+1002 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/compat-data/-/compat-data-7.27.2.tgz 21270ms (cache miss)
+1003 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/glob-parent/-/glob-parent-5.1.2.tgz 21413ms (cache miss)
+1004 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/helper-compilation-targets/-/helper-compilation-targets-7.27.2.tgz 21468ms (cache miss)
+1005 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/code-frame/-/code-frame-7.27.1.tgz 21647ms (cache miss)
+1006 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/yaml/-/yaml-1.10.2.tgz 21652ms (cache miss)
+1007 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/parser/-/parser-7.27.2.tgz 21742ms (cache miss)
+1008 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.32.1.tgz 21835ms (cache miss)
+1009 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/ignore/-/ignore-7.0.4.tgz 21885ms (cache miss)
+1010 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/core/-/core-7.27.1.tgz 21910ms (cache miss)
+1011 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@mui/material/-/material-6.4.12.tgz 21931ms (cache miss)
+1012 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/cache/-/cache-11.14.0.tgz 21956ms (cache miss)
+1013 http fetch GET 200 https://cdn.npmmirror.com/packages/%40rollup/rollup-win32-x64-msvc/4.41.0/rollup-win32-x64-msvc-4.41.0.tgz 22046ms (cache miss)
+1014 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/brace-expansion/-/brace-expansion-2.0.1.tgz 21973ms (cache miss)
+1015 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/picomatch/-/picomatch-2.3.1.tgz 22007ms (cache miss)
+1016 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/helpers/-/helpers-7.27.1.tgz 22033ms (cache miss)
+1017 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/semver/-/semver-7.7.2.tgz 22115ms (cache miss)
+1018 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/globals/-/globals-11.12.0.tgz 22138ms (cache miss)
+1019 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz 22170ms (cache miss)
+1020 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/globals/-/globals-14.0.0.tgz 22219ms (cache miss)
+1021 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@humanwhocodes/retry/-/retry-0.3.1.tgz 22242ms (cache miss)
+1022 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/traverse/-/traverse-7.27.1.tgz 22334ms (cache miss)
+1023 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/minimatch/-/minimatch-9.0.5.tgz 22338ms (cache miss)
+1024 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@babel/types/-/types-7.27.1.tgz 22536ms (cache miss)
+1025 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@emotion/react/-/react-11.14.0.tgz 22580ms (cache miss)
+1026 http fetch GET 200 https://cdn.npmmirror.com/packages/%40esbuild/win32-x64/0.25.4/win32-x64-0.25.4.tgz 24572ms (cache miss)
+1027 http fetch GET 200 https://mirrors.cloud.tencent.com/npm/@mui/icons-material/-/icons-material-6.4.12.tgz 28895ms (cache miss)
+1028 info run esbuild@0.25.4 postinstall node_modules/esbuild node install.js
+1029 info run esbuild@0.25.4 postinstall { code: 0, signal: null }
+1030 silly ADD node_modules/@rollup/rollup-win32-x64-msvc
+1031 silly ADD node_modules/@esbuild/win32-x64
+1032 silly ADD node_modules/yocto-queue
+1033 silly ADD node_modules/yallist
+1034 silly ADD node_modules/word-wrap
+1035 silly ADD node_modules/which
+1036 silly ADD node_modules/vite
+1037 silly ADD node_modules/uri-js
+1038 silly ADD node_modules/update-browserslist-db
+1039 silly ADD node_modules/typescript-eslint
+1040 silly ADD node_modules/typescript
+1041 silly ADD node_modules/type-check
+1042 silly ADD node_modules/ts-api-utils
+1043 silly ADD node_modules/to-regex-range
+1044 silly ADD node_modules/tinyglobby
+1045 silly ADD node_modules/supports-preserve-symlinks-flag
+1046 silly ADD node_modules/supports-color
+1047 silly ADD node_modules/stylis
+1048 silly ADD node_modules/strip-json-comments
+1049 silly ADD node_modules/source-map-js
+1050 silly ADD node_modules/source-map
+1051 silly ADD node_modules/shebang-regex
+1052 silly ADD node_modules/shebang-command
+1053 silly ADD node_modules/set-cookie-parser
+1054 silly ADD node_modules/semver
+1055 silly ADD node_modules/scheduler
+1056 silly ADD node_modules/run-parallel
+1057 silly ADD node_modules/rollup
+1058 silly ADD node_modules/reusify
+1059 silly ADD node_modules/resolve-from
+1060 silly ADD node_modules/resolve
+1061 silly ADD node_modules/react-transition-group
+1062 silly ADD node_modules/react-router-dom
+1063 silly ADD node_modules/react-router
+1064 silly ADD node_modules/react-refresh
+1065 silly ADD node_modules/react-is
+1066 silly ADD node_modules/react-dom
+1067 silly ADD node_modules/react
+1068 silly ADD node_modules/queue-microtask
+1069 silly ADD node_modules/punycode
+1070 silly ADD node_modules/proxy-from-env
+1071 silly ADD node_modules/prop-types
+1072 silly ADD node_modules/prop-types/node_modules/react-is
+1073 silly ADD node_modules/prelude-ls
+1074 silly ADD node_modules/postcss
+1075 silly ADD node_modules/picomatch
+1076 silly ADD node_modules/picocolors
+1077 silly ADD node_modules/path-type
+1078 silly ADD node_modules/path-parse
+1079 silly ADD node_modules/path-key
+1080 silly ADD node_modules/path-exists
+1081 silly ADD node_modules/parse-json
+1082 silly ADD node_modules/parent-module
+1083 silly ADD node_modules/p-locate
+1084 silly ADD node_modules/p-limit
+1085 silly ADD node_modules/optionator
+1086 silly ADD node_modules/object-assign
+1087 silly ADD node_modules/node-releases
+1088 silly ADD node_modules/natural-compare
+1089 silly ADD node_modules/nanoid
+1090 silly ADD node_modules/ms
+1091 silly ADD node_modules/minimatch
+1092 silly ADD node_modules/mime-types
+1093 silly ADD node_modules/mime-db
+1094 silly ADD node_modules/micromatch
+1095 silly ADD node_modules/micromatch/node_modules/picomatch
+1096 silly ADD node_modules/merge2
+1097 silly ADD node_modules/math-intrinsics
+1098 silly ADD node_modules/lru-cache
+1099 silly ADD node_modules/loose-envify
+1100 silly ADD node_modules/lodash.merge
+1101 silly ADD node_modules/locate-path
+1102 silly ADD node_modules/lines-and-columns
+1103 silly ADD node_modules/levn
+1104 silly ADD node_modules/keyv
+1105 silly ADD node_modules/json5
+1106 silly ADD node_modules/json-stable-stringify-without-jsonify
+1107 silly ADD node_modules/json-schema-traverse
+1108 silly ADD node_modules/json-parse-even-better-errors
+1109 silly ADD node_modules/json-buffer
+1110 silly ADD node_modules/jsesc
+1111 silly ADD node_modules/js-yaml
+1112 silly ADD node_modules/js-tokens
+1113 silly ADD node_modules/isexe
+1114 silly ADD node_modules/is-number
+1115 silly ADD node_modules/is-glob
+1116 silly ADD node_modules/is-extglob
+1117 silly ADD node_modules/is-core-module
+1118 silly ADD node_modules/is-arrayish
+1119 silly ADD node_modules/imurmurhash
+1120 silly ADD node_modules/import-fresh
+1121 silly ADD node_modules/ignore
+1122 silly ADD node_modules/hoist-non-react-statics
+1123 silly ADD node_modules/hoist-non-react-statics/node_modules/react-is
+1124 silly ADD node_modules/hasown
+1125 silly ADD node_modules/has-tostringtag
+1126 silly ADD node_modules/has-symbols
+1127 silly ADD node_modules/has-flag
+1128 silly ADD node_modules/graphemer
+1129 silly ADD node_modules/gopd
+1130 silly ADD node_modules/globals
+1131 silly ADD node_modules/glob-parent
+1132 silly ADD node_modules/get-proto
+1133 silly ADD node_modules/get-intrinsic
+1134 silly ADD node_modules/gensync
+1135 silly ADD node_modules/function-bind
+1136 silly ADD node_modules/form-data
+1137 silly ADD node_modules/follow-redirects
+1138 silly ADD node_modules/flatted
+1139 silly ADD node_modules/flat-cache
+1140 silly ADD node_modules/find-up
+1141 silly ADD node_modules/find-root
+1142 silly ADD node_modules/fill-range
+1143 silly ADD node_modules/file-entry-cache
+1144 silly ADD node_modules/fdir
+1145 silly ADD node_modules/fastq
+1146 silly ADD node_modules/fast-levenshtein
+1147 silly ADD node_modules/fast-json-stable-stringify
+1148 silly ADD node_modules/fast-glob
+1149 silly ADD node_modules/fast-glob/node_modules/glob-parent
+1150 silly ADD node_modules/fast-deep-equal
+1151 silly ADD node_modules/esutils
+1152 silly ADD node_modules/estraverse
+1153 silly ADD node_modules/esrecurse
+1154 silly ADD node_modules/esquery
+1155 silly ADD node_modules/espree
+1156 silly ADD node_modules/eslint-visitor-keys
+1157 silly ADD node_modules/eslint-scope
+1158 silly ADD node_modules/eslint-plugin-react-refresh
+1159 silly ADD node_modules/eslint-plugin-react-hooks
+1160 silly ADD node_modules/eslint
+1161 silly ADD node_modules/escape-string-regexp
+1162 silly ADD node_modules/escalade
+1163 silly ADD node_modules/esbuild
+1164 silly ADD node_modules/es-set-tostringtag
+1165 silly ADD node_modules/es-object-atoms
+1166 silly ADD node_modules/es-errors
+1167 silly ADD node_modules/es-define-property
+1168 silly ADD node_modules/error-ex
+1169 silly ADD node_modules/electron-to-chromium
+1170 silly ADD node_modules/dunder-proto
+1171 silly ADD node_modules/dom-helpers
+1172 silly ADD node_modules/delayed-stream
+1173 silly ADD node_modules/deep-is
+1174 silly ADD node_modules/debug
+1175 silly ADD node_modules/csstype
+1176 silly ADD node_modules/cross-spawn
+1177 silly ADD node_modules/cosmiconfig
+1178 silly ADD node_modules/cosmiconfig/node_modules/yaml
+1179 silly ADD node_modules/cookie
+1180 silly ADD node_modules/convert-source-map
+1181 silly ADD node_modules/concat-map
+1182 silly ADD node_modules/combined-stream
+1183 silly ADD node_modules/color-name
+1184 silly ADD node_modules/color-convert
+1185 silly ADD node_modules/clsx
+1186 silly ADD node_modules/chalk
+1187 silly ADD node_modules/caniuse-lite
+1188 silly ADD node_modules/callsites
+1189 silly ADD node_modules/call-bind-apply-helpers
+1190 silly ADD node_modules/browserslist
+1191 silly ADD node_modules/braces
+1192 silly ADD node_modules/brace-expansion
+1193 silly ADD node_modules/balanced-match
+1194 silly ADD node_modules/babel-plugin-macros
+1195 silly ADD node_modules/axios
+1196 silly ADD node_modules/asynckit
+1197 silly ADD node_modules/argparse
+1198 silly ADD node_modules/ansi-styles
+1199 silly ADD node_modules/ajv
+1200 silly ADD node_modules/acorn-jsx
+1201 silly ADD node_modules/acorn
+1202 silly ADD node_modules/@vitejs/plugin-react
+1203 silly ADD node_modules/@typescript-eslint/visitor-keys
+1204 silly ADD node_modules/@typescript-eslint/utils
+1205 silly ADD node_modules/@typescript-eslint/typescript-estree
+1206 silly ADD node_modules/@typescript-eslint/typescript-estree/node_modules/semver
+1207 silly ADD node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch
+1208 silly ADD node_modules/@typescript-eslint/typescript-estree/node_modules/brace-expansion
+1209 silly ADD node_modules/@typescript-eslint/types
+1210 silly ADD node_modules/@typescript-eslint/type-utils
+1211 silly ADD node_modules/@typescript-eslint/scope-manager
+1212 silly ADD node_modules/@typescript-eslint/parser
+1213 silly ADD node_modules/@typescript-eslint/eslint-plugin
+1214 silly ADD node_modules/@typescript-eslint/eslint-plugin/node_modules/ignore
+1215 silly ADD node_modules/@types/react-transition-group
+1216 silly ADD node_modules/@types/react-dom
+1217 silly ADD node_modules/@types/react
+1218 silly ADD node_modules/@types/prop-types
+1219 silly ADD node_modules/@types/parse-json
+1220 silly ADD node_modules/@types/json-schema
+1221 silly ADD node_modules/@types/estree
+1222 silly ADD node_modules/@types/babel__traverse
+1223 silly ADD node_modules/@types/babel__template
+1224 silly ADD node_modules/@types/babel__generator
+1225 silly ADD node_modules/@types/babel__core
+1226 silly ADD node_modules/@popperjs/core
+1227 silly ADD node_modules/@nodelib/fs.walk
+1228 silly ADD node_modules/@nodelib/fs.stat
+1229 silly ADD node_modules/@nodelib/fs.scandir
+1230 silly ADD node_modules/@mui/utils
+1231 silly ADD node_modules/@mui/types
+1232 silly ADD node_modules/@mui/system
+1233 silly ADD node_modules/@mui/styled-engine
+1234 silly ADD node_modules/@mui/private-theming
+1235 silly ADD node_modules/@mui/material
+1236 silly ADD node_modules/@mui/icons-material
+1237 silly ADD node_modules/@mui/core-downloads-tracker
+1238 silly ADD node_modules/@jridgewell/trace-mapping
+1239 silly ADD node_modules/@jridgewell/sourcemap-codec
+1240 silly ADD node_modules/@jridgewell/set-array
+1241 silly ADD node_modules/@jridgewell/resolve-uri
+1242 silly ADD node_modules/@jridgewell/gen-mapping
+1243 silly ADD node_modules/@humanwhocodes/retry
+1244 silly ADD node_modules/@humanwhocodes/module-importer
+1245 silly ADD node_modules/@humanfs/node
+1246 silly ADD node_modules/@humanfs/node/node_modules/@humanwhocodes/retry
+1247 silly ADD node_modules/@humanfs/core
+1248 silly ADD node_modules/@eslint/plugin-kit
+1249 silly ADD node_modules/@eslint/object-schema
+1250 silly ADD node_modules/@eslint/js
+1251 silly ADD node_modules/@eslint/eslintrc
+1252 silly ADD node_modules/@eslint/eslintrc/node_modules/globals
+1253 silly ADD node_modules/@eslint/core
+1254 silly ADD node_modules/@eslint/config-helpers
+1255 silly ADD node_modules/@eslint/config-array
+1256 silly ADD node_modules/@eslint-community/regexpp
+1257 silly ADD node_modules/@eslint-community/eslint-utils
+1258 silly ADD node_modules/@eslint-community/eslint-utils/node_modules/eslint-visitor-keys
+1259 silly ADD node_modules/@emotion/weak-memoize
+1260 silly ADD node_modules/@emotion/utils
+1261 silly ADD node_modules/@emotion/use-insertion-effect-with-fallbacks
+1262 silly ADD node_modules/@emotion/unitless
+1263 silly ADD node_modules/@emotion/styled
+1264 silly ADD node_modules/@emotion/sheet
+1265 silly ADD node_modules/@emotion/serialize
+1266 silly ADD node_modules/@emotion/react
+1267 silly ADD node_modules/@emotion/memoize
+1268 silly ADD node_modules/@emotion/is-prop-valid
+1269 silly ADD node_modules/@emotion/hash
+1270 silly ADD node_modules/@emotion/cache
+1271 silly ADD node_modules/@emotion/babel-plugin
+1272 silly ADD node_modules/@emotion/babel-plugin/node_modules/convert-source-map
+1273 silly ADD node_modules/@babel/types
+1274 silly ADD node_modules/@babel/traverse
+1275 silly ADD node_modules/@babel/traverse/node_modules/globals
+1276 silly ADD node_modules/@babel/template
+1277 silly ADD node_modules/@babel/runtime
+1278 silly ADD node_modules/@babel/plugin-transform-react-jsx-source
+1279 silly ADD node_modules/@babel/plugin-transform-react-jsx-self
+1280 silly ADD node_modules/@babel/parser
+1281 silly ADD node_modules/@babel/helpers
+1282 silly ADD node_modules/@babel/helper-validator-option
+1283 silly ADD node_modules/@babel/helper-validator-identifier
+1284 silly ADD node_modules/@babel/helper-string-parser
+1285 silly ADD node_modules/@babel/helper-plugin-utils
+1286 silly ADD node_modules/@babel/helper-module-transforms
+1287 silly ADD node_modules/@babel/helper-module-imports
+1288 silly ADD node_modules/@babel/helper-compilation-targets
+1289 silly ADD node_modules/@babel/generator
+1290 silly ADD node_modules/@babel/core
+1291 silly ADD node_modules/@babel/compat-data
+1292 silly ADD node_modules/@babel/code-frame
+1293 silly ADD node_modules/@ampproject/remapping
+1294 verbose cwd D:\learning\ai\project\mcp-gateway\web
+1295 verbose os Windows_NT 10.0.26200
+1296 verbose node v24.14.0
+1297 verbose npm  v11.12.0
+1298 notice
+1298 notice New [36mpatch[39m version of npm available! [36m11.12.0[39m -> [34m11.12.1[39m
+1298 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.12.1[39m
+1298 notice To update run: [4mnpm install -g npm@11.12.1[24m
+1298 notice  { force: true, Symbol(proc-log.meta): true }
+1299 verbose exit 0
+1300 info ok

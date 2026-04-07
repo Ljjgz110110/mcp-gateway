@@ -13,10 +13,10 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 
+	"./xlog"
 	"github.com/lucky-aeon/agentx/plugin-helper/config"
 	"github.com/lucky-aeon/agentx/plugin-helper/middleware_impl"
 	"github.com/lucky-aeon/agentx/plugin-helper/router"
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
 )
 
 func main() {

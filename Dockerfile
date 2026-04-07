@@ -1,4 +1,4 @@
-FROM golang:1.23-alpine AS builder
+FROM golang:alpine AS builder
 
 WORKDIR /app
 COPY go.mod go.sum ./
@@ -9,7 +9,7 @@ RUN go env -w GO111MODULE=on && \
 COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -o proxy-server
 
-FROM node:20-alpine
+FROM node:alpine
 
 RUN apk add --update --no-cache git
 
@@ -17,16 +17,15 @@ RUN apk add --update --no-cache git
 ENV PYTHONUNBUFFERED=1
 RUN apk add --update --no-cache python3 py3-pip
 
-COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
+# Install uv using pip with --break-system-packages option
+RUN pip install --break-system-packages uv
 
 # Copy the proxy server binary from builder
 COPY --from=builder /app/proxy-server /usr/local/bin/
 
 # Add execute permissions and set root user
 USER root
-RUN chmod +x /usr/local/bin/proxy-server && \
-    chmod +x /usr/local/bin/uvx && \
-    chmod +x /usr/local/bin/uv
+RUN chmod +x /usr/local/bin/proxy-server
 
 # Set working directory
 WORKDIR /etc/proxy

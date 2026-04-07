@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@kazuph/mcp-fetch": "^1.6.2"
+  },
+  "_npx": {
+    "packages": [
+      "@kazuph/mcp-fetch"
+    ]
+  }
+}
