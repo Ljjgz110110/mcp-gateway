@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/lucky-aeon/agentx/plugin-helper/config"
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/config"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 )
 
 const (
@@ -48,7 +48,7 @@ type AddMcpServiceResult string
 const (
 	AddMcpServiceResultDeployed AddMcpServiceResult = "deployed" // 新部署成功
 	AddMcpServiceResultExisted  AddMcpServiceResult = "existed"  // 已存在且运行中
-	AddMcpServiceResultReplaced AddMcpServiceResult = "replaced" // 替换了停止/失败的服务
+	AddMcpServiceResultReplaced AddMcpServiceResult = "replaced" // 替换了停止失败的服务
 )
 
 // AddMcpService adds a new MCP service to the workspace.
@@ -245,7 +245,7 @@ func (w *WorkSpace) Close(xl xlog.Logger) {
 		}
 		w.serversMutex.Unlock()
 
-		// 在锁外调用 RemoveMcpService 避免死锁
+		// 在锁外调用RemoveMcpService 避免死锁
 		if err := w.removeMcpServiceInternal(xl, serverName); err != nil {
 			xl.Errorf("Failed to remove MCP service %s: %v", serverName, err)
 			// 即使失败也要从map中删除，避免无限循环

@@ -3,11 +3,11 @@ package router
 import (
 	"net/http"
 
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/config"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/service"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/types"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 	"github.com/labstack/echo/v4"
-	"github.com/lucky-aeon/agentx/plugin-helper/config"
-	"github.com/lucky-aeon/agentx/plugin-helper/service"
-	"github.com/lucky-aeon/agentx/plugin-helper/types"
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
 )
 
 // handleDeployServiceToWorkspace 在指定工作空间部署服务

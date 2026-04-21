@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lucky-aeon/agentx/plugin-helper/config"
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/config"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 )
 
 var mockPortMgr PortManagerI = NewPortManager()
@@ -51,7 +51,7 @@ func TestMcpService_Restart_DeadlockPrevention(t *testing.T) {
 
 	logger := xlog.NewLogger("test")
 
-	// 使用channel来检测死锁
+	// 使用channel来检测死�?
 	done := make(chan bool, 1)
 
 	go func() {
@@ -59,7 +59,7 @@ func TestMcpService_Restart_DeadlockPrevention(t *testing.T) {
 		done <- true
 	}()
 
-	// 等待最多10秒，如果超时说明可能发生死锁
+	// 等待最�?0秒，如果超时说明可能发生死锁
 	select {
 	case <-done:
 		t.Log("Restart completed without deadlock")
@@ -92,7 +92,7 @@ func TestMcpService_Restart_SSEService(t *testing.T) {
 
 	service.Restart(logger)
 
-	// SSE服务应该保持Running状态
+	// SSE服务应该保持Running状�?
 	if service.GetStatus() != Running {
 		t.Errorf("Expected SSE service status to remain Running, got %s", service.GetStatus())
 	}

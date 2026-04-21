@@ -1,4 +1,4 @@
-module github.com/lucky-aeon/agentx/plugin-helper
+module github.com/Ljjgz110110/Agent-Platform/plugin-helper
 
 go 1.23
 

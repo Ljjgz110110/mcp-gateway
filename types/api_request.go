@@ -1,6 +1,6 @@
 package types
 
-import "github.com/lucky-aeon/agentx/plugin-helper/config"
+import "github.com/Ljjgz110110/Agent-Platform/plugin-helper/config"
 
 // DeployRequest 部署请求结构
 type DeployRequest struct {

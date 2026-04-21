@@ -13,7 +13,7 @@ func IsSSE(header http.Header) bool {
 	return strings.Contains(header.Get("Content-Type"), "text/event-stream")
 }
 
-// GetWorkspace 获取 workspace, 优先从 header 中获取，如果没有则从 query 中获取
+// GetWorkspace 获取 workspace, 优先从header 中获取，如果没有则从 query 中获取
 func GetWorkspace(c echo.Context, defaultWorkspace ...string) string {
 	workspace := c.Request().Header.Get("X-Workspace-Id")
 	if workspace == "" {
@@ -26,7 +26,7 @@ func GetWorkspace(c echo.Context, defaultWorkspace ...string) string {
 	return workspace
 }
 
-// GetSession 获取 session, 优先从 header 中获取，如果没有则从 query 中获取
+// GetSession 获取 session, 优先从header 中获取，如果没有则从 query 中获取
 func GetSession(c echo.Context) (string, error) {
 	session := c.Request().Header.Get("X-Session-Id")
 	if session == "" {

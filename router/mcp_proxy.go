@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/service"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/utils"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 	"github.com/labstack/echo/v4"
-	"github.com/lucky-aeon/agentx/plugin-helper/service"
-	"github.com/lucky-aeon/agentx/plugin-helper/utils"
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
 )
 
 // proxyHandler 返回代理处理函数
@@ -90,7 +90,7 @@ func (m *ServerManager) proxyHandler() echo.HandlerFunc {
 			return err
 		}
 
-		// 复制原始请求的 header
+		// 复制原始请求的header
 		for k, v := range c.Request().Header {
 			req.Header[k] = v
 		}
@@ -137,7 +137,7 @@ func (m *ServerManager) proxyHandler() echo.HandlerFunc {
 					continue
 				}
 
-				// 处理事件行
+				// 处理事件
 				if strings.HasPrefix(line, "event: ") {
 					currentEvent = strings.TrimPrefix(line, "event: ")
 					fmt.Fprintf(c.Response(), "event: %s\n", currentEvent)
@@ -158,7 +158,7 @@ func (m *ServerManager) proxyHandler() echo.HandlerFunc {
 			return nil
 		}
 
-		// 非 SSE 请求的普通处理
+		// 非SSE 请求的普通处理
 		c.Response().WriteHeader(resp.StatusCode)
 		_, err = io.Copy(c.Response().Writer, resp.Body)
 		return err

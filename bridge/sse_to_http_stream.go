@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 	client "github.com/mark3labs/mcp-go/client"
 	"github.com/mark3labs/mcp-go/client/transport"
 	"github.com/mark3labs/mcp-go/mcp"
@@ -58,7 +58,7 @@ func NewSSEToHTTPStreamBridge(ctx context.Context, sseBaseURL string, mcpName st
 		"server_version", initResult.ServerInfo.Version,
 	)
 
-	// 2. 创建 MCP 服务器，作为桥接层
+	// 2. 创建 MCP 服务器，作为桥接器
 	mcpServer := server.NewMCPServer(
 		initResult.ServerInfo.Name,
 		initResult.ServerInfo.Version,
@@ -82,16 +82,16 @@ func NewSSEToHTTPStreamBridge(ctx context.Context, sseBaseURL string, mcpName st
 	// 4. 设置资源桥接（如果支持的话）
 	if err := bridge.setupResourceBridge(ctx); err != nil {
 		bridge.logger.Warnf("Resource bridging failed (server may not support resources): %v", err)
-		// 不返回错误，继续启动服务器
+		// 不返回错误，继续启动服务
 	}
 
 	// 5. 设置提示桥接（如果支持的话）
 	if err := bridge.setupPromptBridge(ctx); err != nil {
 		bridge.logger.Warnf("Prompt bridging failed (server may not support prompts): %v", err)
-		// 不返回错误，继续启动服务器
+		// 不返回错误，继续启动服务
 	}
 
-	// 6. 创建 StreamableHTTP 服务器包装 MCP 服务器
+	// 6. 创建 StreamableHTTP 服务器包装 MCP 服务
 	httpStreamServer := server.NewStreamableHTTPServer(
 		mcpServer,
 		server.WithEndpointPath(fmt.Sprintf("/%s", mcpName)),
@@ -127,7 +127,7 @@ func (b *SSEToHTTPStreamBridge) setupToolBridge(ctx context.Context) error {
 		b.mcpServer.AddTool(bridgedTool, func(ctx context.Context, request mcp.CallToolRequest) (*mcp.CallToolResult, error) {
 			b.logger.Debug("Calling tool", "tool_name", toolName)
 
-			// 转发工具调用到 SSE 服务器
+			// 转发工具调用到 SSE 服务
 			result, err := b.sseClient.CallTool(ctx, request)
 			if err != nil {
 				b.logger.Error("Tool call failed", "tool_name", toolName, "error", err)
@@ -165,7 +165,7 @@ func (b *SSEToHTTPStreamBridge) setupResourceBridge(ctx context.Context) error {
 		b.mcpServer.AddResource(bridgedResource, func(ctx context.Context, request mcp.ReadResourceRequest) ([]mcp.ResourceContents, error) {
 			b.logger.Debug("Reading resource", "resource_uri", resourceURI)
 
-			// 转发资源读取请求到 SSE 服务器
+			// 转发资源读取请求到 SSE 服务
 			result, err := b.sseClient.ReadResource(ctx, request)
 			if err != nil {
 				b.logger.Error("Resource read failed", "resource_uri", resourceURI, "error", err)
@@ -199,7 +199,7 @@ func (b *SSEToHTTPStreamBridge) setupResourceBridge(ctx context.Context) error {
 		b.mcpServer.AddResourceTemplate(bridgedTemplate, func(ctx context.Context, request mcp.ReadResourceRequest) ([]mcp.ResourceContents, error) {
 			b.logger.Debug("Reading resource template", "template_uri", templateURI)
 
-			// 转发资源读取请求到 SSE 服务器
+			// 转发资源读取请求到 SSE 服务
 			result, err := b.sseClient.ReadResource(ctx, request)
 			if err != nil {
 				b.logger.Error("Resource template read failed", "template_uri", templateURI, "error", err)
@@ -236,7 +236,7 @@ func (b *SSEToHTTPStreamBridge) setupPromptBridge(ctx context.Context) error {
 		b.mcpServer.AddPrompt(bridgedPrompt, func(ctx context.Context, request mcp.GetPromptRequest) (*mcp.GetPromptResult, error) {
 			b.logger.Debug("Getting prompt", "prompt_name", promptName)
 
-			// 转发提示请求到 SSE 服务器
+			// 转发提示请求到 SSE 服务
 			result, err := b.sseClient.GetPrompt(ctx, request)
 			if err != nil {
 				b.logger.Error("Prompt get failed", "prompt_name", promptName, "error", err)
@@ -251,7 +251,7 @@ func (b *SSEToHTTPStreamBridge) setupPromptBridge(ctx context.Context) error {
 	return nil
 }
 
-// Start 启动 HTTP Stream 服务器
+// Start 启动 HTTP Stream 服务
 func (b *SSEToHTTPStreamBridge) Start(addr string) error {
 	b.logger.Info("Starting HTTP Stream bridge server", "address", addr)
 

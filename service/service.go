@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lucky-aeon/agentx/plugin-helper/bridge"
-	"github.com/lucky-aeon/agentx/plugin-helper/config"
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/bridge"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/config"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 	"github.com/mark3labs/mcp-go/client/transport"
 )
 
@@ -255,7 +255,7 @@ func (s *McpService) Restart(logger xlog.Logger) {
 		return
 	}
 
-	// 检查重试次数，避免在锁内调用自身
+	// 检查重试次数，避免在锁内调用自己
 	s.mutex.Lock()
 	if s.RetryCount <= 0 {
 		logger.Warnf("No retry restart count left for %s, marking as failed", s.Name)

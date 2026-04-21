@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 	client "github.com/mark3labs/mcp-go/client"
 	"github.com/mark3labs/mcp-go/client/transport"
 	"github.com/mark3labs/mcp-go/mcp"
@@ -51,7 +51,7 @@ func NewStdioToSSEBridge(ctx context.Context, transport *transport.Stdio, mcpNam
 		"server_version", initResult.ServerInfo.Version,
 	)
 
-	// 2. 创建 MCP 服务器，作为桥接层
+	// 2. 创建 MCP 服务器，作为桥接器
 	mcpServer := server.NewMCPServer(
 		initResult.ServerInfo.Name,
 		initResult.ServerInfo.Version,
@@ -75,10 +75,10 @@ func NewStdioToSSEBridge(ctx context.Context, transport *transport.Stdio, mcpNam
 	// 4. 设置资源桥接（如果支持的话）
 	if err := bridge.setupResourceBridge(ctx); err != nil {
 		bridge.logger.Warnf("Resource bridging failed (server may not support resources): %v", err)
-		// 不返回错误，继续启动服务器
+		// 不返回错误，继续启动服务
 	}
 
-	// 5. 创建 SSE 服务器包装 MCP 服务器
+	// 5. 创建 SSE 服务器包装 MCP 服务
 	sseServer := server.NewSSEServer(
 		mcpServer,
 		server.WithStaticBasePath(mcpName),
@@ -115,7 +115,7 @@ func (b *StdioToSSEBridge) setupToolBridge(ctx context.Context) error {
 		b.mcpServer.AddTool(bridgedTool, func(ctx context.Context, request mcp.CallToolRequest) (*mcp.CallToolResult, error) {
 			b.logger.Debug("Calling tool", "tool_name", toolName)
 
-			// 转发工具调用到 stdio 服务器
+			// 转发工具调用到 stdio 服务
 			result, err := b.stdioClient.CallTool(ctx, request)
 			if err != nil {
 				b.logger.Error("Tool call failed", "tool_name", toolName, "error", err)
@@ -153,7 +153,7 @@ func (b *StdioToSSEBridge) setupResourceBridge(ctx context.Context) error {
 		b.mcpServer.AddResource(bridgedResource, func(ctx context.Context, request mcp.ReadResourceRequest) ([]mcp.ResourceContents, error) {
 			b.logger.Debug("Reading resource", "resource_uri", resourceURI)
 
-			// 转发资源读取请求到 stdio 服务器
+			// 转发资源读取请求到 stdio 服务
 			result, err := b.stdioClient.ReadResource(ctx, request)
 			if err != nil {
 				b.logger.Error("Resource read failed", "resource_uri", resourceURI, "error", err)
@@ -187,7 +187,7 @@ func (b *StdioToSSEBridge) setupResourceBridge(ctx context.Context) error {
 		b.mcpServer.AddResourceTemplate(bridgedTemplate, func(ctx context.Context, request mcp.ReadResourceRequest) ([]mcp.ResourceContents, error) {
 			b.logger.Debug("Reading resource template", "template_uri", templateURI)
 
-			// 转发资源读取请求到 stdio 服务器
+			// 转发资源读取请求到 stdio 服务
 			result, err := b.stdioClient.ReadResource(ctx, request)
 			if err != nil {
 				b.logger.Error("Resource template read failed", "template_uri", templateURI, "error", err)
@@ -201,7 +201,7 @@ func (b *StdioToSSEBridge) setupResourceBridge(ctx context.Context) error {
 	return nil
 }
 
-// StartSSEServer 启动 SSE 服务器
+// StartSSEServer 启动 SSE 服务
 func (b *StdioToSSEBridge) Start(addr string) error {
 	b.logger.Info("Starting SSE bridge server", "address", addr)
 

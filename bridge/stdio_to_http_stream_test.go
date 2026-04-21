@@ -21,7 +21,7 @@ func TestHTTPStreamClient(t *testing.T) {
 	_ = os.Mkdir(pwd, 0755)
 	_ = os.WriteFile(pwd+"/test.txt", []byte("Hello, World!"), 0644)
 
-	// 1. 创建 stdio 客户端连接到文件系统服务器
+	// 1. 创建 stdio 客户端连接到文件系统服务�?
 	stdioTransport := transport.NewStdio(
 		"npx",
 		nil, // 环境变量
@@ -39,7 +39,7 @@ func TestHTTPStreamClient(t *testing.T) {
 		t.Fatalf("Failed to create bridge: %v", err)
 	}
 
-	// 启动 HTTP Stream 服务器
+	// 启动 HTTP Stream 服务�?
 	go func() {
 		t.Log("Starting HTTP Stream server on :8081...")
 		if err := bridge.Start(":8081"); err != nil {
@@ -101,7 +101,7 @@ func TestHTTPStreamClient(t *testing.T) {
 		t.Logf("- %s: %s", tool.Name, tool.Description)
 	}
 
-	// 测试调用一个工具
+	// 测试调用一个工�?
 	if len(toolsResult.Tools) > 0 {
 		// 测试 list_directory 工具
 		t.Log("Testing list_directory tool...")

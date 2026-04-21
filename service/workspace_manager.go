@@ -4,8 +4,8 @@ import (
 	"sync"
 
 	"github.com/google/uuid"
-	"github.com/lucky-aeon/agentx/plugin-helper/config"
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/config"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 )
 
 type WorkspaceManager struct {

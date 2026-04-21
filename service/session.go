@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 	"github.com/mark3labs/mcp-go/client"
 	"github.com/mark3labs/mcp-go/mcp"
 )
@@ -130,7 +130,7 @@ func (s *Session) checkInactivity() {
 	sessionId := s.Id
 	s.mu.RUnlock()
 
-	// 如果没有活跃的事件通道且超过阈值没有活动，则清理 session
+	// 如果没有活跃的事件通道且超过阈值没有活动，则清理session
 	if !hasActiveChans && time.Since(lastActivity) > s.cleanupConfig.noConnectionTTL {
 		xl := xlog.NewLogger("session-monitor")
 		xl.Infof("Session %s is inactive, triggering cleanup", sessionId)
@@ -183,7 +183,7 @@ func (s *Session) SendMessage(xl xlog.Logger, content json.RawMessage) (err erro
 		}
 	}
 
-	// 对所有 MCP 服务器发送消息
+	// 对所有MCP 服务器发送消息
 	if singleMcp == "" {
 		// 如果是tools/list请求，需要特殊处理来聚合所有MCP的工具
 		if method == "tools/list" {
@@ -297,7 +297,7 @@ type SessionMsg struct {
 	Data     string `json:"data"`
 }
 
-// check lastMsg is 重复的
+// check lastMsg is 重复�?
 func (smsg *SessionMsg) isDuplicate(newMsg *SessionMsg) bool {
 	if smsg.proxyId != 0 && smsg.proxyId == newMsg.proxyId {
 		return true
@@ -365,7 +365,7 @@ func (s *Session) SendEvent(event SessionMsg) {
 	// 优化：并发发送事件到所有通道
 	sentToChannels := s.broadcastEvent(eventChans, event, xl)
 
-	// 只在成功发送后更新状态
+	// 只在成功发送后更新状�?
 	if sentToChannels > 0 {
 		s.mu.Lock()
 		s.LastReceiveTime = time.Now()
@@ -437,7 +437,7 @@ func (s *Session) removeEventChan(targetChan chan SessionMsg) {
 	// 检查是否所有通道都已关闭
 	if len(s.eventChans) == 0 {
 		shouldScheduleCleanup = true
-		// 从最后一个连接断开时开始计时
+		// 从最后一个连接断开时开始计�?
 		s.LastReceiveTime = time.Now()
 		sessionId = s.Id
 	}

@@ -13,10 +13,11 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 
-	"./xlog"
-	"github.com/lucky-aeon/agentx/plugin-helper/config"
-	"github.com/lucky-aeon/agentx/plugin-helper/middleware_impl"
-	"github.com/lucky-aeon/agentx/plugin-helper/router"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
+
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/config"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/middleware_impl"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/router"
 )
 
 func main() {

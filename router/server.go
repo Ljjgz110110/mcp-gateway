@@ -5,10 +5,10 @@ import (
 	"os"
 	"sync"
 
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/config"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/service"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 	"github.com/labstack/echo/v4"
-	"github.com/lucky-aeon/agentx/plugin-helper/config"
-	"github.com/lucky-aeon/agentx/plugin-helper/service"
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
 )
 
 // ServerManager 管理所有运行的服务
@@ -62,7 +62,7 @@ func NewServerManager(cfg config.Config, e *echo.Echo) *ServerManager {
 	// 调试功能路由
 	m.setupDebugRoutes(api)
 
-	// 静态文件服务 (前端管理界面)
+	// 静态文件服务(前端管理界面)
 	e.Static("/admin", "web/dist")
 
 	// 代理

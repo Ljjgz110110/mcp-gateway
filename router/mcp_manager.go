@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/config"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/service"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/types"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/utils"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 	"github.com/labstack/echo/v4"
-	"github.com/lucky-aeon/agentx/plugin-helper/config"
-	"github.com/lucky-aeon/agentx/plugin-helper/service"
-	"github.com/lucky-aeon/agentx/plugin-helper/types"
-	"github.com/lucky-aeon/agentx/plugin-helper/utils"
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
 )
 
 // GET ALL MCP SERVICES
@@ -115,11 +115,11 @@ func (m *ServerManager) handleDeploy(c echo.Context) error {
 
 	// 设置整体消息
 	if response.Success {
-		response.Message = fmt.Sprintf("部署完成: %d个服务总计，%d个新部署，%d个已存在，%d个已替换，%d个失败",
+		response.Message = fmt.Sprintf("部署完成: %d个服务总计, %d个新部署, %d个已存在, %d个已替换, %d个失败",
 			response.Summary.Total, response.Summary.Deployed,
 			response.Summary.Existed, response.Summary.Replaced, response.Summary.Failed)
 	} else {
-		response.Message = fmt.Sprintf("部署完成但存在失败: %d个服务总计，%d个新部署，%d个已存在，%d个已替换，%d个失败",
+		response.Message = fmt.Sprintf("部署完成但存在失败: %d个服务总计, %d个新部署, %d个已存在, %d个已替换, %d个失败",
 			response.Summary.Total, response.Summary.Deployed,
 			response.Summary.Existed, response.Summary.Replaced, response.Summary.Failed)
 	}

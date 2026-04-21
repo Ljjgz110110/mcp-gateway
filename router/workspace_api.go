@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
-	"github.com/lucky-aeon/agentx/plugin-helper/service"
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/service"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 )
 
 // WorkspaceInfo 工作空间信息
@@ -40,7 +40,7 @@ func (m *ServerManager) handleGetAllWorkspaces(c echo.Context) error {
 
 		workspaceInfo := WorkspaceInfo{
 			ID:           id,
-			Status:       "running", // 简化状态，实际可以从 workspace 获取
+			Status:       "running", // 简化状态，实际可以从workspace 获取
 			ServiceCount: len(services),
 			SessionCount: len(sessions),
 			Services:     serviceInfos,

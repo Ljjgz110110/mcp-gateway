@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/service"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 	"github.com/labstack/echo/v4"
-	"github.com/lucky-aeon/agentx/plugin-helper/service"
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
 )
 
 // DebugRequest 调试请求结构
@@ -360,7 +360,7 @@ func (m *ServerManager) handleGetServiceDebugLogs(c echo.Context) error {
 	limitStr := c.QueryParam("limit")
 	offsetStr := c.QueryParam("offset")
 
-	limit := 100 // 默认返回最后100行
+	limit := 100 // 默认返回最近100行
 	offset := 0
 
 	if limitStr != "" {
@@ -447,7 +447,7 @@ func (m *ServerManager) handleGetServiceDebugLogs(c echo.Context) error {
 	return c.JSON(http.StatusOK, response)
 }
 
-// 添加调试路由到ServerManager的初始化中
+// 添加调试路由到ServerManager的初始化
 func (m *ServerManager) setupDebugRoutes(api *echo.Group) {
 	// 调试相关路由
 	debug := api.Group("/workspaces/:workspace/services/:name/debug")
@@ -528,10 +528,10 @@ func (m *ServerManager) analyzeRoute(route *echo.Route) *APIEndpoint {
 	// 分析路径参数
 	parameters := m.extractPathParameters(route.Path)
 
-	// 获取处理器名称
+	// 获取处理器名�?
 	handlerName := m.getHandlerName(route.Name)
 
-	// 添加描述和示例
+	// 添加描述和示�?
 	description := m.getAPIDescription(route.Method, route.Path, handlerName)
 	examples := m.getAPIExamples(route.Method, route.Path)
 
@@ -577,7 +577,7 @@ func (m *ServerManager) getAPIGroup(path string) string {
 func (m *ServerManager) extractPathParameters(path string) []APIParameter {
 	var parameters []APIParameter
 
-	// 使用正则表达式匹配路径参数
+	// 使用正则表达式匹配路径参�?
 	re := regexp.MustCompile(`:(\w+)`)
 	matches := re.FindAllStringSubmatch(path, -1)
 
@@ -663,7 +663,7 @@ func (m *ServerManager) getAPIDescription(method, path, handler string) string {
 		return desc
 	}
 
-	// 基于路径和方法生成描述
+	// 基于路径和方法生成描�?
 	if strings.Contains(handler, "Debug") {
 		return "调试相关功能"
 	} else if strings.Contains(handler, "Workspace") {
@@ -762,7 +762,7 @@ func (m *ServerManager) getAPIExamples(method, path string) []APIExample {
 	case "GET /services":
 		examples = append(examples, APIExample{
 			Name:        "获取服务列表",
-			Description: "获取所有运行中的服务",
+			Description: "获取所有运行中的服务列表",
 			Response: map[string]interface{}{
 				"services": []map[string]interface{}{
 					{
@@ -891,7 +891,7 @@ func (m *ServerManager) handleTestAPI(c echo.Context) error {
 		fullURL += "?" + strings.Join(queryParts, "&")
 	}
 
-	// 准备请求体
+	// 准备请求�?
 	var bodyReader io.Reader
 	var requestBodyStr string
 	if req.Body != nil && len(req.Body) > 0 {
@@ -922,12 +922,12 @@ func (m *ServerManager) handleTestAPI(c echo.Context) error {
 		httpReq.Header.Set("Content-Type", "application/json")
 	}
 
-	// 复制原始请求的授权头部
+	// 复制原始请求的授权头�?
 	if auth := c.Request().Header.Get("Authorization"); auth != "" {
 		httpReq.Header.Set("Authorization", auth)
 	}
 
-	// 添加自定义头部
+	// 添加自定义头�?
 	for key, value := range req.Headers {
 		httpReq.Header.Set(key, value)
 	}
@@ -940,7 +940,7 @@ func (m *ServerManager) handleTestAPI(c echo.Context) error {
 		}
 	}
 
-	// 发送请求
+	// 发送请�?
 	client := &http.Client{
 		Timeout: 30 * time.Second,
 	}

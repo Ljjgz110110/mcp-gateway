@@ -6,7 +6,7 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 )
 
 var startProfile bool

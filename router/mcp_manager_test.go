@@ -10,10 +10,10 @@ import (
 	"testing"
 
 	"github.com/labstack/echo/v4"
-	"github.com/lucky-aeon/agentx/plugin-helper/config"
-	"github.com/lucky-aeon/agentx/plugin-helper/service"
-	"github.com/lucky-aeon/agentx/plugin-helper/types"
-	"github.com/lucky-aeon/agentx/plugin-helper/xlog"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/config"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/service"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/types"
+	"github.com/Ljjgz110110/Agent-Platform/plugin-helper/xlog"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )
@@ -117,7 +117,7 @@ func TestHandleDeploy_Success_NewDeployment(t *testing.T) {
 	// 创建测试用的 ServerManager
 	serverMgr, mockServiceMgr := createTestServerManager()
 
-	// 模拟请求体
+	// 模拟请求�?
 	deployReq := types.DeployRequest{
 		MCPServers: map[string]config.MCPServerConfig{
 			"test-service-1": {
@@ -172,7 +172,7 @@ func TestHandleDeploy_Success_NewDeployment(t *testing.T) {
 	assert.Equal(t, 0, response.Summary.Replaced)
 	assert.Equal(t, 0, response.Summary.Failed)
 
-	// 验证每个服务的结果
+	// 验证每个服务的结�?
 	assert.Equal(t, types.ServiceDeployStatusDeployed, response.Results["test-service-1"].Status)
 	assert.Equal(t, types.ServiceDeployStatusDeployed, response.Results["test-service-2"].Status)
 	assert.Contains(t, response.Results["test-service-1"].Message, "服务部署成功")
@@ -189,7 +189,7 @@ func TestHandleDeploy_MixedResults(t *testing.T) {
 	// 创建测试用的 ServerManager
 	serverMgr, mockServiceMgr := createTestServerManager()
 
-	// 模拟请求体
+	// 模拟请求�?
 	deployReq := types.DeployRequest{
 		MCPServers: map[string]config.MCPServerConfig{
 			"existing-service": {
@@ -261,7 +261,7 @@ func TestHandleDeploy_MixedResults(t *testing.T) {
 	assert.Equal(t, 1, response.Summary.Replaced)
 	assert.Equal(t, 1, response.Summary.Failed)
 
-	// 验证每个服务的结果
+	// 验证每个服务的结�?
 	assert.Equal(t, types.ServiceDeployStatusExisted, response.Results["existing-service"].Status)
 	assert.Equal(t, types.ServiceDeployStatusDeployed, response.Results["new-service"].Status)
 	assert.Equal(t, types.ServiceDeployStatusReplaced, response.Results["replaced-service"].Status)
@@ -274,7 +274,7 @@ func TestHandleDeploy_MixedResults(t *testing.T) {
 	// 验证 mock 调用
 	mockServiceMgr.AssertExpectations(t)
 
-	// 打印响应 JSON 以供参考
+	// 打印响应 JSON 以供参�?
 	fmt.Printf("Mixed Results Response JSON:\n%s\n", rec.Body.String())
 }
 
@@ -285,7 +285,7 @@ func TestHandleDeploy_AllFailed(t *testing.T) {
 	// 创建测试用的 ServerManager
 	serverMgr, mockServiceMgr := createTestServerManager()
 
-	// 模拟请求体
+	// 模拟请求�?
 	deployReq := types.DeployRequest{
 		MCPServers: map[string]config.MCPServerConfig{
 			"failed-service-1": {
@@ -352,7 +352,7 @@ func TestHandleDeploy_InvalidJSON(t *testing.T) {
 	// 创建测试用的 ServerManager
 	serverMgr, _ := createTestServerManager()
 
-	// 创建无效的 JSON 请求
+	// 创建无效�?JSON 请求
 	req := httptest.NewRequest(http.MethodPost, "/deploy", strings.NewReader("invalid json"))
 	req.Header.Set("Content-Type", "application/json")
 	rec := httptest.NewRecorder()
@@ -373,7 +373,7 @@ func TestHandleDeploy_EmptyRequest(t *testing.T) {
 	// 创建测试用的 ServerManager
 	serverMgr, _ := createTestServerManager()
 
-	// 模拟空的请求体
+	// 模拟空的请求�?
 	deployReq := types.DeployRequest{
 		MCPServers: map[string]config.MCPServerConfig{},
 	}
